@@ -1,0 +1,100 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios18.4 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MeticaSDKFramework
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1
+import AppLovinSDK
+import Combine
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os.log
+import os
+public protocol MeticaAd {
+  var adUnitId: Swift.String { get }
+  var revenue: Swift.Double { get }
+  var networkName: Swift.String? { get }
+  var placementTag: Swift.String? { get }
+  var adFormat: Swift.String? { get }
+  var requestId: Swift.String { get }
+  var creativeId: Swift.String? { get }
+  var latency: Swift.Int64 { get }
+  func print() -> Swift.String
+}
+extension MeticaSDKFramework.MeticaAd {
+  public func print() -> Swift.String
+}
+public func createMeticaAd(adUnitId: Swift.String, revenue: Swift.Double, networkName: Swift.String?, placementTag: Swift.String?, adFormat: Swift.String?, creativeId: Swift.String?) -> any MeticaSDKFramework.MeticaAd
+public enum AdFormatType : Swift.Equatable {
+  case INTER
+  case REWARDED
+  public static func == (a: MeticaSDKFramework.AdFormatType, b: MeticaSDKFramework.AdFormatType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol MeticaLoggerListener : AnyObject {
+  func onLog(tag: Swift.String, message: Swift.String, level: MeticaSDKFramework.MeticaLogger.LogLevel)
+}
+public enum MeticaLogger {
+  public enum LogLevel : Swift.String {
+    case debug
+    case info
+    case warn
+    case error
+    case special
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static var enableLogs: Swift.Bool
+  public static var isLoggingEnabled: Swift.Bool {
+    get
+  }
+  public static func addListener(_ listener: any MeticaSDKFramework.MeticaLoggerListener)
+  public static func removeListener(_ listener: any MeticaSDKFramework.MeticaLoggerListener)
+  public static func debug(_ message: @autoclosure () -> Swift.String, tag: Swift.String? = nil, forceLogging: Swift.Bool = false, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
+  public static func info(_ message: @autoclosure () -> Swift.String, tag: Swift.String? = nil, forceLogging: Swift.Bool = false, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
+  public static func warn(_ message: @autoclosure () -> Swift.String, tag: Swift.String? = nil, error: (any Swift.Error)? = nil, forceLogging: Swift.Bool = false, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
+  public static func error(_ message: @autoclosure () -> Swift.String, tag: Swift.String? = nil, error: (any Swift.Error)? = nil, forceLogging: Swift.Bool = false, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
+  public static func tlog(_ message: @autoclosure () -> Swift.String, error: (any Swift.Error)? = nil, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
+}
+public protocol MeticaShowAdCallback {
+  func onAdShowSuccess(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdShowFailed(meticaAd: any MeticaSDKFramework.MeticaAd, error: Swift.String)
+  func onAdHidden(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdClicked(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdRevenuePaid(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdRewarded(meticaAd: any MeticaSDKFramework.MeticaAd)
+}
+public protocol MeticaLoadAdCallback {
+  func onAdLoadSuccess(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdLoadFailed(error: Swift.String)
+}
+public protocol MeticaAdsInitCallback {
+  func onInitialized(enabled: Swift.Bool)
+  func onFailed(reason: Swift.String)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class MeticaAds : ObjectiveC.NSObject {
+  @objc public static let shared: MeticaSDKFramework.MeticaAds
+  final public var isInitialized: Swift.Bool {
+    get
+  }
+  final public func initialize(apiKey: Swift.String, appId: Swift.String, userId: Swift.String, version: Swift.String, baseEndpoint: Swift.String, callback: any MeticaSDKFramework.MeticaAdsInitCallback)
+  final public func loadInterstitial(callback: any MeticaSDKFramework.MeticaLoadAdCallback)
+  final public func showInterstitial(viewController: UIKit.UIViewController, callback: any MeticaSDKFramework.MeticaShowAdCallback)
+  @objc final public func isInterstitialReady() -> Swift.Bool
+  final public func loadRewarded(callback: any MeticaSDKFramework.MeticaLoadAdCallback)
+  final public func showRewarded(viewController: UIKit.UIViewController, callback: any MeticaSDKFramework.MeticaShowAdCallback)
+  @objc final public func isRewardedReady() -> Swift.Bool
+  @objc deinit
+}
+extension MeticaSDKFramework.AdFormatType : Swift.Hashable {}
+extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.Equatable {}
+extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.Hashable {}
+extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.RawRepresentable {}
