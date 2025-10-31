@@ -12,18 +12,21 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-public protocol MeticaAdsInitCallback {
-  func onInitialized(enabled: Swift.Bool)
-  func onFailed(reason: Swift.String)
+public protocol MeticaAd {
+  var adUnitId: Swift.String { get }
+  var revenue: Swift.Double { get }
+  var networkName: Swift.String? { get }
+  var placementTag: Swift.String? { get }
+  var adFormat: Swift.String? { get }
+  var requestId: Swift.String { get }
+  var creativeId: Swift.String? { get }
+  var latency: Swift.Int64 { get }
+  func print() -> Swift.String
 }
-public protocol MeticaShowAdCallback {
-  func onAdShowSuccess(meticaAd: any MeticaSDKFramework.MeticaAd)
-  func onAdShowFailed(meticaAd: any MeticaSDKFramework.MeticaAd, error: Swift.String)
-  func onAdHidden(meticaAd: any MeticaSDKFramework.MeticaAd)
-  func onAdClicked(meticaAd: any MeticaSDKFramework.MeticaAd)
-  func onAdRevenuePaid(meticaAd: any MeticaSDKFramework.MeticaAd)
-  func onAdRewarded(meticaAd: any MeticaSDKFramework.MeticaAd)
+extension MeticaSDKFramework.MeticaAd {
+  public func print() -> Swift.String
 }
+public func createMeticaAd(adUnitId: Swift.String, revenue: Swift.Double, networkName: Swift.String?, placementTag: Swift.String?, adFormat: Swift.String?, creativeId: Swift.String?) -> any MeticaSDKFramework.MeticaAd
 public enum AdFormatType : Swift.Equatable {
   case INTER
   case REWARDED
@@ -35,10 +38,6 @@ public enum AdFormatType : Swift.Equatable {
 }
 public protocol MeticaLoggerListener : AnyObject {
   func onLog(tag: Swift.String, message: Swift.String, level: MeticaSDKFramework.MeticaLogger.LogLevel)
-}
-public protocol MeticaLoadAdCallback {
-  func onAdLoadSuccess(meticaAd: any MeticaSDKFramework.MeticaAd)
-  func onAdLoadFailed(error: Swift.String)
 }
 public enum MeticaLogger {
   public enum LogLevel : Swift.String {
@@ -65,6 +64,22 @@ public enum MeticaLogger {
   public static func error(_ message: @autoclosure () -> Swift.String, tag: Swift.String? = nil, error: (any Swift.Error)? = nil, forceLogging: Swift.Bool = false, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
   public static func tlog(_ message: @autoclosure () -> Swift.String, error: (any Swift.Error)? = nil, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
 }
+public protocol MeticaShowAdCallback {
+  func onAdShowSuccess(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdShowFailed(meticaAd: any MeticaSDKFramework.MeticaAd, error: Swift.String)
+  func onAdHidden(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdClicked(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdRevenuePaid(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdRewarded(meticaAd: any MeticaSDKFramework.MeticaAd)
+}
+public protocol MeticaLoadAdCallback {
+  func onAdLoadSuccess(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdLoadFailed(error: Swift.String)
+}
+public protocol MeticaAdsInitCallback {
+  func onInitialized(enabled: Swift.Bool)
+  func onFailed(reason: Swift.String)
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class MeticaAds : ObjectiveC.NSObject {
   @objc public static let shared: MeticaSDKFramework.MeticaAds
   final public var isInitialized: Swift.Bool {
@@ -79,21 +94,6 @@ public enum MeticaLogger {
   @objc final public func isRewardedReady() -> Swift.Bool
   @objc deinit
 }
-public protocol MeticaAd {
-  var adUnitId: Swift.String { get }
-  var revenue: Swift.Double { get }
-  var networkName: Swift.String? { get }
-  var placementTag: Swift.String? { get }
-  var adFormat: Swift.String? { get }
-  var requestId: Swift.String { get }
-  var creativeId: Swift.String? { get }
-  var latency: Swift.Int64 { get }
-  func print() -> Swift.String
-}
-extension MeticaSDKFramework.MeticaAd {
-  public func print() -> Swift.String
-}
-public func createMeticaAd(adUnitId: Swift.String, revenue: Swift.Double, networkName: Swift.String?, placementTag: Swift.String?, adFormat: Swift.String?, creativeId: Swift.String?) -> any MeticaSDKFramework.MeticaAd
 extension MeticaSDKFramework.AdFormatType : Swift.Hashable {}
 extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.Equatable {}
 extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.Hashable {}

@@ -12,6 +12,28 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
+public protocol MeticaLoadAdCallback {
+  func onAdLoadSuccess(meticaAd: any MeticaSDKFramework.MeticaAd)
+  func onAdLoadFailed(error: Swift.String)
+}
+public protocol MeticaAdsInitCallback {
+  func onInitialized(enabled: Swift.Bool)
+  func onFailed(reason: Swift.String)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class MeticaAds : ObjectiveC.NSObject {
+  @objc public static let shared: MeticaSDKFramework.MeticaAds
+  final public var isInitialized: Swift.Bool {
+    get
+  }
+  final public func initialize(apiKey: Swift.String, appId: Swift.String, userId: Swift.String, version: Swift.String, baseEndpoint: Swift.String, callback: any MeticaSDKFramework.MeticaAdsInitCallback)
+  final public func loadInterstitial(callback: any MeticaSDKFramework.MeticaLoadAdCallback)
+  final public func showInterstitial(viewController: UIKit.UIViewController, callback: any MeticaSDKFramework.MeticaShowAdCallback)
+  @objc final public func isInterstitialReady() -> Swift.Bool
+  final public func loadRewarded(callback: any MeticaSDKFramework.MeticaLoadAdCallback)
+  final public func showRewarded(viewController: UIKit.UIViewController, callback: any MeticaSDKFramework.MeticaShowAdCallback)
+  @objc final public func isRewardedReady() -> Swift.Bool
+  @objc deinit
+}
 public protocol MeticaAd {
   var adUnitId: Swift.String { get }
   var revenue: Swift.Double { get }
@@ -71,28 +93,6 @@ public protocol MeticaShowAdCallback {
   func onAdClicked(meticaAd: any MeticaSDKFramework.MeticaAd)
   func onAdRevenuePaid(meticaAd: any MeticaSDKFramework.MeticaAd)
   func onAdRewarded(meticaAd: any MeticaSDKFramework.MeticaAd)
-}
-public protocol MeticaLoadAdCallback {
-  func onAdLoadSuccess(meticaAd: any MeticaSDKFramework.MeticaAd)
-  func onAdLoadFailed(error: Swift.String)
-}
-public protocol MeticaAdsInitCallback {
-  func onInitialized(enabled: Swift.Bool)
-  func onFailed(reason: Swift.String)
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class MeticaAds : ObjectiveC.NSObject {
-  @objc public static let shared: MeticaSDKFramework.MeticaAds
-  final public var isInitialized: Swift.Bool {
-    get
-  }
-  final public func initialize(apiKey: Swift.String, appId: Swift.String, userId: Swift.String, version: Swift.String, baseEndpoint: Swift.String, callback: any MeticaSDKFramework.MeticaAdsInitCallback)
-  final public func loadInterstitial(callback: any MeticaSDKFramework.MeticaLoadAdCallback)
-  final public func showInterstitial(viewController: UIKit.UIViewController, callback: any MeticaSDKFramework.MeticaShowAdCallback)
-  @objc final public func isInterstitialReady() -> Swift.Bool
-  final public func loadRewarded(callback: any MeticaSDKFramework.MeticaLoadAdCallback)
-  final public func showRewarded(viewController: UIKit.UIViewController, callback: any MeticaSDKFramework.MeticaShowAdCallback)
-  @objc final public func isRewardedReady() -> Swift.Bool
-  @objc deinit
 }
 extension MeticaSDKFramework.AdFormatType : Swift.Hashable {}
 extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.Equatable {}

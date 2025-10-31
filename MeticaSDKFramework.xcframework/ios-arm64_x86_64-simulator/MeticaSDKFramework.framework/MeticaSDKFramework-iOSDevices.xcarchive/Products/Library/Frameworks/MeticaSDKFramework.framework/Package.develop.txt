@@ -20,13 +20,13 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "MeticaSDKFramework",
-            path: "./MeticaSDKFramework.xcframework"
+            name: "PrivateMeticaSDKFramework",
+            path: "./PrivateMeticaSDKFramework.xcframework"
         ),
         .target(
             name: "MeticaPrivateSDK",
             dependencies: [
-                .target(name: "MeticaSDKFramework"),
+                .target(name: "PrivateMeticaSDKFramework"),
                 .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package")
             ],
             path: "Sources/MeticaSDKWrapper"
