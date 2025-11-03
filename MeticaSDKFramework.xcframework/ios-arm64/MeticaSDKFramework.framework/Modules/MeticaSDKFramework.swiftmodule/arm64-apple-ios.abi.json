@@ -5,6 +5,1728 @@
     "printedName": "MeticaSDKFramework",
     "children": [
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdFormatType",
+        "printedName": "AdFormatType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "INTER",
+            "printedName": "INTER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeticaSDKFramework.AdFormatType.Type) -> MeticaSDKFramework.AdFormatType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdFormatType",
+                    "printedName": "MeticaSDKFramework.AdFormatType",
+                    "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeticaSDKFramework.AdFormatType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdFormatType",
+                        "printedName": "MeticaSDKFramework.AdFormatType",
+                        "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MeticaSDKFramework12AdFormatTypeO5INTERyA2CmF",
+            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO5INTERyA2CmF",
+            "moduleName": "MeticaSDKFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "REWARDED",
+            "printedName": "REWARDED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeticaSDKFramework.AdFormatType.Type) -> MeticaSDKFramework.AdFormatType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdFormatType",
+                    "printedName": "MeticaSDKFramework.AdFormatType",
+                    "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeticaSDKFramework.AdFormatType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdFormatType",
+                        "printedName": "MeticaSDKFramework.AdFormatType",
+                        "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MeticaSDKFramework12AdFormatTypeO8REWARDEDyA2CmF",
+            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO8REWARDEDyA2CmF",
+            "moduleName": "MeticaSDKFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework12AdFormatTypeO9hashValueSivp",
+            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO9hashValueSivp",
+            "moduleName": "MeticaSDKFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework12AdFormatTypeO9hashValueSivg",
+                "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO9hashValueSivg",
+                "moduleName": "MeticaSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework12AdFormatTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "MeticaSDKFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFormatType",
+                "printedName": "MeticaSDKFramework.AdFormatType",
+                "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFormatType",
+                "printedName": "MeticaSDKFramework.AdFormatType",
+                "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework12AdFormatTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18MeticaSDKFramework12AdFormatTypeO",
+        "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MeticaLoggerListener",
+        "printedName": "MeticaLoggerListener",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onLog",
+            "printedName": "onLog(tag:message:level:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LogLevel",
+                "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A14LoggerListenerP5onLog3tag7message5levelySS_SSAA0aC0O0F5LevelOtF",
+            "mangledName": "$s18MeticaSDKFramework0A14LoggerListenerP5onLog3tag7message5levelySS_SSAA0aC0O0F5LevelOtF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaLoggerListener>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaLoggerListener>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18MeticaSDKFramework0A14LoggerListenerP",
+        "mangledName": "$s18MeticaSDKFramework0A14LoggerListenerP",
+        "moduleName": "MeticaSDKFramework",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MeticaLogger",
+        "printedName": "MeticaLogger",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "LogLevel",
+            "printedName": "LogLevel",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "debug",
+                "printedName": "debug",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MeticaSDKFramework.MeticaLogger.LogLevel.Type) -> MeticaSDKFramework.MeticaLogger.LogLevel",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LogLevel",
+                            "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO5debugyA2EmF",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO5debugyA2EmF",
+                "moduleName": "MeticaSDKFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "info",
+                "printedName": "info",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MeticaSDKFramework.MeticaLogger.LogLevel.Type) -> MeticaSDKFramework.MeticaLogger.LogLevel",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LogLevel",
+                            "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO4infoyA2EmF",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO4infoyA2EmF",
+                "moduleName": "MeticaSDKFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "warn",
+                "printedName": "warn",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MeticaSDKFramework.MeticaLogger.LogLevel.Type) -> MeticaSDKFramework.MeticaLogger.LogLevel",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LogLevel",
+                            "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO4warnyA2EmF",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO4warnyA2EmF",
+                "moduleName": "MeticaSDKFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "error",
+                "printedName": "error",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MeticaSDKFramework.MeticaLogger.LogLevel.Type) -> MeticaSDKFramework.MeticaLogger.LogLevel",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LogLevel",
+                            "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO5erroryA2EmF",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO5erroryA2EmF",
+                "moduleName": "MeticaSDKFramework"
+              },
+              {
+                "kind": "Var",
+                "name": "special",
+                "printedName": "special",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(MeticaSDKFramework.MeticaLogger.LogLevel.Type) -> MeticaSDKFramework.MeticaLogger.LogLevel",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LogLevel",
+                            "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO7specialyA2EmF",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO7specialyA2EmF",
+                "moduleName": "MeticaSDKFramework"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
+                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueAESgSS_tcfc",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueAESgSS_tcfc",
+                "moduleName": "MeticaSDKFramework",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueSSvp",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueSSvp",
+                "moduleName": "MeticaSDKFramework",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueSSvg",
+                    "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueSSvg",
+                    "moduleName": "MeticaSDKFramework",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO",
+            "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enableLogs",
+            "printedName": "enableLogs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A6LoggerO10enableLogsSbvpZ",
+            "mangledName": "$s18MeticaSDKFramework0A6LoggerO10enableLogsSbvpZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO10enableLogsSbvgZ",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO10enableLogsSbvgZ",
+                "moduleName": "MeticaSDKFramework",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO10enableLogsSbvsZ",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO10enableLogsSbvsZ",
+                "moduleName": "MeticaSDKFramework",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO10enableLogsSbvMZ",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO10enableLogsSbvMZ",
+                "moduleName": "MeticaSDKFramework",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLoggingEnabled",
+            "printedName": "isLoggingEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A6LoggerO16isLoggingEnabledSbvpZ",
+            "mangledName": "$s18MeticaSDKFramework0A6LoggerO16isLoggingEnabledSbvpZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A6LoggerO16isLoggingEnabledSbvgZ",
+                "mangledName": "$s18MeticaSDKFramework0A6LoggerO16isLoggingEnabledSbvgZ",
+                "moduleName": "MeticaSDKFramework",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "addListener",
+            "printedName": "addListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaLoggerListener",
+                "printedName": "any MeticaSDKFramework.MeticaLoggerListener",
+                "usr": "s:18MeticaSDKFramework0A14LoggerListenerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A6LoggerO11addListeneryyAA0acE0_pFZ",
+            "mangledName": "$s18MeticaSDKFramework0A6LoggerO11addListeneryyAA0acE0_pFZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeListener",
+            "printedName": "removeListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaLoggerListener",
+                "printedName": "any MeticaSDKFramework.MeticaLoggerListener",
+                "usr": "s:18MeticaSDKFramework0A14LoggerListenerP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A6LoggerO14removeListeneryyAA0acE0_pFZ",
+            "mangledName": "$s18MeticaSDKFramework0A6LoggerO14removeListeneryyAA0acE0_pFZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debug",
+            "printedName": "debug(_:tag:forceLogging:function:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "hasDefaultArg": true,
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A6LoggerO5debug_3tag12forceLogging8function4file4lineySSyXK_SSSgSbS2SSutFZ",
+            "mangledName": "$s18MeticaSDKFramework0A6LoggerO5debug_3tag12forceLogging8function4file4lineySSyXK_SSSgSbS2SSutFZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "info",
+            "printedName": "info(_:tag:forceLogging:function:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "hasDefaultArg": true,
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A6LoggerO4info_3tag12forceLogging8function4file4lineySSyXK_SSSgSbS2SSutFZ",
+            "mangledName": "$s18MeticaSDKFramework0A6LoggerO4info_3tag12forceLogging8function4file4lineySSyXK_SSSgSbS2SSutFZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warn",
+            "printedName": "warn(_:tag:error:forceLogging:function:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "hasDefaultArg": true,
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A6LoggerO4warn_3tag5error12forceLogging8function4file4lineySSyXK_SSSgs5Error_pSgSbS2SSutFZ",
+            "mangledName": "$s18MeticaSDKFramework0A6LoggerO4warn_3tag5error12forceLogging8function4file4lineySSyXK_SSSgs5Error_pSgSbS2SSutFZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:tag:error:forceLogging:function:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "hasDefaultArg": true,
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A6LoggerO5error_3tagAD12forceLogging8function4file4lineySSyXK_SSSgs5Error_pSgSbS2SSutFZ",
+            "mangledName": "$s18MeticaSDKFramework0A6LoggerO5error_3tagAD12forceLogging8function4file4lineySSyXK_SSSgs5Error_pSgSbS2SSutFZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tlog",
+            "printedName": "tlog(_:error:function:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Error)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "hasDefaultArg": true,
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A6LoggerO4tlog_5error8function4file4lineySSyXK_s5Error_pSgS2SSutFZ",
+            "mangledName": "$s18MeticaSDKFramework0A6LoggerO4tlog_5error8function4file4lineySSyXK_s5Error_pSgS2SSutFZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18MeticaSDKFramework0A6LoggerO",
+        "mangledName": "$s18MeticaSDKFramework0A6LoggerO",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDKVersion",
+        "printedName": "SDKVersion",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework10SDKVersionV7versionSSvpZ",
+            "mangledName": "$s18MeticaSDKFramework10SDKVersionV7versionSSvpZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework10SDKVersionV7versionSSvgZ",
+                "mangledName": "$s18MeticaSDKFramework10SDKVersionV7versionSSvgZ",
+                "moduleName": "MeticaSDKFramework",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18MeticaSDKFramework10SDKVersionV",
+        "mangledName": "$s18MeticaSDKFramework10SDKVersionV",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MeticaShowAdCallback",
+        "printedName": "MeticaShowAdCallback",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onAdShowSuccess",
+            "printedName": "onAdShowSuccess(meticaAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAd",
+                "printedName": "any MeticaSDKFramework.MeticaAd",
+                "usr": "s:18MeticaSDKFramework0A2AdP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02ondC7Success06meticaD0yAA0aD0_p_tF",
+            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02ondC7Success06meticaD0yAA0aD0_p_tF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdShowFailed",
+            "printedName": "onAdShowFailed(meticaAd:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAd",
+                "printedName": "any MeticaSDKFramework.MeticaAd",
+                "usr": "s:18MeticaSDKFramework0A2AdP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02ondC6Failed06meticaD05erroryAA0aD0_p_SStF",
+            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02ondC6Failed06meticaD05erroryAA0aD0_p_SStF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdHidden",
+            "printedName": "onAdHidden(meticaAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAd",
+                "printedName": "any MeticaSDKFramework.MeticaAd",
+                "usr": "s:18MeticaSDKFramework0A2AdP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02onD6Hidden06meticaD0yAA0aD0_p_tF",
+            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02onD6Hidden06meticaD0yAA0aD0_p_tF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdClicked",
+            "printedName": "onAdClicked(meticaAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAd",
+                "printedName": "any MeticaSDKFramework.MeticaAd",
+                "usr": "s:18MeticaSDKFramework0A2AdP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02onD7Clicked06meticaD0yAA0aD0_p_tF",
+            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02onD7Clicked06meticaD0yAA0aD0_p_tF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdRevenuePaid",
+            "printedName": "onAdRevenuePaid(meticaAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAd",
+                "printedName": "any MeticaSDKFramework.MeticaAd",
+                "usr": "s:18MeticaSDKFramework0A2AdP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02onD11RevenuePaid06meticaD0yAA0aD0_p_tF",
+            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02onD11RevenuePaid06meticaD0yAA0aD0_p_tF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAdRewarded",
+            "printedName": "onAdRewarded(meticaAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAd",
+                "printedName": "any MeticaSDKFramework.MeticaAd",
+                "usr": "s:18MeticaSDKFramework0A2AdP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02onD8Rewarded06meticaD0yAA0aD0_p_tF",
+            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02onD8Rewarded06meticaD0yAA0aD0_p_tF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP",
+        "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "MeticaLoadAdCallback",
         "printedName": "MeticaLoadAdCallback",
@@ -1303,272 +3025,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AdFormatType",
-        "printedName": "AdFormatType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "INTER",
-            "printedName": "INTER",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MeticaSDKFramework.AdFormatType.Type) -> MeticaSDKFramework.AdFormatType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdFormatType",
-                    "printedName": "MeticaSDKFramework.AdFormatType",
-                    "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MeticaSDKFramework.AdFormatType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdFormatType",
-                        "printedName": "MeticaSDKFramework.AdFormatType",
-                        "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:18MeticaSDKFramework12AdFormatTypeO5INTERyA2CmF",
-            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO5INTERyA2CmF",
-            "moduleName": "MeticaSDKFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "REWARDED",
-            "printedName": "REWARDED",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MeticaSDKFramework.AdFormatType.Type) -> MeticaSDKFramework.AdFormatType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdFormatType",
-                    "printedName": "MeticaSDKFramework.AdFormatType",
-                    "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MeticaSDKFramework.AdFormatType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdFormatType",
-                        "printedName": "MeticaSDKFramework.AdFormatType",
-                        "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:18MeticaSDKFramework12AdFormatTypeO8REWARDEDyA2CmF",
-            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO8REWARDEDyA2CmF",
-            "moduleName": "MeticaSDKFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18MeticaSDKFramework12AdFormatTypeO9hashValueSivp",
-            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO9hashValueSivp",
-            "moduleName": "MeticaSDKFramework",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18MeticaSDKFramework12AdFormatTypeO9hashValueSivg",
-                "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO9hashValueSivg",
-                "moduleName": "MeticaSDKFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework12AdFormatTypeO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO4hash4intoys6HasherVz_tF",
-            "moduleName": "MeticaSDKFramework",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdFormatType",
-                "printedName": "MeticaSDKFramework.AdFormatType",
-                "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdFormatType",
-                "printedName": "MeticaSDKFramework.AdFormatType",
-                "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework12AdFormatTypeO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO2eeoiySbAC_ACtFZ",
-            "moduleName": "MeticaSDKFramework",
-            "static": true,
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:18MeticaSDKFramework12AdFormatTypeO",
-        "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO",
-        "moduleName": "MeticaSDKFramework",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -1596,1426 +3052,19 @@
         "moduleName": "MeticaSDKFramework"
       },
       {
-        "kind": "TypeDecl",
-        "name": "MeticaLoggerListener",
-        "printedName": "MeticaLoggerListener",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onLog",
-            "printedName": "onLog(tag:message:level:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "LogLevel",
-                "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A14LoggerListenerP5onLog3tag7message5levelySS_SSAA0aC0O0F5LevelOtF",
-            "mangledName": "$s18MeticaSDKFramework0A14LoggerListenerP5onLog3tag7message5levelySS_SSAA0aC0O0F5LevelOtF",
-            "moduleName": "MeticaSDKFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaLoggerListener>",
-            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaLoggerListener>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:18MeticaSDKFramework0A14LoggerListenerP",
-        "mangledName": "$s18MeticaSDKFramework0A14LoggerListenerP",
-        "moduleName": "MeticaSDKFramework",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "os.log",
-        "printedName": "os.log",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MeticaLogger",
-        "printedName": "MeticaLogger",
-        "children": [
-          {
-            "kind": "TypeDecl",
-            "name": "LogLevel",
-            "printedName": "LogLevel",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "debug",
-                "printedName": "debug",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(MeticaSDKFramework.MeticaLogger.LogLevel.Type) -> MeticaSDKFramework.MeticaLogger.LogLevel",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LogLevel",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "LogLevel",
-                            "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO5debugyA2EmF",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO5debugyA2EmF",
-                "moduleName": "MeticaSDKFramework"
-              },
-              {
-                "kind": "Var",
-                "name": "info",
-                "printedName": "info",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(MeticaSDKFramework.MeticaLogger.LogLevel.Type) -> MeticaSDKFramework.MeticaLogger.LogLevel",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LogLevel",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "LogLevel",
-                            "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO4infoyA2EmF",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO4infoyA2EmF",
-                "moduleName": "MeticaSDKFramework"
-              },
-              {
-                "kind": "Var",
-                "name": "warn",
-                "printedName": "warn",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(MeticaSDKFramework.MeticaLogger.LogLevel.Type) -> MeticaSDKFramework.MeticaLogger.LogLevel",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LogLevel",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "LogLevel",
-                            "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO4warnyA2EmF",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO4warnyA2EmF",
-                "moduleName": "MeticaSDKFramework"
-              },
-              {
-                "kind": "Var",
-                "name": "error",
-                "printedName": "error",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(MeticaSDKFramework.MeticaLogger.LogLevel.Type) -> MeticaSDKFramework.MeticaLogger.LogLevel",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LogLevel",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "LogLevel",
-                            "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO5erroryA2EmF",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO5erroryA2EmF",
-                "moduleName": "MeticaSDKFramework"
-              },
-              {
-                "kind": "Var",
-                "name": "special",
-                "printedName": "special",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(MeticaSDKFramework.MeticaLogger.LogLevel.Type) -> MeticaSDKFramework.MeticaLogger.LogLevel",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LogLevel",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "LogLevel",
-                            "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO7specialyA2EmF",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO7specialyA2EmF",
-                "moduleName": "MeticaSDKFramework"
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LogLevel",
-                        "printedName": "MeticaSDKFramework.MeticaLogger.LogLevel",
-                        "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueAESgSS_tcfc",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueAESgSS_tcfc",
-                "moduleName": "MeticaSDKFramework",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueSSvp",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueSSvp",
-                "moduleName": "MeticaSDKFramework",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueSSvg",
-                    "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO8rawValueSSvg",
-                    "moduleName": "MeticaSDKFramework",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:18MeticaSDKFramework0A6LoggerO8LogLevelO",
-            "mangledName": "$s18MeticaSDKFramework0A6LoggerO8LogLevelO",
-            "moduleName": "MeticaSDKFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "enumRawTypeName": "String",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "enableLogs",
-            "printedName": "enableLogs",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18MeticaSDKFramework0A6LoggerO10enableLogsSbvpZ",
-            "mangledName": "$s18MeticaSDKFramework0A6LoggerO10enableLogsSbvpZ",
-            "moduleName": "MeticaSDKFramework",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO10enableLogsSbvgZ",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO10enableLogsSbvgZ",
-                "moduleName": "MeticaSDKFramework",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO10enableLogsSbvsZ",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO10enableLogsSbvsZ",
-                "moduleName": "MeticaSDKFramework",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO10enableLogsSbvMZ",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO10enableLogsSbvMZ",
-                "moduleName": "MeticaSDKFramework",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isLoggingEnabled",
-            "printedName": "isLoggingEnabled",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18MeticaSDKFramework0A6LoggerO16isLoggingEnabledSbvpZ",
-            "mangledName": "$s18MeticaSDKFramework0A6LoggerO16isLoggingEnabledSbvpZ",
-            "moduleName": "MeticaSDKFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18MeticaSDKFramework0A6LoggerO16isLoggingEnabledSbvgZ",
-                "mangledName": "$s18MeticaSDKFramework0A6LoggerO16isLoggingEnabledSbvgZ",
-                "moduleName": "MeticaSDKFramework",
-                "static": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "addListener",
-            "printedName": "addListener(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MeticaLoggerListener",
-                "printedName": "any MeticaSDKFramework.MeticaLoggerListener",
-                "usr": "s:18MeticaSDKFramework0A14LoggerListenerP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A6LoggerO11addListeneryyAA0acE0_pFZ",
-            "mangledName": "$s18MeticaSDKFramework0A6LoggerO11addListeneryyAA0acE0_pFZ",
-            "moduleName": "MeticaSDKFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "removeListener",
-            "printedName": "removeListener(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MeticaLoggerListener",
-                "printedName": "any MeticaSDKFramework.MeticaLoggerListener",
-                "usr": "s:18MeticaSDKFramework0A14LoggerListenerP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A6LoggerO14removeListeneryyAA0acE0_pFZ",
-            "mangledName": "$s18MeticaSDKFramework0A6LoggerO14removeListeneryyAA0acE0_pFZ",
-            "moduleName": "MeticaSDKFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "debug",
-            "printedName": "debug(_:tag:forceLogging:function:file:line:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> Swift.String",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "typeAttributes": [
-                  "noescape"
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "hasDefaultArg": true,
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A6LoggerO5debug_3tag12forceLogging8function4file4lineySSyXK_SSSgSbS2SSutFZ",
-            "mangledName": "$s18MeticaSDKFramework0A6LoggerO5debug_3tag12forceLogging8function4file4lineySSyXK_SSSgSbS2SSutFZ",
-            "moduleName": "MeticaSDKFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "info",
-            "printedName": "info(_:tag:forceLogging:function:file:line:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> Swift.String",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "typeAttributes": [
-                  "noescape"
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "hasDefaultArg": true,
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A6LoggerO4info_3tag12forceLogging8function4file4lineySSyXK_SSSgSbS2SSutFZ",
-            "mangledName": "$s18MeticaSDKFramework0A6LoggerO4info_3tag12forceLogging8function4file4lineySSyXK_SSSgSbS2SSutFZ",
-            "moduleName": "MeticaSDKFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "warn",
-            "printedName": "warn(_:tag:error:forceLogging:function:file:line:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> Swift.String",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "typeAttributes": [
-                  "noescape"
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "hasDefaultArg": true,
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A6LoggerO4warn_3tag5error12forceLogging8function4file4lineySSyXK_SSSgs5Error_pSgSbS2SSutFZ",
-            "mangledName": "$s18MeticaSDKFramework0A6LoggerO4warn_3tag5error12forceLogging8function4file4lineySSyXK_SSSgs5Error_pSgSbS2SSutFZ",
-            "moduleName": "MeticaSDKFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "error",
-            "printedName": "error(_:tag:error:forceLogging:function:file:line:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> Swift.String",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "typeAttributes": [
-                  "noescape"
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "hasDefaultArg": true,
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A6LoggerO5error_3tagAD12forceLogging8function4file4lineySSyXK_SSSgs5Error_pSgSbS2SSutFZ",
-            "mangledName": "$s18MeticaSDKFramework0A6LoggerO5error_3tagAD12forceLogging8function4file4lineySSyXK_SSSgs5Error_pSgSbS2SSutFZ",
-            "moduleName": "MeticaSDKFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "tlog",
-            "printedName": "tlog(_:error:function:file:line:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> Swift.String",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "typeAttributes": [
-                  "noescape"
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "hasDefaultArg": true,
-                "usr": "s:Su"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A6LoggerO4tlog_5error8function4file4lineySSyXK_s5Error_pSgS2SSutFZ",
-            "mangledName": "$s18MeticaSDKFramework0A6LoggerO4tlog_5error8function4file4lineySSyXK_s5Error_pSgS2SSutFZ",
-            "moduleName": "MeticaSDKFramework",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:18MeticaSDKFramework0A6LoggerO",
-        "mangledName": "$s18MeticaSDKFramework0A6LoggerO",
         "moduleName": "MeticaSDKFramework",
         "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MeticaShowAdCallback",
-        "printedName": "MeticaShowAdCallback",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onAdShowSuccess",
-            "printedName": "onAdShowSuccess(meticaAd:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MeticaAd",
-                "printedName": "any MeticaSDKFramework.MeticaAd",
-                "usr": "s:18MeticaSDKFramework0A2AdP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02ondC7Success06meticaD0yAA0aD0_p_tF",
-            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02ondC7Success06meticaD0yAA0aD0_p_tF",
-            "moduleName": "MeticaSDKFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
-            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onAdShowFailed",
-            "printedName": "onAdShowFailed(meticaAd:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MeticaAd",
-                "printedName": "any MeticaSDKFramework.MeticaAd",
-                "usr": "s:18MeticaSDKFramework0A2AdP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02ondC6Failed06meticaD05erroryAA0aD0_p_SStF",
-            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02ondC6Failed06meticaD05erroryAA0aD0_p_SStF",
-            "moduleName": "MeticaSDKFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
-            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onAdHidden",
-            "printedName": "onAdHidden(meticaAd:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MeticaAd",
-                "printedName": "any MeticaSDKFramework.MeticaAd",
-                "usr": "s:18MeticaSDKFramework0A2AdP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02onD6Hidden06meticaD0yAA0aD0_p_tF",
-            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02onD6Hidden06meticaD0yAA0aD0_p_tF",
-            "moduleName": "MeticaSDKFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
-            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onAdClicked",
-            "printedName": "onAdClicked(meticaAd:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MeticaAd",
-                "printedName": "any MeticaSDKFramework.MeticaAd",
-                "usr": "s:18MeticaSDKFramework0A2AdP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02onD7Clicked06meticaD0yAA0aD0_p_tF",
-            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02onD7Clicked06meticaD0yAA0aD0_p_tF",
-            "moduleName": "MeticaSDKFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
-            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onAdRevenuePaid",
-            "printedName": "onAdRevenuePaid(meticaAd:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MeticaAd",
-                "printedName": "any MeticaSDKFramework.MeticaAd",
-                "usr": "s:18MeticaSDKFramework0A2AdP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02onD11RevenuePaid06meticaD0yAA0aD0_p_tF",
-            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02onD11RevenuePaid06meticaD0yAA0aD0_p_tF",
-            "moduleName": "MeticaSDKFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
-            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onAdRewarded",
-            "printedName": "onAdRewarded(meticaAd:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MeticaAd",
-                "printedName": "any MeticaSDKFramework.MeticaAd",
-                "usr": "s:18MeticaSDKFramework0A2AdP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP02onD8Rewarded06meticaD0yAA0aD0_p_tF",
-            "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP02onD8Rewarded06meticaD0yAA0aD0_p_tF",
-            "moduleName": "MeticaSDKFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaShowAdCallback>",
-            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaShowAdCallback>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:18MeticaSDKFramework0A14ShowAdCallbackP",
-        "mangledName": "$s18MeticaSDKFramework0A14ShowAdCallbackP",
-        "moduleName": "MeticaSDKFramework",
-        "declAttributes": [
-          "AccessControl",
           "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialRepository.swift",
-      "kind": "Dictionary",
-      "offset": 420,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 902,
-      "length": 7,
-      "value": "\"INTER\""
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
-      "kind": "FloatLiteral",
-      "offset": 1029,
-      "length": 4,
-      "value": "-1.0"
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1146,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/EventsApiClient.swift",
-      "kind": "StringLiteral",
-      "offset": 152,
-      "length": 17,
-      "value": "\"EventsApiClient\""
-    },
     {
       "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinAdapter.swift",
       "kind": "Array",
@@ -3164,6 +3213,13 @@
       "value": "\"adunits_applovin\""
     },
     {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/SDKVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 78,
+      "length": 7,
+      "value": "\"1.0.2\""
+    },
+    {
       "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinVersionParser.swift",
       "kind": "IntegerLiteral",
       "offset": 1851,
@@ -3218,6 +3274,41 @@
       "offset": 1640,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialRepository.swift",
+      "kind": "Dictionary",
+      "offset": 420,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
+      "kind": "StringLiteral",
+      "offset": 902,
+      "length": 7,
+      "value": "\"INTER\""
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
+      "kind": "FloatLiteral",
+      "offset": 1029,
+      "length": 4,
+      "value": "-1.0"
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1146,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/EventsApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 152,
+      "length": 17,
+      "value": "\"EventsApiClient\""
     }
   ]
 }

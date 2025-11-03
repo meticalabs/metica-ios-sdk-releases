@@ -21,7 +21,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "PrivateMeticaSDKFramework",
-            path: "./PrivateMeticaSDKFramework.xcframework"
+            path: "./MeticaSDKFramework.xcframework"
         ),
         .target(
             name: "MeticaPrivateSDK",

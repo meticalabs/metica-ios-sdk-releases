@@ -64,6 +64,9 @@ public enum MeticaLogger {
   public static func error(_ message: @autoclosure () -> Swift.String, tag: Swift.String? = nil, error: (any Swift.Error)? = nil, forceLogging: Swift.Bool = false, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
   public static func tlog(_ message: @autoclosure () -> Swift.String, error: (any Swift.Error)? = nil, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
 }
+public struct SDKVersion {
+  public static let version: Swift.String
+}
 public protocol MeticaShowAdCallback {
   func onAdShowSuccess(meticaAd: any MeticaSDKFramework.MeticaAd)
   func onAdShowFailed(meticaAd: any MeticaSDKFramework.MeticaAd, error: Swift.String)
