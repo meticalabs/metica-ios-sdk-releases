@@ -27,194 +27,70 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
       {
         "kind": "TypeDecl",
-        "name": "AdFormatType",
-        "printedName": "AdFormatType",
+        "name": "UserIdManager",
+        "printedName": "UserIdManager",
         "children": [
           {
-            "kind": "Var",
-            "name": "INTER",
-            "printedName": "INTER",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MeticaSDKFramework.AdFormatType.Type) -> MeticaSDKFramework.AdFormatType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdFormatType",
-                    "printedName": "MeticaSDKFramework.AdFormatType",
-                    "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MeticaSDKFramework.AdFormatType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdFormatType",
-                        "printedName": "MeticaSDKFramework.AdFormatType",
-                        "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:18MeticaSDKFramework12AdFormatTypeO5INTERyA2CmF",
-            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO5INTERyA2CmF",
-            "moduleName": "MeticaSDKFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "REWARDED",
-            "printedName": "REWARDED",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MeticaSDKFramework.AdFormatType.Type) -> MeticaSDKFramework.AdFormatType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdFormatType",
-                    "printedName": "MeticaSDKFramework.AdFormatType",
-                    "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MeticaSDKFramework.AdFormatType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdFormatType",
-                        "printedName": "MeticaSDKFramework.AdFormatType",
-                        "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:18MeticaSDKFramework12AdFormatTypeO8REWARDEDyA2CmF",
-            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO8REWARDEDyA2CmF",
-            "moduleName": "MeticaSDKFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18MeticaSDKFramework12AdFormatTypeO9hashValueSivp",
-            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO9hashValueSivp",
-            "moduleName": "MeticaSDKFramework",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18MeticaSDKFramework12AdFormatTypeO9hashValueSivg",
-                "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO9hashValueSivg",
-                "moduleName": "MeticaSDKFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
+            "name": "getStableUserId",
+            "printedName": "getStableUserId(appId:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework12AdFormatTypeO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO4hash4intoys6HasherVz_tF",
-            "moduleName": "MeticaSDKFramework",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdFormatType",
-                "printedName": "MeticaSDKFramework.AdFormatType",
-                "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdFormatType",
-                "printedName": "MeticaSDKFramework.AdFormatType",
-                "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework12AdFormatTypeO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO2eeoiySbAC_ACtFZ",
+            "usr": "s:18MeticaSDKFramework13UserIdManagerC09getStablecD003appD0S2S_tFZ",
+            "mangledName": "$s18MeticaSDKFramework13UserIdManagerC09getStablecD003appD0S2S_tFZ",
             "moduleName": "MeticaSDKFramework",
             "static": true,
-            "implicit": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Enum",
-        "usr": "s:18MeticaSDKFramework12AdFormatTypeO",
-        "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO",
+        "declKind": "Class",
+        "usr": "s:18MeticaSDKFramework13UserIdManagerC",
+        "mangledName": "$s18MeticaSDKFramework13UserIdManagerC",
         "moduleName": "MeticaSDKFramework",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Final",
+          "RawDocComment"
         ],
+        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -229,20 +105,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
           }
         ]
       },
@@ -250,6 +112,13 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -335,6 +204,23 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -1357,6 +1243,20 @@
       },
       {
         "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1373,6 +1273,55 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -1707,22 +1656,15 @@
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
       {
         "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -1825,20 +1767,6 @@
         "moduleName": "MeticaSDKFramework"
       },
       {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
         "kind": "TypeDecl",
         "name": "MeticaAdsInitCallback",
         "printedName": "MeticaAdsInitCallback",
@@ -1921,37 +1849,6 @@
             "mangledName": "$ss8CopyableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
       },
       {
         "kind": "Import",
@@ -2405,13 +2302,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -3025,34 +2915,6 @@
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3060,66 +2922,301 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdFormatType",
+        "printedName": "AdFormatType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "INTER",
+            "printedName": "INTER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeticaSDKFramework.AdFormatType.Type) -> MeticaSDKFramework.AdFormatType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdFormatType",
+                    "printedName": "MeticaSDKFramework.AdFormatType",
+                    "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeticaSDKFramework.AdFormatType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdFormatType",
+                        "printedName": "MeticaSDKFramework.AdFormatType",
+                        "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MeticaSDKFramework12AdFormatTypeO5INTERyA2CmF",
+            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO5INTERyA2CmF",
+            "moduleName": "MeticaSDKFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "REWARDED",
+            "printedName": "REWARDED",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MeticaSDKFramework.AdFormatType.Type) -> MeticaSDKFramework.AdFormatType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdFormatType",
+                    "printedName": "MeticaSDKFramework.AdFormatType",
+                    "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MeticaSDKFramework.AdFormatType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdFormatType",
+                        "printedName": "MeticaSDKFramework.AdFormatType",
+                        "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18MeticaSDKFramework12AdFormatTypeO8REWARDEDyA2CmF",
+            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO8REWARDEDyA2CmF",
+            "moduleName": "MeticaSDKFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework12AdFormatTypeO9hashValueSivp",
+            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO9hashValueSivp",
+            "moduleName": "MeticaSDKFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework12AdFormatTypeO9hashValueSivg",
+                "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO9hashValueSivg",
+                "moduleName": "MeticaSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework12AdFormatTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "MeticaSDKFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFormatType",
+                "printedName": "MeticaSDKFramework.AdFormatType",
+                "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdFormatType",
+                "printedName": "MeticaSDKFramework.AdFormatType",
+                "usr": "s:18MeticaSDKFramework12AdFormatTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework12AdFormatTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "MeticaSDKFramework",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18MeticaSDKFramework12AdFormatTypeO",
+        "mangledName": "$s18MeticaSDKFramework12AdFormatTypeO",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinAdapter.swift",
-      "kind": "Array",
-      "offset": 1157,
-      "length": 2,
-      "value": "[]"
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
+      "kind": "FloatLiteral",
+      "offset": 582,
+      "length": 4,
+      "value": "-1.0"
     },
     {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinAdapter.swift",
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 8300,
-      "length": 17,
-      "value": "\"ApplovinAdapter\""
+      "offset": 741,
+      "length": 10,
+      "value": "\"REWARDED\""
     },
     {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinAdapter.swift",
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 8333,
+      "offset": 909,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinAdapter.swift",
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 8383,
-      "length": 17,
-      "value": "\"No ad available\""
+      "offset": 1370,
+      "length": 22,
+      "value": "\"disable_auto_retries\""
     },
     {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/ConfigApiClient.swift",
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 152,
-      "length": 17,
-      "value": "\"ConfigApiClient\""
+      "offset": 1401,
+      "length": 6,
+      "value": "\"true\""
     },
     {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/ConfigApiClient.swift",
-      "kind": "StringLiteral",
-      "offset": 208,
-      "length": 18,
-      "value": "\"adunits_applovin\""
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1640,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/BaseApiClient.swift",
-      "kind": "StringLiteral",
-      "offset": 98,
-      "length": 18,
-      "value": "\"application\/json\""
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/BaseApiClient.swift",
-      "kind": "FloatLiteral",
-      "offset": 156,
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialRepository.swift",
+      "kind": "Dictionary",
+      "offset": 420,
       "length": 3,
-      "value": "3.0"
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
+      "kind": "StringLiteral",
+      "offset": 902,
+      "length": 7,
+      "value": "\"INTER\""
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
+      "kind": "FloatLiteral",
+      "offset": 1029,
+      "length": 4,
+      "value": "-1.0"
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1146,
+      "length": 2,
+      "value": "-1"
     },
     {
       "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/util\/MeticaLogger.swift",
@@ -3206,18 +3303,88 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/model\/ConfigResponse.swift",
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/util\/KeychainWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 223,
+      "offset": 65,
+      "length": 23,
+      "value": "\"com.metica.ads.userId\""
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/EventsApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 152,
+      "length": 17,
+      "value": "\"EventsApiClient\""
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinAdapter.swift",
+      "kind": "Array",
+      "offset": 1157,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 8300,
+      "length": 17,
+      "value": "\"ApplovinAdapter\""
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinAdapter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8333,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinAdapter.swift",
+      "kind": "StringLiteral",
+      "offset": 8383,
+      "length": 17,
+      "value": "\"No ad available\""
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/ConfigApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 152,
+      "length": 17,
+      "value": "\"ConfigApiClient\""
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/ConfigApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 208,
       "length": 18,
       "value": "\"adunits_applovin\""
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/BaseApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 98,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/BaseApiClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 156,
+      "length": 3,
+      "value": "3.0"
     },
     {
       "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/SDKVersion.swift",
       "kind": "StringLiteral",
       "offset": 78,
       "length": 7,
-      "value": "\"1.0.2\""
+      "value": "\"1.0.3\""
+    },
+    {
+      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/model\/ConfigResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
+      "length": 18,
+      "value": "\"adunits_applovin\""
     },
     {
       "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinVersionParser.swift",
@@ -3232,83 +3399,6 @@
       "offset": 1874,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
-      "kind": "FloatLiteral",
-      "offset": 582,
-      "length": 4,
-      "value": "-1.0"
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
-      "kind": "StringLiteral",
-      "offset": 741,
-      "length": 10,
-      "value": "\"REWARDED\""
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 909,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1370,
-      "length": 22,
-      "value": "\"disable_auto_retries\""
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
-      "kind": "StringLiteral",
-      "offset": 1401,
-      "length": 6,
-      "value": "\"true\""
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinRewardedAd.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1640,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialRepository.swift",
-      "kind": "Dictionary",
-      "offset": 420,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
-      "kind": "StringLiteral",
-      "offset": 902,
-      "length": 7,
-      "value": "\"INTER\""
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
-      "kind": "FloatLiteral",
-      "offset": 1029,
-      "length": 4,
-      "value": "-1.0"
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/adapter\/applovin\/ApplovinInterstitialAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1146,
-      "length": 2,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/dvniqryab\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/api\/EventsApiClient.swift",
-      "kind": "StringLiteral",
-      "offset": 152,
-      "length": 17,
-      "value": "\"EventsApiClient\""
     }
   ]
 }

@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable:  -interface-compiler-version 6.1
 import AppLovinSDK
 import Combine
+import CryptoKit
 import Foundation
 import Swift
 import UIKit
@@ -12,14 +13,9 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-public enum AdFormatType : Swift.Equatable {
-  case INTER
-  case REWARDED
-  public static func == (a: MeticaSDKFramework.AdFormatType, b: MeticaSDKFramework.AdFormatType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+@_hasMissingDesignatedInitializers final public class UserIdManager {
+  public static func getStableUserId(appId: Swift.String) -> Swift.String
+  @objc deinit
 }
 public protocol MeticaLoggerListener : AnyObject {
   func onLog(tag: Swift.String, message: Swift.String, level: MeticaSDKFramework.MeticaLogger.LogLevel)
@@ -97,7 +93,16 @@ extension MeticaSDKFramework.MeticaAd {
   public func print() -> Swift.String
 }
 public func createMeticaAd(adUnitId: Swift.String, revenue: Swift.Double, networkName: Swift.String?, placementTag: Swift.String?, adFormat: Swift.String?, creativeId: Swift.String?) -> any MeticaSDKFramework.MeticaAd
-extension MeticaSDKFramework.AdFormatType : Swift.Hashable {}
+public enum AdFormatType : Swift.Equatable {
+  case INTER
+  case REWARDED
+  public static func == (a: MeticaSDKFramework.AdFormatType, b: MeticaSDKFramework.AdFormatType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.Equatable {}
 extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.Hashable {}
 extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.RawRepresentable {}
+extension MeticaSDKFramework.AdFormatType : Swift.Hashable {}
