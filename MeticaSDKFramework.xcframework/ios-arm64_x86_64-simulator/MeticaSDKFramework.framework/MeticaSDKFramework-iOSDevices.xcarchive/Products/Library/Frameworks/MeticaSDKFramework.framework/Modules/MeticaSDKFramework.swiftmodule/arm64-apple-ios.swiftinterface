@@ -13,8 +13,25 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-@_hasMissingDesignatedInitializers final public class UserIdManager {
-  public static func getStableUserId(appId: Swift.String) -> Swift.String
+public enum UserIdGenerationError : Swift.Error {
+  case emptyAppId
+  public static func == (a: MeticaSDKFramework.UserIdGenerationError, b: MeticaSDKFramework.UserIdGenerationError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class UserIdManager {
+  public enum Keys : Swift.String {
+    case userId
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(appId: Swift.String?, keychain: any MeticaSDKFramework.KeychainWrapperProtocol = KeychainWrapper())
+  final public func getStableUserId() -> Swift.Result<Swift.String, MeticaSDKFramework.UserIdGenerationError>
   @objc deinit
 }
 public protocol MeticaLoggerListener : AnyObject {
@@ -44,6 +61,16 @@ public enum MeticaLogger {
   public static func warn(_ message: @autoclosure () -> Swift.String, tag: Swift.String? = nil, error: (any Swift.Error)? = nil, forceLogging: Swift.Bool = false, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
   public static func error(_ message: @autoclosure () -> Swift.String, tag: Swift.String? = nil, error: (any Swift.Error)? = nil, forceLogging: Swift.Bool = false, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
   public static func tlog(_ message: @autoclosure () -> Swift.String, error: (any Swift.Error)? = nil, function: Swift.String = #function, file: Swift.String = #file, line: Swift.UInt = #line)
+}
+public protocol KeychainWrapperProtocol {
+  func saveToKeychain(key: Swift.String, value: Swift.String)
+  func loadFromKeychain(key: Swift.String) -> Swift.String?
+}
+final public class KeychainWrapper : MeticaSDKFramework.KeychainWrapperProtocol {
+  public init()
+  final public func saveToKeychain(key: Swift.String, value: Swift.String)
+  final public func loadFromKeychain(key: Swift.String) -> Swift.String?
+  @objc deinit
 }
 public struct SDKVersion {
   public static let version: Swift.String
@@ -102,6 +129,11 @@ public enum AdFormatType : Swift.Equatable {
     get
   }
 }
+extension MeticaSDKFramework.UserIdGenerationError : Swift.Equatable {}
+extension MeticaSDKFramework.UserIdGenerationError : Swift.Hashable {}
+extension MeticaSDKFramework.UserIdManager.Keys : Swift.Equatable {}
+extension MeticaSDKFramework.UserIdManager.Keys : Swift.Hashable {}
+extension MeticaSDKFramework.UserIdManager.Keys : Swift.RawRepresentable {}
 extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.Equatable {}
 extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.Hashable {}
 extension MeticaSDKFramework.MeticaLogger.LogLevel : Swift.RawRepresentable {}
