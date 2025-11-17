@@ -6,7 +6,7 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		a2xuaazQ6jPANQBKTeHMQogirJ0=
+		XPh/S76L/RNkCPH+L//qkRcIz/Y=
 		</data>
 		<key>MeticaSDKWrapper.release.txt</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Jo2gVZdd9NsX32tflgaZAZnZyO0=
+		i7pWy38WneEMKVrqD4Pm/J+hkNU=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		TjqYuskRmTRtXg9A9CG9TaG64qk=
+		8Z1bqw8C2WDXKdiL//0lfNUYPxU=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		FRUMM0fVAj1TBJIQIB12hIbG68c=
+		uZ/bUEurq4RjmHY0zr6lnHUnS4I=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		TjqYuskRmTRtXg9A9CG9TaG64qk=
+		8Z1bqw8C2WDXKdiL//0lfNUYPxU=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		qTIIvzoJ8U7+2N6ASSJ5bVqoWss=
+		2DFo8kJlVcZK8P2fxZ6OezIG6fE=
 		</data>
 		<key>Package.develop.txt</key>
 		<data>
@@ -50,35 +50,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xvm3iusT9LeQqg5eP7K8qsK7weKfqzsvWD7lXt6IZbo=
+			WSsQnCvgEfmc6o+DqlbbUHAqzsi3PNcj5D6wTdVarLA=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VAWYvuVjYIdgMzFa1opDlXFRxfYfGl66wUqbee3niIA=
+			NuWW3oMzdu1E+zGUDNAQrzcTCLzgiD2zXGYhVYWtl4I=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0OqHKEtimAgYAbjb4AZpkASClh4J6B/CG4O6xONjkKg=
+			8yN/cxRP8Raj7S2tuwcdlxHczR5q911tXfLj8zX5/TQ=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VAWYvuVjYIdgMzFa1opDlXFRxfYfGl66wUqbee3niIA=
+			NuWW3oMzdu1E+zGUDNAQrzcTCLzgiD2zXGYhVYWtl4I=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AB1SnzgAwqS+FeZGq00X6v0QvLEZ3ucaVFDxftJXWn8=
+			noc/4oLrkSpgEXwvZL9NrpQW6bN9ZbeWe6FQGL5WevQ=
 			</data>
 		</dict>
 		<key>Package.develop.txt</key>
