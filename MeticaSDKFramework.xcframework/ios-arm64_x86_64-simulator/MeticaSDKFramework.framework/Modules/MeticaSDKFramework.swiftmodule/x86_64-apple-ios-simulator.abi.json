@@ -5800,13 +5800,6 @@
         "moduleName": "MeticaSDKFramework"
       },
       {
-        "kind": "Import",
-        "name": "CommonCrypto",
-        "printedName": "CommonCrypto",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
         "kind": "TypeDecl",
         "name": "MeticaInitConfig",
         "printedName": "MeticaInitConfig",
@@ -13800,84 +13793,91 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "StringLiteral",
-      "offset": 338,
+      "offset": 337,
       "length": 7,
       "value": "\"DEBUG\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "StringLiteral",
-      "offset": 366,
+      "offset": 365,
       "length": 6,
       "value": "\"INFO\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "StringLiteral",
-      "offset": 393,
+      "offset": 392,
       "length": 6,
       "value": "\"WARN\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "StringLiteral",
-      "offset": 421,
+      "offset": 420,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "StringLiteral",
-      "offset": 452,
+      "offset": 451,
       "length": 6,
       "value": "\"TLOG\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "StringLiteral",
-      "offset": 502,
+      "offset": 501,
       "length": 8,
       "value": "\"Metica\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "StringLiteral",
-      "offset": 701,
+      "offset": 700,
       "length": 37,
       "value": "\"com.metica.ads.logger.listenerQueue\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 830,
+      "length": 23,
+      "value": "\"com.metica.ads.logger\""
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 1393,
+      "offset": 1570,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 6011,
+      "offset": 5606,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 6614,
+      "offset": 6209,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 7255,
+      "offset": 6850,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 7901,
+      "offset": 7496,
       "length": 5,
       "value": "false"
     },
@@ -13891,14 +13891,28 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaInitConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1262,
+      "offset": 1445,
       "length": 70,
       "value": "\"Consumer supplied userId is empty. Creating our own stable unique ID\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaInitConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2142,
+      "offset": 1891,
+      "length": 74,
+      "value": "\"Failed to generate stable user ID: \""
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaInitConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 1935,
+      "length": 1,
+      "value": "\". Falling back to random UUID\""
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaInitConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2683,
       "length": 18,
       "value": "\"MeticaInitConfig\""
     },
@@ -13949,7 +13963,7 @@
       "kind": "StringLiteral",
       "offset": 78,
       "length": 14,
-      "value": "\"2.0.0-beta12\""
+      "value": "\"2.0.0-beta13\""
     }
   ]
 }
