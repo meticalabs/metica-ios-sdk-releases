@@ -34,8 +34,612 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
         "name": "AppLovinSDK",
         "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ApplovinAdView",
+        "printedName": "ApplovinAdView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setListener",
+            "printedName": "setListener(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAdsBannerCallback",
+                "printedName": "any MeticaSDKFramework.MeticaAdsBannerCallback",
+                "usr": "s:18MeticaSDKFramework0A17AdsBannerCallbackP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework14ApplovinAdViewC11setListener8callbackyAA0A17AdsBannerCallback_p_tF",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC11setListener8callbackyAA0A17AdsBannerCallback_p_tF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework14ApplovinAdViewC4loadyyF",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC4loadyyF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "destroy",
+            "printedName": "destroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework14ApplovinAdViewC7destroyyyF",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC7destroyyyF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startAutoRefresh",
+            "printedName": "startAutoRefresh()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework14ApplovinAdViewC16startAutoRefreshyyF",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC16startAutoRefreshyyF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAutoRefresh",
+            "printedName": "stopAutoRefresh()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework14ApplovinAdViewC15stopAutoRefreshyyF",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC15stopAutoRefreshyyF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ApplovinAdView",
+                "printedName": "MeticaSDKFramework.ApplovinAdView",
+                "usr": "c:@M@MeticaSDKFramework@objc(cs)ApplovinAdView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MeticaSDKFramework@objc(cs)ApplovinAdView(im)initWithFrame:",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "MeticaSDKFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "didPayRevenue",
+            "printedName": "didPayRevenue(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MeticaSDKFramework@objc(cs)ApplovinAdView(im)didPayRevenueForAd:",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC13didPayRevenue3forySo4MAAdC_tF",
+            "moduleName": "MeticaSDKFramework",
+            "objc_name": "didPayRevenueForAd:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didLoad",
+            "printedName": "didLoad(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MeticaSDKFramework@objc(cs)ApplovinAdView(im)didLoadAd:",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC7didLoadyySo4MAAdCF",
+            "moduleName": "MeticaSDKFramework",
+            "objc_name": "didLoadAd:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFailToLoadAd",
+            "printedName": "didFailToLoadAd(forAdUnitIdentifier:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAError",
+                "printedName": "AppLovinSDK.MAError",
+                "usr": "c:objc(cs)MAError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MeticaSDKFramework@objc(cs)ApplovinAdView(im)didFailToLoadAdForAdUnitIdentifier:withError:",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC013didFailToLoadD003forD14UnitIdentifier9withErrorySS_So7MAErrorCtF",
+            "moduleName": "MeticaSDKFramework",
+            "objc_name": "didFailToLoadAdForAdUnitIdentifier:withError:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didClick",
+            "printedName": "didClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MeticaSDKFramework@objc(cs)ApplovinAdView(im)didClickAd:",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC8didClickyySo4MAAdCF",
+            "moduleName": "MeticaSDKFramework",
+            "objc_name": "didClickAd:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didFail",
+            "printedName": "didFail(toDisplay:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAError",
+                "printedName": "AppLovinSDK.MAError",
+                "usr": "c:objc(cs)MAError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MeticaSDKFramework@objc(cs)ApplovinAdView(im)didFailToDisplayAd:withError:",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC7didFail9toDisplay9withErrorySo4MAAdC_So7MAErrorCtF",
+            "moduleName": "MeticaSDKFramework",
+            "objc_name": "didFailToDisplayAd:withError:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didDisplay",
+            "printedName": "didDisplay(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MeticaSDKFramework@objc(cs)ApplovinAdView(im)didDisplayAd:",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC10didDisplayyySo4MAAdCF",
+            "moduleName": "MeticaSDKFramework",
+            "objc_name": "didDisplayAd:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didHide",
+            "printedName": "didHide(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MeticaSDKFramework@objc(cs)ApplovinAdView(im)didHideAd:",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC7didHideyySo4MAAdCF",
+            "moduleName": "MeticaSDKFramework",
+            "objc_name": "didHideAd:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didExpand",
+            "printedName": "didExpand(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MeticaSDKFramework@objc(cs)ApplovinAdView(im)didExpandAd:",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC9didExpandyySo4MAAdCF",
+            "moduleName": "MeticaSDKFramework",
+            "objc_name": "didExpandAd:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didCollapse",
+            "printedName": "didCollapse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MAAd",
+                "printedName": "AppLovinSDK.MAAd",
+                "usr": "c:objc(cs)MAAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MeticaSDKFramework@objc(cs)ApplovinAdView(im)didCollapseAd:",
+            "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC11didCollapseyySo4MAAdCF",
+            "moduleName": "MeticaSDKFramework",
+            "objc_name": "didCollapseAd:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MeticaSDKFramework@objc(cs)ApplovinAdView",
+        "mangledName": "$s18MeticaSDKFramework14ApplovinAdViewC",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "MeticaAdView",
+            "printedName": "MeticaAdView",
+            "usr": "s:18MeticaSDKFramework0A6AdViewP",
+            "mangledName": "$s18MeticaSDKFramework0A6AdViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -55,8 +659,22 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -71,6 +689,13 @@
         "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -90,90 +715,6 @@
       },
       {
         "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -281,6 +822,13 @@
         "kind": "Import",
         "name": "AppLovinSDK",
         "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -1296,6 +1844,123 @@
             "static": true,
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "adapted",
+            "printedName": "adapted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MAAdFormat",
+                "printedName": "AppLovinSDK.MAAdFormat",
+                "usr": "c:objc(cs)MAAdFormat"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A12AdFormatTypeO7adaptedSo04MAAdD0Cvp",
+            "mangledName": "$s18MeticaSDKFramework0A12AdFormatTypeO7adaptedSo04MAAdD0Cvp",
+            "moduleName": "MeticaSDKFramework",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MAAdFormat",
+                    "printedName": "AppLovinSDK.MAAdFormat",
+                    "usr": "c:objc(cs)MAAdFormat"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A12AdFormatTypeO7adaptedSo04MAAdD0Cvg",
+                "mangledName": "$s18MeticaSDKFramework0A12AdFormatTypeO7adaptedSo04MAAdD0Cvg",
+                "moduleName": "MeticaSDKFramework",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "size",
+            "printedName": "size",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A12AdFormatTypeO4sizeSo6CGSizeVvp",
+            "mangledName": "$s18MeticaSDKFramework0A12AdFormatTypeO4sizeSo6CGSizeVvp",
+            "moduleName": "MeticaSDKFramework",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A12AdFormatTypeO4sizeSo6CGSizeVvg",
+                "mangledName": "$s18MeticaSDKFramework0A12AdFormatTypeO4sizeSo6CGSizeVvg",
+                "moduleName": "MeticaSDKFramework",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A12AdFormatTypeO4nameSSvp",
+            "mangledName": "$s18MeticaSDKFramework0A12AdFormatTypeO4nameSSvp",
+            "moduleName": "MeticaSDKFramework",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A12AdFormatTypeO4nameSSvg",
+                "mangledName": "$s18MeticaSDKFramework0A12AdFormatTypeO4nameSSvg",
+                "moduleName": "MeticaSDKFramework",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -1358,37 +2023,13 @@
           {
             "kind": "Function",
             "name": "createBannerOrMrecAdView",
-            "printedName": "createBannerOrMrecAdView()",
+            "printedName": "createBannerOrMrecAdView(adUnitId:adFormat:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MeticaAdView",
-                "printedName": "MeticaSDKFramework.MeticaAdView",
-                "usr": "c:@M@MeticaSDKFramework@objc(cs)MeticaAdView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A3AdsP24createBannerOrMrecAdViewAA0ahI0CyYaF",
-            "mangledName": "$s18MeticaSDKFramework0A3AdsP24createBannerOrMrecAdViewAA0ahI0CyYaF",
-            "moduleName": "MeticaSDKFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAds>",
-            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAds>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "loadBannerOrMrecAd",
-            "printedName": "loadBannerOrMrecAd(adUnitId:format:callback:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "ApplovinAdView",
+                "printedName": "MeticaSDKFramework.ApplovinAdView",
+                "usr": "c:@M@MeticaSDKFramework@objc(cs)ApplovinAdView"
               },
               {
                 "kind": "TypeNominal",
@@ -1398,45 +2039,21 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "MeticaAdFormat",
-                "printedName": "MeticaSDKFramework.MeticaAdFormat",
-                "usr": "s:18MeticaSDKFramework0A8AdFormatO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MeticaAdsBannerCallback",
-                "printedName": "any MeticaSDKFramework.MeticaAdsBannerCallback",
-                "usr": "s:18MeticaSDKFramework0A17AdsBannerCallbackP"
+                "name": "MeticaAdFormatType",
+                "printedName": "MeticaSDKFramework.MeticaAdFormatType",
+                "usr": "s:18MeticaSDKFramework0A12AdFormatTypeO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A3AdsP18loadBannerOrMrecAd8adUnitId6format8callbackySS_AA0aH6FormatOAA0acE8Callback_ptF",
-            "mangledName": "$s18MeticaSDKFramework0A3AdsP18loadBannerOrMrecAd8adUnitId6format8callbackySS_AA0aH6FormatOAA0acE8Callback_ptF",
+            "usr": "s:18MeticaSDKFramework0A3AdsP24createBannerOrMrecAdView8adUnitId0J6FormatAA08ApplovinhI0CSS_AA0ahM4TypeOtYaF",
+            "mangledName": "$s18MeticaSDKFramework0A3AdsP24createBannerOrMrecAdView8adUnitId0J6FormatAA08ApplovinhI0CSS_AA0ahM4TypeOtYaF",
             "moduleName": "MeticaSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAds>",
             "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAds>",
             "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "destroyBannerOrMrecAd",
-            "printedName": "destroyBannerOrMrecAd()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
+            "declAttributes": [
+              "RawDocComment"
             ],
-            "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A3AdsP21destroyBannerOrMrecAdyyF",
-            "mangledName": "$s18MeticaSDKFramework0A3AdsP21destroyBannerOrMrecAdyyF",
-            "moduleName": "MeticaSDKFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAds>",
-            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAds>",
-            "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2164,22 +2781,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "MeticaSDKFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "AppLovinSDK",
-        "printedName": "AppLovinSDK",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -2190,142 +2793,104 @@
         "children": [
           {
             "kind": "Function",
-            "name": "didPayRevenue",
-            "printedName": "didPayRevenue(for:)",
+            "name": "load",
+            "printedName": "load()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MeticaSDKFramework@objc(cs)MeticaAdView(im)didPayRevenueForAd:",
-            "mangledName": "$s18MeticaSDKFramework0A6AdViewC13didPayRevenue3forySo4MAAdC_tF",
+            "usr": "s:18MeticaSDKFramework0A6AdViewP4loadyyF",
+            "mangledName": "$s18MeticaSDKFramework0A6AdViewP4loadyyF",
             "moduleName": "MeticaSDKFramework",
-            "objc_name": "didPayRevenueForAd:",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAdView>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAdView>",
+            "protocolReq": true,
             "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "RawDocComment"
             ],
-            "isFromExtension": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "didLoad",
-            "printedName": "didLoad(_:)",
+            "name": "destroy",
+            "printedName": "destroy()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MeticaSDKFramework@objc(cs)MeticaAdView(im)didLoadAd:",
-            "mangledName": "$s18MeticaSDKFramework0A6AdViewC7didLoadyySo4MAAdCF",
+            "usr": "s:18MeticaSDKFramework0A6AdViewP7destroyyyF",
+            "mangledName": "$s18MeticaSDKFramework0A6AdViewP7destroyyyF",
             "moduleName": "MeticaSDKFramework",
-            "objc_name": "didLoadAd:",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAdView>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAdView>",
+            "protocolReq": true,
             "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "RawDocComment"
             ],
-            "isFromExtension": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "didFailToLoadAd",
-            "printedName": "didFailToLoadAd(forAdUnitIdentifier:withError:)",
+            "name": "startAutoRefresh",
+            "printedName": "startAutoRefresh()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAError",
-                "printedName": "AppLovinSDK.MAError",
-                "usr": "c:objc(cs)MAError"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MeticaSDKFramework@objc(cs)MeticaAdView(im)didFailToLoadAdForAdUnitIdentifier:withError:",
-            "mangledName": "$s18MeticaSDKFramework0A6AdViewC013didFailToLoadC003forC14UnitIdentifier9withErrorySS_So7MAErrorCtF",
+            "usr": "s:18MeticaSDKFramework0A6AdViewP16startAutoRefreshyyF",
+            "mangledName": "$s18MeticaSDKFramework0A6AdViewP16startAutoRefreshyyF",
             "moduleName": "MeticaSDKFramework",
-            "objc_name": "didFailToLoadAdForAdUnitIdentifier:withError:",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAdView>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAdView>",
+            "protocolReq": true,
             "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "RawDocComment"
             ],
-            "isFromExtension": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "didDisplay",
-            "printedName": "didDisplay(_:)",
+            "name": "stopAutoRefresh",
+            "printedName": "stopAutoRefresh()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MeticaSDKFramework@objc(cs)MeticaAdView(im)didDisplayAd:",
-            "mangledName": "$s18MeticaSDKFramework0A6AdViewC10didDisplayyySo4MAAdCF",
+            "usr": "s:18MeticaSDKFramework0A6AdViewP15stopAutoRefreshyyF",
+            "mangledName": "$s18MeticaSDKFramework0A6AdViewP15stopAutoRefreshyyF",
             "moduleName": "MeticaSDKFramework",
-            "objc_name": "didDisplayAd:",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAdView>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAdView>",
+            "protocolReq": true,
             "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "RawDocComment"
             ],
-            "isFromExtension": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "didHide",
-            "printedName": "didHide(_:)",
+            "name": "setListener",
+            "printedName": "setListener(callback:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2334,428 +2899,33 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
+                "name": "MeticaAdsBannerCallback",
+                "printedName": "any MeticaSDKFramework.MeticaAdsBannerCallback",
+                "usr": "s:18MeticaSDKFramework0A17AdsBannerCallbackP"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@MeticaSDKFramework@objc(cs)MeticaAdView(im)didHideAd:",
-            "mangledName": "$s18MeticaSDKFramework0A6AdViewC7didHideyySo4MAAdCF",
+            "usr": "s:18MeticaSDKFramework0A6AdViewP11setListener8callbackyAA0A17AdsBannerCallback_p_tF",
+            "mangledName": "$s18MeticaSDKFramework0A6AdViewP11setListener8callbackyAA0A17AdsBannerCallback_p_tF",
             "moduleName": "MeticaSDKFramework",
-            "objc_name": "didHideAd:",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAdView>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAdView>",
+            "protocolReq": true,
             "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
+              "RawDocComment"
             ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didClick",
-            "printedName": "didClick(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MeticaSDKFramework@objc(cs)MeticaAdView(im)didClickAd:",
-            "mangledName": "$s18MeticaSDKFramework0A6AdViewC8didClickyySo4MAAdCF",
-            "moduleName": "MeticaSDKFramework",
-            "objc_name": "didClickAd:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didFail",
-            "printedName": "didFail(toDisplay:withError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAError",
-                "printedName": "AppLovinSDK.MAError",
-                "usr": "c:objc(cs)MAError"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MeticaSDKFramework@objc(cs)MeticaAdView(im)didFailToDisplayAd:withError:",
-            "mangledName": "$s18MeticaSDKFramework0A6AdViewC7didFail9toDisplay9withErrorySo4MAAdC_So7MAErrorCtF",
-            "moduleName": "MeticaSDKFramework",
-            "objc_name": "didFailToDisplayAd:withError:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didExpand",
-            "printedName": "didExpand(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MeticaSDKFramework@objc(cs)MeticaAdView(im)didExpandAd:",
-            "mangledName": "$s18MeticaSDKFramework0A6AdViewC9didExpandyySo4MAAdCF",
-            "moduleName": "MeticaSDKFramework",
-            "objc_name": "didExpandAd:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didCollapse",
-            "printedName": "didCollapse(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MAAd",
-                "printedName": "AppLovinSDK.MAAd",
-                "usr": "c:objc(cs)MAAd"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@MeticaSDKFramework@objc(cs)MeticaAdView(im)didCollapseAd:",
-            "mangledName": "$s18MeticaSDKFramework0A6AdViewC11didCollapseyySo4MAAdCF",
-            "moduleName": "MeticaSDKFramework",
-            "objc_name": "didCollapseAd:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:@M@MeticaSDKFramework@objc(cs)MeticaAdView",
-        "mangledName": "$s18MeticaSDKFramework0A6AdViewC",
-        "moduleName": "MeticaSDKFramework",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "Final",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)UIView",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "UIKit.UIView",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MeticaAdFormat",
-        "printedName": "MeticaAdFormat",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "banner",
-            "printedName": "banner",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MeticaSDKFramework.MeticaAdFormat.Type) -> MeticaSDKFramework.MeticaAdFormat",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MeticaAdFormat",
-                    "printedName": "MeticaSDKFramework.MeticaAdFormat",
-                    "usr": "s:18MeticaSDKFramework0A8AdFormatO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MeticaSDKFramework.MeticaAdFormat.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MeticaAdFormat",
-                        "printedName": "MeticaSDKFramework.MeticaAdFormat",
-                        "usr": "s:18MeticaSDKFramework0A8AdFormatO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:18MeticaSDKFramework0A8AdFormatO6banneryA2CmF",
-            "mangledName": "$s18MeticaSDKFramework0A8AdFormatO6banneryA2CmF",
-            "moduleName": "MeticaSDKFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "mrec",
-            "printedName": "mrec",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(MeticaSDKFramework.MeticaAdFormat.Type) -> MeticaSDKFramework.MeticaAdFormat",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MeticaAdFormat",
-                    "printedName": "MeticaSDKFramework.MeticaAdFormat",
-                    "usr": "s:18MeticaSDKFramework0A8AdFormatO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "MeticaSDKFramework.MeticaAdFormat.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MeticaAdFormat",
-                        "printedName": "MeticaSDKFramework.MeticaAdFormat",
-                        "usr": "s:18MeticaSDKFramework0A8AdFormatO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:18MeticaSDKFramework0A8AdFormatO4mrecyA2CmF",
-            "mangledName": "$s18MeticaSDKFramework0A8AdFormatO4mrecyA2CmF",
-            "moduleName": "MeticaSDKFramework"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MeticaSDKFramework.MeticaAdFormat?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MeticaAdFormat",
-                    "printedName": "MeticaSDKFramework.MeticaAdFormat",
-                    "usr": "s:18MeticaSDKFramework0A8AdFormatO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:18MeticaSDKFramework0A8AdFormatO8rawValueACSgSS_tcfc",
-            "mangledName": "$s18MeticaSDKFramework0A8AdFormatO8rawValueACSgSS_tcfc",
-            "moduleName": "MeticaSDKFramework",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:18MeticaSDKFramework0A8AdFormatO8rawValueSSvp",
-            "mangledName": "$s18MeticaSDKFramework0A8AdFormatO8rawValueSSvp",
-            "moduleName": "MeticaSDKFramework",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:18MeticaSDKFramework0A8AdFormatO8rawValueSSvg",
-                "mangledName": "$s18MeticaSDKFramework0A8AdFormatO8rawValueSSvg",
-                "moduleName": "MeticaSDKFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:18MeticaSDKFramework0A8AdFormatO",
-        "mangledName": "$s18MeticaSDKFramework0A8AdFormatO",
+        "declKind": "Protocol",
+        "usr": "s:18MeticaSDKFramework0A6AdViewP",
+        "mangledName": "$s18MeticaSDKFramework0A6AdViewP",
         "moduleName": "MeticaSDKFramework",
         "declAttributes": [
           "AccessControl"
         ],
-        "enumRawTypeName": "String",
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
           {
             "kind": "Conformance",
             "name": "Escapable",
@@ -2765,39 +2935,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -7170,9 +7311,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "MeticaAdFormat",
-                "printedName": "MeticaSDKFramework.MeticaAdFormat",
-                "usr": "s:18MeticaSDKFramework0A8AdFormatO"
+                "name": "MeticaAdFormatType",
+                "printedName": "MeticaSDKFramework.MeticaAdFormatType",
+                "usr": "s:18MeticaSDKFramework0A12AdFormatTypeO"
               },
               {
                 "kind": "TypeNominal",
@@ -7182,8 +7323,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId9yPosition0I6Format8callbackySS_SiAA0ahM0OAA0a3AdsC8Callback_ptYaF",
-            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId9yPosition0I6Format8callbackySS_SiAA0ahM0OAA0a3AdsC8Callback_ptYaF",
+            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId9yPosition0I6Format8callbackySS_SiAA0ahM4TypeOAA0a3AdsC8Callback_ptYaF",
+            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId9yPosition0I6Format8callbackySS_SiAA0ahM4TypeOAA0a3AdsC8Callback_ptYaF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
               "Final",
@@ -7268,6 +7409,90 @@
             "declKind": "Func",
             "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC9destroyAd8adUnitIdySS_tF",
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC9destroyAd8adUnitIdySS_tF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadAd",
+            "printedName": "loadAd(adUnitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC6loadAd8adUnitIdySS_tF",
+            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC6loadAd8adUnitIdySS_tF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startAutoRefresh",
+            "printedName": "startAutoRefresh(adUnitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC16startAutoRefresh8adUnitIdySS_tF",
+            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC16startAutoRefresh8adUnitIdySS_tF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAutoRefresh",
+            "printedName": "stopAutoRefresh(adUnitId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC15stopAutoRefresh8adUnitIdySS_tF",
+            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC15stopAutoRefresh8adUnitIdySS_tF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
               "Final",
@@ -10575,6 +10800,135 @@
         "funcSelfKind": "NonMutating"
       },
       {
+        "kind": "Function",
+        "name": "ios_loadBannerOrMrecAd",
+        "printedName": "ios_loadBannerOrMrecAd(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_loadBannerOrMrecAd:",
+        "mangledName": "$s18MeticaSDKFramework22ios_loadBannerOrMrecAdyySPys4Int8VGSgF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ios_startBannerOrMrecAutoRefresh",
+        "printedName": "ios_startBannerOrMrecAutoRefresh(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_startBannerOrMrecAutoRefresh:",
+        "mangledName": "$s18MeticaSDKFramework32ios_startBannerOrMrecAutoRefreshyySPys4Int8VGSgF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ios_stopBannerOrMrecAutoRefresh",
+        "printedName": "ios_stopBannerOrMrecAutoRefresh(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_stopBannerOrMrecAutoRefresh:",
+        "mangledName": "$s18MeticaSDKFramework31ios_stopBannerOrMrecAutoRefreshyySPys4Int8VGSgF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -13194,21 +13548,21 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1523,
+      "offset": 1478,
       "length": 50,
       "value": "\"User is in holdout. Generating request id: \""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1572,
+      "offset": 1527,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 27299,
+      "offset": 22118,
       "length": 11,
       "value": "\"MeticaAds\""
     },
@@ -13397,7 +13751,7 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/di\/DependencyContainer.swift",
       "kind": "BooleanLiteral",
-      "offset": 3525,
+      "offset": 3424,
       "length": 5,
       "value": "false"
     },
@@ -13558,35 +13912,35 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "Dictionary",
-      "offset": 104,
+      "offset": 106,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 137,
+      "offset": 205,
       "length": 21,
       "value": "\"BannerOrMrecManager\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 311,
+      "offset": 384,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 373,
+      "offset": 446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 419,
+      "offset": 492,
       "length": 5,
       "value": "false"
     },
@@ -13595,7 +13949,7 @@
       "kind": "StringLiteral",
       "offset": 78,
       "length": 14,
-      "value": "\"2.0.0-beta10\""
+      "value": "\"2.0.0-beta12\""
     }
   ]
 }

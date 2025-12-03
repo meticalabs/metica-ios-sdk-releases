@@ -10,7 +10,7 @@
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Info.plist</key>
 		<data>
-		kdBjMd160ldWRVjIsm7ZimBcUOk=
+		5TpfpUz5xU5Dthtc1SsNyDWNX/8=
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Info.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/MeticaSDKFramework</key>
 		<data>
-		47iQUYm79BS5/RJFjgsFRiXZg30=
+		gpS24wScHJSfdP/L3h0l46TxVKw=
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/MeticaSDKWrapper.release.txt</key>
 		<data>
@@ -26,23 +26,23 @@
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		tYgBpsMPKKrC8oHjGtRSZrPGuzc=
+		4wo1DTIecmw/ySTVGgRd6TkPNlQ=
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		JL7xAIVpj7NM4aEwQIRUFCQepEQ=
+		1uqJCGOvIAqOD0nqGydMuMFYWwI=
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		xwAwEm7Xb01d8PTGAmtXqhqHalA=
+		gfDnqoEXXjo6Q9o8yZ5NIawGbo8=
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		JL7xAIVpj7NM4aEwQIRUFCQepEQ=
+		1uqJCGOvIAqOD0nqGydMuMFYWwI=
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		SbihQyK0vnUnA/eXvBMaI7Svkv0=
+		LfnRl6BKlk7qBdOE9COgPvpogOg=
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Package.develop.txt</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
-		zrIbMOGcFlemb8mG3OpUB3dUlhc=
+		TFIppjCoTnybk6L3bRCrkVv3vjo=
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Users/aljazkajtna/Objects/AppLovinSDKResources.o</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/dSYMs/MeticaSDKFramework.framework.dSYM/Contents/Resources/DWARF/MeticaSDKFramework</key>
 		<data>
-		4bng7yBcUnCn/wXCuUN1ZN++0Zs=
+		Jy26dQBZFwEBH8753cavv8Zfn98=
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/dSYMs/MeticaSDKFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/MeticaSDKFramework.yml</key>
 		<data>
-		V9LcqTPa8u3ojUEsJmPY8W/cAVQ=
+		NBofpEA0CtZAFwgcRuTsmSUdfW8=
 		</data>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/dSYMs/MeticaSDKFramework.framework.dSYM/Contents/Resources/Swift/aarch64/AppLovinSDK.swiftinterface</key>
 		<data>
@@ -82,43 +82,43 @@
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		tYgBpsMPKKrC8oHjGtRSZrPGuzc=
+		4wo1DTIecmw/ySTVGgRd6TkPNlQ=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Z5xRvAqDXFMFLbmmcnNs9KKT8+g=
+		py+1xDnv1b5MukhtMgDGFM7MmpI=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pzd4B/3INqI+XwNw7GDJyag8jzA=
+		oLTDUWo4GO5y0vDx6Yp2o/NKXPE=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Z5xRvAqDXFMFLbmmcnNs9KKT8+g=
+		py+1xDnv1b5MukhtMgDGFM7MmpI=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lyHhb2czCdXN7Ptu2/Oy0OvKLbM=
+		119o07+ufTlTHzXrSlibgA01vdE=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		tYgBpsMPKKrC8oHjGtRSZrPGuzc=
+		4wo1DTIecmw/ySTVGgRd6TkPNlQ=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		IlmGDvvd7AGjnSfXWrYVQFCJKqY=
+		zv9eh38yMow/S2ZlAQdaCtLQUUM=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0Wy4aQCNpyLnR3hRMzBcun7wErM=
+		HTOXagqsNRx0Pi0Py+Bw2Fh0+cY=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IlmGDvvd7AGjnSfXWrYVQFCJKqY=
+		zv9eh38yMow/S2ZlAQdaCtLQUUM=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gfVI6HM/CvXp2TBEAw54vKWoY8U=
+		yKdtWVuabOf0o+/AynJZlqpjqiw=
 		</data>
 		<key>Package.develop.txt</key>
 		<data>
@@ -131,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B1M42FDN5TiN4eDu0RSSKuBi8f+f8Etcso4jRfXQDCM=
+			hl9LFxmWTNwD0eP8mBYfPbDTdtTc1/JgYZFUjoCY6sA=
 			</data>
 		</dict>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Info.plist</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xoymc2NTtHgy38LeduUk/tHs7xT23keHK0NnS6ijAR8=
+			8x//uTBGYbr/SHAXP9WvDNCcR+Ke0WD/P3O88AauEnU=
 			</data>
 		</dict>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/MeticaSDKWrapper.release.txt</key>
@@ -159,35 +159,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J+s8z+K/lxHK9gu/QpqszK4XuYAThaYvrgvNKEIKe2o=
+			9n6wyVKS7CBgQEKWLIDa8rvOmNKdoyqeSMjyKViclIU=
 			</data>
 		</dict>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9PZFOEQ13u5hlO6Hb/sKhCSkMBzDhhkSwCxbav1uIfw=
+			51DSkenfCP8YJEXegIWnuzqXhfek3NbdFSpNe9jREv4=
 			</data>
 		</dict>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Yqqd3H6lDQ26QVJA9iFlbU3ZFFrBQGDyuBUzxNuCN+E=
+			uh2oEcRUhfUrhuc0uPZVofjiq1ztQVlqKaysz3zhKzU=
 			</data>
 		</dict>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9PZFOEQ13u5hlO6Hb/sKhCSkMBzDhhkSwCxbav1uIfw=
+			51DSkenfCP8YJEXegIWnuzqXhfek3NbdFSpNe9jREv4=
 			</data>
 		</dict>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ENwmSjvyhWi2QtV47Dyg8vtEk7uAbjPkEdKmQgKbvj4=
+			XZRncjMiisMcTRtSf5Rz9hL1ek+UOeiEKQDFbPOWzVg=
 			</data>
 		</dict>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Library/Frameworks/MeticaSDKFramework.framework/Package.develop.txt</key>
@@ -201,7 +201,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			S/1Jfq7MtrVDcIzKqXRYGARYwXvZUjBovYrqO/mMPiU=
+			3/0s0cGYAGnRnHU2gmpK+mP1BX+KRYjlFwKetaSQsI0=
 			</data>
 		</dict>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/Products/Users/aljazkajtna/Objects/AppLovinSDKResources.o</key>
@@ -229,14 +229,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3B+DT/eq8Q2zVeodxdbByaj/bm5XGH44Yn8gGy4qoj4=
+			vpVsh5JLcwxffAgw1ijTGdYyh7XlrMoP5DXwN0Bv4Cg=
 			</data>
 		</dict>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/dSYMs/MeticaSDKFramework.framework.dSYM/Contents/Resources/Relocations/aarch64/MeticaSDKFramework.yml</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S+5GuO/ejtIkVEtHwmQGuBuIlUsFcr1VBWu30i4mLSY=
+			w8LVwNzOkJlRRmXT19G8zVIP4a580J1oyBL5A+kQ83M=
 			</data>
 		</dict>
 		<key>MeticaSDKFramework-iOSDevices.xcarchive/dSYMs/MeticaSDKFramework.framework.dSYM/Contents/Resources/Swift/aarch64/AppLovinSDK.swiftinterface</key>
@@ -257,70 +257,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J+s8z+K/lxHK9gu/QpqszK4XuYAThaYvrgvNKEIKe2o=
+			9n6wyVKS7CBgQEKWLIDa8rvOmNKdoyqeSMjyKViclIU=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lkftmk+GzWre5O0qtU3jg86A04fT9ZyQ8bTQxGhG5gg=
+			gmidTk7/o+VVYmah42N/gSlnBu96I2W1An+CDyR2mfs=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y5pLRNmqqZxogRtFfVS3HhP8pw6FI+i+6OB9/YSxRqs=
+			Fva2MK0ubpal6rXtbZ22jwkgDtww/t0U461PJEi2yvE=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lkftmk+GzWre5O0qtU3jg86A04fT9ZyQ8bTQxGhG5gg=
+			gmidTk7/o+VVYmah42N/gSlnBu96I2W1An+CDyR2mfs=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eGDDSQ9s6wDfpf8DOhGUD1wJGMeAbw0ZhEYKAweyY0g=
+			dje87Ho8nHPqMOLBtYOQsOAb6lgaWt/fUwTHdBJDCC4=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J+s8z+K/lxHK9gu/QpqszK4XuYAThaYvrgvNKEIKe2o=
+			9n6wyVKS7CBgQEKWLIDa8rvOmNKdoyqeSMjyKViclIU=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			frwT0pSB1T/Bp+GVxeF9bCDbsWOXkwD9+L/ZDn3PFnM=
+			KbYDYciWvYlP8J12dgktEN3w+OSV6x9NhtWnhYFUVWI=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ivzF0MPL6CoeosgB60D6SVv7qJBJcnqS4OdhFyghUDI=
+			MrmInQ/ApXJO1lNzHiSZkreqg7iCtISgVsCNy9jHY3U=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			frwT0pSB1T/Bp+GVxeF9bCDbsWOXkwD9+L/ZDn3PFnM=
+			KbYDYciWvYlP8J12dgktEN3w+OSV6x9NhtWnhYFUVWI=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XEQj2EkCJAwycRGCNkJ1IHzDwjJlvaxUfWF32Z/dbMk=
+			68GCEQd8XQeiCZoFonXBdGwYs7K3eggJvizVD4XUWlA=
 			</data>
 		</dict>
 		<key>Package.develop.txt</key>
