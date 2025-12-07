@@ -306,7 +306,7 @@ public enum MeticaUserGroup : Swift.Codable {
 }
 @_hasMissingDesignatedInitializers final public class BannerOrMrecManager {
   public static let shared: MeticaSDKFramework.BannerOrMrecManager
-  final public func createAd(adUnitId: Swift.String, yPosition: Swift.Int, adFormat: MeticaSDKFramework.MeticaAdFormatType, callback: any MeticaSDKFramework.MeticaAdsBannerCallback) async
+  final public func createAd(adUnitId: Swift.String, position: Swift.String, adFormat: MeticaSDKFramework.MeticaAdFormatType, callback: any MeticaSDKFramework.MeticaAdsBannerCallback) async
   final public func showAd(adUnitId: Swift.String)
   final public func hideAd(adUnitId: Swift.String)
   final public func destroyAd(adUnitId: Swift.String)
@@ -372,7 +372,7 @@ public func ios_showInterstitial(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, 
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_createBannerOrMrecAd")
-public func ios_createBannerOrMrecAd(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ yPosition: Swift.Int32, _ format: Swift.UnsafePointer<Swift.CChar>?, _ onAdLoadSuccess: MeticaSDKFramework.OnAdLoadSuccessDelegate?, _ onAdLoadFailed: MeticaSDKFramework.OnAdLoadFailedDelegate?, _ onAdClicked: MeticaSDKFramework.OnAdClickedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnAdRevenuePaidDelegate?)
+public func ios_createBannerOrMrecAd(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ position: Swift.UnsafePointer<Swift.CChar>?, _ format: Swift.UnsafePointer<Swift.CChar>?, _ onAdLoadSuccess: MeticaSDKFramework.OnAdLoadSuccessDelegate?, _ onAdLoadFailed: MeticaSDKFramework.OnAdLoadFailedDelegate?, _ onAdClicked: MeticaSDKFramework.OnAdClickedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnAdRevenuePaidDelegate?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_showBannerOrMrecAd")

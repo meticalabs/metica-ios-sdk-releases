@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("13.2.0")
+            url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("13.5.1")
         )
     ],
     targets: [
