@@ -2,7 +2,6 @@
 // swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MeticaSDKFramework
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
-import AppLovinSDK
 import Combine
 import CryptoKit
 import Foundation
@@ -13,29 +12,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class ApplovinAdView : UIKit.UIView, MeticaSDKFramework.MeticaAdView {
-  @_Concurrency.MainActor @preconcurrency final public func setListener(callback: any MeticaSDKFramework.MeticaAdsBannerCallback)
-  @_Concurrency.MainActor @preconcurrency final public func load()
-  @_Concurrency.MainActor @preconcurrency final public func destroy()
-  @_Concurrency.MainActor @preconcurrency final public func startAutoRefresh()
-  @_Concurrency.MainActor @preconcurrency final public func stopAutoRefresh()
-  @objc deinit
-}
-extension MeticaSDKFramework.ApplovinAdView : AppLovinSDK.MAAdViewAdDelegate, AppLovinSDK.MAAdRevenueDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc final public func didPayRevenue(for ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor @preconcurrency @objc final public func didLoad(_ ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor @preconcurrency @objc final public func didFailToLoadAd(forAdUnitIdentifier adUnitIdentifier: Swift.String, withError error: AppLovinSDK.MAError)
-  @_Concurrency.MainActor @preconcurrency @objc final public func didClick(_ ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor @preconcurrency @objc final public func didFail(toDisplay ad: AppLovinSDK.MAAd, withError error: AppLovinSDK.MAError)
-  @_Concurrency.MainActor @preconcurrency @objc final public func didDisplay(_ ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor @preconcurrency @objc final public func didHide(_ ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor @preconcurrency @objc final public func didExpand(_ ad: AppLovinSDK.MAAd)
-  @_Concurrency.MainActor @preconcurrency @objc final public func didCollapse(_ ad: AppLovinSDK.MAAd)
-}
 extension MeticaSDKFramework.MeticaAdFormatType {
-  public var adapted: AppLovinSDK.MAAdFormat {
-    get
-  }
   public var size: CoreFoundation.CGSize {
     get
   }
@@ -83,7 +60,7 @@ public enum MeticaAdFormatType : Swift.Equatable {
   }
 }
 public protocol MeticaAds {
-  func createBannerOrMrecAdView(adUnitId: Swift.String, adFormat: MeticaSDKFramework.MeticaAdFormatType) async -> MeticaSDKFramework.ApplovinAdView
+  func createBannerOrMrecAdView(adUnitId: Swift.String, adFormat: MeticaSDKFramework.MeticaAdFormatType) async -> any MeticaSDKFramework.MeticaAdView
   func loadInterstitial(adUnitId: Swift.String, callback: any MeticaSDKFramework.MeticaAdsLoadCallback)
   func showInterstitial(adUnitId: Swift.String, callback: any MeticaSDKFramework.MeticaAdsShowCallback)
   func isInterstitialReady(adUnitId: Swift.String) -> Swift.Bool
@@ -306,7 +283,7 @@ public enum MeticaUserGroup : Swift.Codable {
 }
 @_hasMissingDesignatedInitializers final public class BannerOrMrecManager {
   public static let shared: MeticaSDKFramework.BannerOrMrecManager
-  final public func createAd(adUnitId: Swift.String, yPosition: Swift.Int, adFormat: MeticaSDKFramework.MeticaAdFormatType, callback: any MeticaSDKFramework.MeticaAdsBannerCallback) async
+  final public func createAd(adUnitId: Swift.String, position: Swift.String, adFormat: MeticaSDKFramework.MeticaAdFormatType, callback: any MeticaSDKFramework.MeticaAdsBannerCallback) async
   final public func showAd(adUnitId: Swift.String)
   final public func hideAd(adUnitId: Swift.String)
   final public func destroyAd(adUnitId: Swift.String)
@@ -372,7 +349,7 @@ public func ios_showInterstitial(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, 
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_createBannerOrMrecAd")
-public func ios_createBannerOrMrecAd(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ yPosition: Swift.Int32, _ format: Swift.UnsafePointer<Swift.CChar>?, _ onAdLoadSuccess: MeticaSDKFramework.OnAdLoadSuccessDelegate?, _ onAdLoadFailed: MeticaSDKFramework.OnAdLoadFailedDelegate?, _ onAdClicked: MeticaSDKFramework.OnAdClickedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnAdRevenuePaidDelegate?)
+public func ios_createBannerOrMrecAd(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ position: Swift.UnsafePointer<Swift.CChar>?, _ format: Swift.UnsafePointer<Swift.CChar>?, _ onAdLoadSuccess: MeticaSDKFramework.OnAdLoadSuccessDelegate?, _ onAdLoadFailed: MeticaSDKFramework.OnAdLoadFailedDelegate?, _ onAdClicked: MeticaSDKFramework.OnAdClickedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnAdRevenuePaidDelegate?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_showBannerOrMrecAd")
