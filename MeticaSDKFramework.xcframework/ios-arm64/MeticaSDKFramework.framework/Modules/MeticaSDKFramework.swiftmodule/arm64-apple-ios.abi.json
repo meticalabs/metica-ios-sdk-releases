@@ -65,6 +65,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -185,6 +192,20 @@
         "declAttributes": [
           "AccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
       },
       {
         "kind": "Import",
@@ -12661,42 +12682,42 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInitializer.swift",
       "kind": "StringLiteral",
-      "offset": 1954,
+      "offset": 2577,
       "length": 21,
       "value": "\"ApplovinInitializer\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 1799,
+      "offset": 2113,
       "length": 22,
       "value": "\"disable_auto_retries\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 1830,
+      "offset": 2144,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 1999,
+      "offset": 2313,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2038,
+      "offset": 2352,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 7927,
+      "offset": 8973,
       "length": 24,
       "value": "\"ApplovinInterstitialAd\""
     },
@@ -12717,35 +12738,35 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1486,
+      "offset": 1804,
       "length": 22,
       "value": "\"disable_auto_retries\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1517,
+      "offset": 1835,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1693,
+      "offset": 2011,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1732,
+      "offset": 2050,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 7376,
+      "offset": 8426,
       "length": 20,
       "value": "\"ApplovinRewardedAd\""
     },
@@ -12787,49 +12808,49 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "Array",
-      "offset": 2490,
+      "offset": 2498,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "Array",
-      "offset": 2554,
+      "offset": 2562,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "Array",
-      "offset": 2609,
+      "offset": 2617,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 19535,
+      "offset": 19951,
       "length": 17,
       "value": "\"ApplovinAdapter\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "IntegerLiteral",
-      "offset": 19568,
+      "offset": 19984,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 19618,
+      "offset": 20034,
       "length": 17,
       "value": "\"No ad available\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 19671,
+      "offset": 20087,
       "length": 17,
       "value": "\"ApplovinAdapter\""
     },
@@ -12911,58 +12932,65 @@
       "value": "\"adunits_applovin\""
     },
     {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/backend\/model\/ConfigResponse.swift",
+      "kind": "BooleanLiteral",
+      "offset": 906,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/service\/AdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 1821,
+      "offset": 1876,
       "length": 27,
       "value": "\"com.metica.adloader.fetch\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/service\/AdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 9288,
+      "offset": 10222,
       "length": 10,
       "value": "\"AdLoader\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/service\/AdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 9347,
+      "offset": 10281,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/service\/AdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 9351,
+      "offset": 10285,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/service\/AdRulesImpl.swift",
       "kind": "Array",
-      "offset": 529,
+      "offset": 537,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/service\/AdRulesImpl.swift",
       "kind": "Array",
-      "offset": 576,
+      "offset": 584,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/service\/AdRulesImpl.swift",
       "kind": "Array",
-      "offset": 625,
+      "offset": 633,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/service\/AdRulesImpl.swift",
       "kind": "Array",
-      "offset": 678,
+      "offset": 686,
       "length": 2,
       "value": "[]"
     },
@@ -12976,23 +13004,30 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1478,
+      "offset": 1299,
       "length": 50,
       "value": "\"User is in holdout. Generating request id: \""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1527,
+      "offset": 1348,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 22116,
+      "offset": 22819,
       "length": 11,
       "value": "\"MeticaAds\""
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23124,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaApplovinFunctionsImpl.swift",
@@ -13108,78 +13143,155 @@
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 8011,
+      "length": 4,
+      "value": "0.01"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 8027,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
       "kind": "StringLiteral",
-      "offset": 8028,
+      "offset": 8066,
       "length": 18,
       "value": "\"37f4c63d4e3723e6\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 8061,
+      "offset": 8099,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 8121,
+      "length": 4,
+      "value": "0.01"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 8137,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
       "kind": "StringLiteral",
-      "offset": 8100,
+      "offset": 8176,
       "length": 18,
       "value": "\"8c63ff91a4a47584\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 8133,
+      "offset": 8209,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 8231,
+      "length": 4,
+      "value": "0.01"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 8247,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 8176,
+      "offset": 8290,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
       "kind": "StringLiteral",
-      "offset": 8423,
+      "offset": 8325,
+      "length": 7,
+      "value": "\"jC7Fp\""
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8365,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "StringLiteral",
+      "offset": 8612,
       "length": 18,
       "value": "\"8c63ff91a4a47584\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 8456,
+      "offset": 8645,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 8667,
+      "length": 4,
+      "value": "0.01"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "FloatLiteral",
+      "offset": 8683,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 8499,
+      "offset": 8726,
       "length": 4,
       "value": "true"
     },
     {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/ConfigApiClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8763,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/EventsApiClient.swift",
       "kind": "StringLiteral",
-      "offset": 133,
+      "offset": 332,
       "length": 11,
       "value": "\"X-API-KEY\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/backend\/EventsApiClient.swift",
       "kind": "StringLiteral",
-      "offset": 174,
+      "offset": 373,
       "length": 17,
       "value": "\"EventsApiClient\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/di\/DependencyContainer.swift",
       "kind": "BooleanLiteral",
-      "offset": 3433,
+      "offset": 3557,
       "length": 5,
       "value": "false"
     },
@@ -13207,23 +13319,86 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/ConfigRepositoryImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 763,
+      "offset": 706,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/ConfigRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8599,
+      "offset": 11307,
       "length": 18,
       "value": "\"ConfigRepository\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 51,
+      "offset": 419,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 424,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 490,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 533,
       "length": 3,
       "value": "200"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 574,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 610,
+      "length": 18,
+      "value": "\"EventsRepository\""
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 987,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
+      "kind": "Dictionary",
+      "offset": 1035,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1979,
+      "length": 29,
+      "value": "\"App paused, flushing events\""
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3585,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/MeticaLogger.swift",
@@ -13353,8 +13528,15 @@
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaSdk.swift",
+      "kind": "IntegerLiteral",
+      "offset": 359,
+      "length": 6,
+      "value": "30000"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaSdk.swift",
       "kind": "StringLiteral",
-      "offset": 8268,
+      "offset": 11227,
       "length": 11,
       "value": "\"MeticaSdk\""
     },
@@ -13418,8 +13600,8 @@
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/SDKVersion.swift",
       "kind": "StringLiteral",
       "offset": 78,
-      "length": 14,
-      "value": "\"2.0.0-beta25\""
+      "length": 7,
+      "value": "\"2.0.1\""
     }
   ]
 }
