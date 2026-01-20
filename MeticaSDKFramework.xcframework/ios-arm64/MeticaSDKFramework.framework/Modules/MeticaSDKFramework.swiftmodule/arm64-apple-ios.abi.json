@@ -6940,8 +6940,7 @@
         "moduleName": "MeticaSDKFramework",
         "declAttributes": [
           "AccessControl",
-          "Final",
-          "RawDocComment"
+          "Final"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -13018,14 +13017,14 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 22819,
+      "offset": 22704,
       "length": 11,
       "value": "\"MeticaAds\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 23124,
+      "offset": 23009,
       "length": 5,
       "value": "false"
     },
@@ -13543,56 +13542,49 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 129,
+      "offset": 522,
       "length": 11,
       "value": "\"TopCenter\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 165,
+      "offset": 558,
       "length": 10,
       "value": "\"Centered\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 204,
+      "offset": 597,
       "length": 14,
       "value": "\"BottomCenter\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "Dictionary",
-      "offset": 281,
+      "offset": 674,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 380,
+      "offset": 773,
       "length": 21,
       "value": "\"BannerOrMrecManager\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 559,
+      "offset": 961,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 621,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 667,
+      "offset": 1023,
       "length": 5,
       "value": "false"
     },
@@ -13601,7 +13593,7 @@
       "kind": "StringLiteral",
       "offset": 78,
       "length": 7,
-      "value": "\"2.0.1\""
+      "value": "\"2.0.2\""
     }
   ]
 }

@@ -6,11 +6,11 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		xVPJ9N+J/9PSCw8OOZK2K1U6ZzQ=
+		0nVELOxNQx72ZSqBqNigxQrqVWc=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		j1P6xBCtKDB1NVCh9X1MW6+UopA=
+		da4jaRWwocETYcbxyoQ6nHwJpnc=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yiDeK89bec7NKa6HPObMGU9/q2M=
+		QTRTn9JWFrvY/M+/TFx/aQf6hWI=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		j1P6xBCtKDB1NVCh9X1MW6+UopA=
+		da4jaRWwocETYcbxyoQ6nHwJpnc=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UUt2l3t1zs+TR4BOgczDz0in8ow=
+		60Vuv/1h3WqzoigDzVvjFBnsRS4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P9iTBF+oqD1mE4pz93Qgy6LZvfA0nr2e/iKune75+5Y=
+			bKqRedJYKPCAdX1eCXUjvNTYY9n7T3gjtWn4teIwpsw=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -83,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			imkaiBWJR33Gu4LmD2ioqabYaFhyzu63lAOEOJNrtgM=
+			D80HEB9HI52KnN9483vt3C1h+8MtWNFRGpeU8qqaPBg=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P9iTBF+oqD1mE4pz93Qgy6LZvfA0nr2e/iKune75+5Y=
+			bKqRedJYKPCAdX1eCXUjvNTYY9n7T3gjtWn4teIwpsw=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A82jPhcU+2/s/3Q15k88CqtKDP14chLCDF2poKQYAK8=
+			0H5U70Mm453WgIdx3/hhaIjN4kdVLou4GoOMqOWg0U4=
 			</data>
 		</dict>
 	</dict>
