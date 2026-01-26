@@ -2,9 +2,13 @@
 // swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MeticaSDKFramework
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import AdSupport
+import AppTrackingTransparency
 import Combine
+import CoreTelephony
 import CryptoKit
 import Foundation
+import StoreKit
 import Swift
 import UIKit
 import _Concurrency
@@ -17,6 +21,23 @@ extension MeticaSDKFramework.MeticaAdFormatType {
     get
   }
 }
+public enum EventType {
+  case purchase
+  case sessionStart
+  case install
+  case impression
+  case fullStateUpdate
+  case partialStateUpdate
+  case sdkInitializeFailed
+  case sdkInitializeAttempt
+  case adHidden
+  case adShowFailed
+  case adClicked
+  case estimatedAdRevenue
+  case applovinBidFloor
+  case custom(Swift.String)
+}
+public typealias Payload = [Swift.String : Any]
 public protocol MeticaAd {
   var adUnitId: Swift.String { get }
   var revenue: Swift.Double { get }
@@ -59,13 +80,36 @@ public enum MeticaAdFormatType : Swift.Equatable {
     get
   }
 }
+public protocol MeticaAnalytics {
+  #if compiler(>=5.3) && $NonescapableTypes
+  func logPurchaseEvent(productId: Swift.String, currency: Swift.String, amount: Swift.Double, status: Swift.String, errorCode: Swift.String?, referenceId: Swift.String?, customPayload: MeticaSDKFramework.Payload?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func logSessionStartEvent(customPayload: MeticaSDKFramework.Payload?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func logInstallEvent(customPayload: MeticaSDKFramework.Payload?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func logImpressionEvent(value: Swift.Double, type: Swift.String, mediator: Swift.String, source: Swift.String, placement: Swift.String?, customPayload: MeticaSDKFramework.Payload?)
+  #endif
+  func logFullStateUpdateEvent(attributes: MeticaSDKFramework.Payload)
+  func logPartialStateUpdateEvent(attributes: MeticaSDKFramework.Payload)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func logCustomEvent(eventType: MeticaSDKFramework.EventType, properties: MeticaSDKFramework.Payload?)
+  #endif
+}
 public protocol MeticaAds {
   func createBannerOrMrecAdView(adUnitId: Swift.String, adFormat: MeticaSDKFramework.MeticaAdFormatType) async -> any MeticaSDKFramework.MeticaAdView
   func loadInterstitial(adUnitId: Swift.String, callback: any MeticaSDKFramework.MeticaAdsLoadCallback)
-  func showInterstitial(adUnitId: Swift.String, callback: any MeticaSDKFramework.MeticaAdsShowCallback)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func showInterstitial(adUnitId: Swift.String, placementId: Swift.String?, customData: Swift.String?, callback: any MeticaSDKFramework.MeticaAdsShowCallback)
+  #endif
   func isInterstitialReady(adUnitId: Swift.String) -> Swift.Bool
   func loadRewarded(adUnitId: Swift.String, callback: any MeticaSDKFramework.MeticaAdsLoadCallback)
-  func showRewarded(adUnitId: Swift.String, callback: any MeticaSDKFramework.MeticaAdsShowCallback)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func showRewarded(adUnitId: Swift.String, placementId: Swift.String?, customData: Swift.String?, callback: any MeticaSDKFramework.MeticaAdsShowCallback)
+  #endif
   func isRewardedReady(adUnitId: Swift.String) -> Swift.Bool
 }
 extension MeticaSDKFramework.MeticaAds {
@@ -221,7 +265,9 @@ public protocol MeticaInitCallback {
 public struct MeticaInitConfig {
   public let apiKey: Swift.String
   public let appId: Swift.String
-  public init(apiKey: Swift.String, appId: Swift.String, userId: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(apiKey: Swift.String, appId: Swift.String, userId: Swift.String?)
+  #endif
 }
 extension MeticaSDKFramework.MeticaInitConfig : Swift.Equatable {
   public static func == (lhs: MeticaSDKFramework.MeticaInitConfig, rhs: MeticaSDKFramework.MeticaInitConfig) -> Swift.Bool
@@ -245,6 +291,9 @@ public struct MeticaInitResponse : Swift.Codable, Swift.Equatable, Swift.Hashabl
 }
 @_hasMissingDesignatedInitializers public class MeticaSdk {
   public static var Ads: any MeticaSDKFramework.MeticaAds {
+    get
+  }
+  public static var Analytics: any MeticaSDKFramework.MeticaAnalytics {
     get
   }
   public static var privacySettings: any MeticaSDKFramework.MeticaPrivacySettings {
@@ -337,7 +386,7 @@ public func ios_loadRewarded(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ on
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_showRewarded")
-public func ios_showRewarded(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ onShowSuccess: MeticaSDKFramework.OnAdShowSuccessDelegate?, _ onShowFailed: MeticaSDKFramework.OnAdShowFailedDelegate?, _ onAdHidden: MeticaSDKFramework.OnAdHiddenDelegate?, _ onAdClicked: MeticaSDKFramework.OnAdClickedDelegate?, _ onAdRewarded: MeticaSDKFramework.OnAdRewardedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnAdRevenuePaidDelegate?)
+public func ios_showRewarded(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ placementId: Swift.UnsafePointer<Swift.CChar>?, _ customData: Swift.UnsafePointer<Swift.CChar>?, _ onShowSuccess: MeticaSDKFramework.OnAdShowSuccessDelegate?, _ onShowFailed: MeticaSDKFramework.OnAdShowFailedDelegate?, _ onAdHidden: MeticaSDKFramework.OnAdHiddenDelegate?, _ onAdClicked: MeticaSDKFramework.OnAdClickedDelegate?, _ onAdRewarded: MeticaSDKFramework.OnAdRewardedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnAdRevenuePaidDelegate?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_loadInterstitial")
@@ -345,7 +394,7 @@ public func ios_loadInterstitial(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, 
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_showInterstitial")
-public func ios_showInterstitial(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ onShowSuccess: MeticaSDKFramework.OnAdShowSuccessDelegate?, _ onShowFailed: MeticaSDKFramework.OnAdShowFailedDelegate?, _ onAdHidden: MeticaSDKFramework.OnAdHiddenDelegate?, _ onAdClicked: MeticaSDKFramework.OnAdClickedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnAdRevenuePaidDelegate?)
+public func ios_showInterstitial(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ placementId: Swift.UnsafePointer<Swift.CChar>?, _ customData: Swift.UnsafePointer<Swift.CChar>?, _ onShowSuccess: MeticaSDKFramework.OnAdShowSuccessDelegate?, _ onShowFailed: MeticaSDKFramework.OnAdShowFailedDelegate?, _ onAdHidden: MeticaSDKFramework.OnAdHiddenDelegate?, _ onAdClicked: MeticaSDKFramework.OnAdClickedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnAdRevenuePaidDelegate?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_createBannerOrMrecAd")
@@ -374,6 +423,34 @@ public func ios_startBannerOrMrecAutoRefresh(_ adUnitId: Swift.UnsafePointer<Swi
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_stopBannerOrMrecAutoRefresh")
 public func ios_stopBannerOrMrecAutoRefresh(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_logPurchaseEvent")
+public func ios_logPurchaseEvent(_ productId: Swift.UnsafePointer<Swift.CChar>?, _ currency: Swift.UnsafePointer<Swift.CChar>?, _ amount: Swift.Double, _ status: Swift.UnsafePointer<Swift.CChar>?, _ errorCode: Swift.UnsafePointer<Swift.CChar>?, _ referenceId: Swift.UnsafePointer<Swift.CChar>?, _ customPayload: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_logSessionStartEvent")
+public func ios_logSessionStartEvent(_ customPayload: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_logInstallEvent")
+public func ios_logInstallEvent(_ customPayload: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_logImpressionEvent")
+public func ios_logImpressionEvent(_ value: Swift.Double, _ type: Swift.UnsafePointer<Swift.CChar>?, _ mediator: Swift.UnsafePointer<Swift.CChar>?, _ source: Swift.UnsafePointer<Swift.CChar>?, _ placement: Swift.UnsafePointer<Swift.CChar>?, _ customPayload: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_logFullStateUpdateEvent")
+public func ios_logFullStateUpdateEvent(_ attributes: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_logPartialStateUpdateEvent")
+public func ios_logPartialStateUpdateEvent(_ attributes: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_logCustomEvent")
+public func ios_logCustomEvent(_ eventName: Swift.UnsafePointer<Swift.CChar>?, _ properties: Swift.UnsafePointer<Swift.CChar>?)
 #endif
 public class MeticaAdsBannerCallbackWrapper : MeticaSDKFramework.MeticaAdsBannerCallback {
   #if compiler(>=5.3) && $NonescapableTypes
