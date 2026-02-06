@@ -144,6 +144,32 @@ public protocol MeticaAdView {
   func startAutoRefresh()
   func stopAutoRefresh()
   func setListener(callback: any MeticaSDKFramework.MeticaAdsBannerCallback)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setExtraParameterForKey(for key: Swift.String, value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setLocalExtraParameterForKey(for key: Swift.String, value: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setCustomData(value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setPlacement(placement: Swift.String?)
+  #endif
+}
+extension MeticaSDKFramework.MeticaAdView {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setExtraParameterForKey(for key: Swift.String, value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setLocalExtraParameterForKey(for key: Swift.String, value: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setCustomData(value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setPlacement(placement: Swift.String?)
+  #endif
 }
 public protocol MeticaApplovinFunctions {
   func isMuted() -> Swift.Bool
@@ -152,6 +178,9 @@ public protocol MeticaApplovinFunctions {
   func getConsentFlowUserGeography() -> Swift.Int
   func showMediationDebugger()
   func showCmpForExistingUser() async
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setExtraParameter(for key: Swift.String, value: Swift.String?)
+  #endif
 }
 public struct MeticaMediationInfo : Swift.Equatable, Swift.Hashable {
   public let mediationType: MeticaSDKFramework.MeticaMediationType
@@ -280,7 +309,8 @@ extension MeticaSDKFramework.MeticaInitConfig : Swift.Hashable {
 }
 public struct MeticaInitResponse : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let smartFloors: MeticaSDKFramework.MeticaSmartFloors
-  public init(smartFloors: MeticaSDKFramework.MeticaSmartFloors)
+  public let userId: Swift.String
+  public init(smartFloors: MeticaSDKFramework.MeticaSmartFloors, userId: Swift.String)
   public static func == (a: MeticaSDKFramework.MeticaInitResponse, b: MeticaSDKFramework.MeticaInitResponse) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public func hash(into hasher: inout Swift.Hasher)
@@ -338,7 +368,19 @@ public enum MeticaUserGroup : Swift.Codable {
   final public func destroyAd(adUnitId: Swift.String)
   final public func loadAd(adUnitId: Swift.String)
   final public func startAutoRefresh(adUnitId: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setCustomData(adUnitId: Swift.String, value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setExtraParameterForKey(adUnitId: Swift.String, key: Swift.String, value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setLocalExtraParameterForKey(adUnitId: Swift.String, key: Swift.String, value: Any?)
+  #endif
   final public func stopAutoRefresh(adUnitId: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func setPlacement(adUnitId: Swift.String, placement: Swift.String?)
+  #endif
   @objc deinit
 }
 public typealias OnInitializedCallbackDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void
@@ -370,6 +412,10 @@ public func ios_isMuted() -> Swift.Bool
 public func ios_showCmpForExistingUser()
 @_cdecl("ios_showMediationDebugger")
 public func ios_showMediationDebugger()
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setExtraParameter")
+public func ios_setExtraParameter(_ key: Swift.UnsafePointer<Swift.CChar>?, _ value: Swift.UnsafePointer<Swift.CChar>?)
+#endif
 @_cdecl("ios_setDoNotSell")
 public func ios_setDoNotSell(value: Swift.CBool)
 #if compiler(>=5.3) && $NonescapableTypes
@@ -423,6 +469,22 @@ public func ios_startBannerOrMrecAutoRefresh(_ adUnitId: Swift.UnsafePointer<Swi
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_stopBannerOrMrecAutoRefresh")
 public func ios_stopBannerOrMrecAutoRefresh(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setBannerOrMrecCustomData")
+public func ios_setBannerOrMrecCustomData(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ value: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setBannerOrMrecExtraParameterForKey")
+public func ios_setBannerOrMrecExtraParameterForKey(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ value: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setBannerOrMrecLocalExtraParameterForKey")
+public func ios_setBannerOrMrecLocalExtraParameterForKey(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ jsonValuePtr: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setBannerOrMrecPlacement")
+public func ios_setBannerOrMrecPlacement(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ placement: Swift.UnsafePointer<Swift.CChar>?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_logPurchaseEvent")
