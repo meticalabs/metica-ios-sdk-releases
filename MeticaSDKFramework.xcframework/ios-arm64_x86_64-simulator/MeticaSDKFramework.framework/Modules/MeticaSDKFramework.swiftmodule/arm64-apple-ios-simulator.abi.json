@@ -9766,12 +9766,12 @@
           {
             "kind": "TypeNominal",
             "name": "Optional",
-            "printedName": "((Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ())?",
+            "printedName": "((Swift.UnsafePointer<Swift.Int8>?, Swift.Double, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.Int64, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ())?",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.Double, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.Int64, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -9781,8 +9781,130 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?)",
+                    "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.Double, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.Int64, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?)",
                     "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      },
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
@@ -10433,7 +10555,7 @@
         ],
         "declKind": "Func",
         "usr": "c:(cm)ios_showRewarded:::::::::",
-        "mangledName": "$s18MeticaSDKFramework16ios_showRewardedyySPys4Int8VGSg_A2FyAF_SdA4Fs5Int64VtXCSgyAF_AFtXCSgA4ItF",
+        "mangledName": "$s18MeticaSDKFramework16ios_showRewardedyySPys4Int8VGSg_A2FyAF_SdA4Fs5Int64VtXCSgyAF_SdA4fh2FtXCSgA4ItF",
         "moduleName": "MeticaSDKFramework",
         "declAttributes": [
           "AccessControl",
@@ -10932,12 +11054,12 @@
           {
             "kind": "TypeNominal",
             "name": "Optional",
-            "printedName": "((Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ())?",
+            "printedName": "((Swift.UnsafePointer<Swift.Int8>?, Swift.Double, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.Int64, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ())?",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.Double, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.Int64, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -10947,8 +11069,130 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?)",
+                    "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.Double, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.Int64, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?)",
                     "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      },
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
@@ -11450,7 +11694,7 @@
         ],
         "declKind": "Func",
         "usr": "c:(cm)ios_showInterstitial::::::::",
-        "mangledName": "$s18MeticaSDKFramework20ios_showInterstitialyySPys4Int8VGSg_A2FyAF_SdA4Fs5Int64VtXCSgyAF_AFtXCSgA3ItF",
+        "mangledName": "$s18MeticaSDKFramework20ios_showInterstitialyySPys4Int8VGSg_A2FyAF_SdA4Fs5Int64VtXCSgyAF_SdA4fh2FtXCSgA3ItF",
         "moduleName": "MeticaSDKFramework",
         "declAttributes": [
           "AccessControl",
@@ -14512,12 +14756,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ())?",
+                "printedName": "((Swift.UnsafePointer<Swift.Int8>?, Swift.Double, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.Int64, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                    "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.Double, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.Int64, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -14527,8 +14771,130 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?)",
+                        "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.Double, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?, Swift.Int64, Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?)",
                         "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UnsafePointer",
+                                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int8",
+                                    "printedName": "Swift.Int8",
+                                    "usr": "s:s4Int8V"
+                                  }
+                                ],
+                                "usr": "s:SP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UnsafePointer",
+                                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int8",
+                                    "printedName": "Swift.Int8",
+                                    "usr": "s:s4Int8V"
+                                  }
+                                ],
+                                "usr": "s:SP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UnsafePointer",
+                                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int8",
+                                    "printedName": "Swift.Int8",
+                                    "usr": "s:s4Int8V"
+                                  }
+                                ],
+                                "usr": "s:SP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UnsafePointer",
+                                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int8",
+                                    "printedName": "Swift.Int8",
+                                    "usr": "s:s4Int8V"
+                                  }
+                                ],
+                                "usr": "s:SP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UnsafePointer",
+                                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int8",
+                                    "printedName": "Swift.Int8",
+                                    "usr": "s:s4Int8V"
+                                  }
+                                ],
+                                "usr": "s:SP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int64",
+                            "printedName": "Swift.Int64",
+                            "usr": "s:s5Int64V"
+                          },
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
@@ -15178,8 +15544,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MeticaSDKFramework0A21ShowAdCallbackWrapperC02ondC7Success0gdC6Failed0gD6Hidden0gD7Clicked0gD8Rewarded0gD7RevenueACySPys4Int8VGSg_SdA4Ms5Int64VtXCSg_yAM_AMtXCSgA4Ptcfc",
-            "mangledName": "$s18MeticaSDKFramework0A21ShowAdCallbackWrapperC02ondC7Success0gdC6Failed0gD6Hidden0gD7Clicked0gD8Rewarded0gD7RevenueACySPys4Int8VGSg_SdA4Ms5Int64VtXCSg_yAM_AMtXCSgA4Ptcfc",
+            "usr": "s:18MeticaSDKFramework0A21ShowAdCallbackWrapperC02ondC7Success0gdC6Failed0gD6Hidden0gD7Clicked0gD8Rewarded0gD7RevenueACySPys4Int8VGSg_SdA4Ms5Int64VtXCSg_yAM_SdA4mo2MtXCSgA4Ptcfc",
+            "mangledName": "$s18MeticaSDKFramework0A21ShowAdCallbackWrapperC02ondC7Success0gdC6Failed0gD6Hidden0gD7Clicked0gD8Rewarded0gD7RevenueACySPys4Int8VGSg_SdA4Ms5Int64VtXCSg_yAM_SdA4mo2MtXCSgA4Ptcfc",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
               "AccessControl"
@@ -16221,69 +16587,69 @@
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "IntegerLiteral",
       "offset": 486,
-      "length": 3,
-      "value": "100"
+      "length": 2,
+      "value": "40"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 529,
+      "offset": 528,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 570,
+      "offset": 569,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "StringLiteral",
-      "offset": 606,
+      "offset": 605,
       "length": 18,
       "value": "\"EventsRepository\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 903,
+      "offset": 902,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "Dictionary",
-      "offset": 955,
+      "offset": 954,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 1058,
+      "offset": 1057,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "StringLiteral",
-      "offset": 1978,
+      "offset": 1977,
       "length": 41,
       "value": "\"App entered background, flushing events\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "StringLiteral",
-      "offset": 2183,
+      "offset": 2182,
       "length": 37,
       "value": "\"App will terminate, flushing events\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/repository\/EventsRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 3829,
+      "offset": 3828,
       "length": 5,
       "value": "false"
     },
@@ -16537,7 +16903,7 @@
       "kind": "StringLiteral",
       "offset": 78,
       "length": 7,
-      "value": "\"2.1.1\""
+      "value": "\"2.1.2\""
     }
   ]
 }
