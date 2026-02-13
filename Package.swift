@@ -13,11 +13,6 @@ let package = Package(
             name: "MeticaSDK",
             targets: ["MeticaSDK"]),
     ],
-    dependencies: [
-        .package(
-            url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", .exact("13.5.1")
-        )
-    ],
     targets: [
         .binaryTarget(
             name: "MeticaSDKFramework",
@@ -27,7 +22,6 @@ let package = Package(
             name: "MeticaSDK",
             dependencies: [
                 .target(name: "MeticaSDKFramework"),
-                .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package")
             ],
             path: "Sources/MeticaSDKWrapper"
         )

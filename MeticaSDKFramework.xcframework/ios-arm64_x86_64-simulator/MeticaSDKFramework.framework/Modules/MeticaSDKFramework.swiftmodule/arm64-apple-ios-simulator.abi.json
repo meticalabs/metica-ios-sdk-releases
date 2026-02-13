@@ -2817,6 +2817,117 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "setExtraParameter",
+            "printedName": "setExtraParameter(adFormat:adUnitId:key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAdFormatType",
+                "printedName": "MeticaSDKFramework.MeticaAdFormatType",
+                "usr": "s:18MeticaSDKFramework0A12AdFormatTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A3AdsP17setExtraParameter8adFormat0G6UnitId3key5valueyAA0a2AdH4TypeO_S3SSgtF",
+            "mangledName": "$s18MeticaSDKFramework0A3AdsP17setExtraParameter8adFormat0G6UnitId3key5valueyAA0a2AdH4TypeO_S3SSgtF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAds>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAds>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocalExtraParameter",
+            "printedName": "setLocalExtraParameter(adFormat:adUnitId:key:value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAdFormatType",
+                "printedName": "MeticaSDKFramework.MeticaAdFormatType",
+                "usr": "s:18MeticaSDKFramework0A12AdFormatTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A3AdsP22setLocalExtraParameter8adFormat0H6UnitId3key5valueyAA0a2AdI4TypeO_S2SypSgtF",
+            "mangledName": "$s18MeticaSDKFramework0A3AdsP22setLocalExtraParameter8adFormat0H6UnitId3key5valueyAA0a2AdI4TypeO_S2SypSgtF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAds>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAds>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "privacySettings",
             "printedName": "privacySettings",
@@ -3623,6 +3734,36 @@
             "declKind": "Func",
             "usr": "s:18MeticaSDKFramework0A6AdViewP12setPlacement9placementySSSg_tF",
             "mangledName": "$s18MeticaSDKFramework0A6AdViewP12setPlacement9placementySSSg_tF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAdView>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAdView>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBackgroundColor",
+            "printedName": "setBackgroundColor(hexColorCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A6AdViewP18setBackgroundColor03hexG4CodeySS_tF",
+            "mangledName": "$s18MeticaSDKFramework0A6AdViewP18setBackgroundColor03hexG4CodeySS_tF",
             "moduleName": "MeticaSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAdView>",
             "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAdView>",
@@ -4786,6 +4927,13 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
       },
@@ -8657,6 +8805,74 @@
           },
           {
             "kind": "Function",
+            "name": "setWidth",
+            "printedName": "setWidth(adUnitId:width:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC8setWidth8adUnitId5widthySS_14CoreFoundation7CGFloatVtF",
+            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC8setWidth8adUnitId5widthySS_12CoreGraphics7CGFloatVtF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setBackgroundColor",
+            "printedName": "setBackgroundColor(adUnitId:hexColorCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC18setBackgroundColor8adUnitId03hexI4CodeySS_SStF",
+            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC18setBackgroundColor8adUnitId03hexI4CodeySS_SStF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "stopAutoRefresh",
             "printedName": "stopAutoRefresh(adUnitId:)",
             "children": [
@@ -10565,6 +10781,180 @@
       },
       {
         "kind": "Function",
+        "name": "ios_setRewardedAdExtraParameter",
+        "printedName": "ios_setRewardedAdExtraParameter(_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_setRewardedAdExtraParameter:::",
+        "mangledName": "$s18MeticaSDKFramework31ios_setRewardedAdExtraParameteryySPys4Int8VGSg_A2FtF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ios_setRewardedAdLocalExtraParameter",
+        "printedName": "ios_setRewardedAdLocalExtraParameter(_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_setRewardedAdLocalExtraParameter:::",
+        "mangledName": "$s18MeticaSDKFramework36ios_setRewardedAdLocalExtraParameteryySPys4Int8VGSg_A2FtF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
         "name": "ios_loadInterstitial",
         "printedName": "ios_loadInterstitial(_:_:_:)",
         "children": [
@@ -11704,6 +12094,180 @@
       },
       {
         "kind": "Function",
+        "name": "ios_setInterstitialExtraParameter",
+        "printedName": "ios_setInterstitialExtraParameter(_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_setInterstitialExtraParameter:::",
+        "mangledName": "$s18MeticaSDKFramework33ios_setInterstitialExtraParameteryySPys4Int8VGSg_A2FtF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ios_setInterstitialLocalExtraParameter",
+        "printedName": "ios_setInterstitialLocalExtraParameter(_:_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_setInterstitialLocalExtraParameter:::",
+        "mangledName": "$s18MeticaSDKFramework38ios_setInterstitialLocalExtraParameteryySPys4Int8VGSg_A2FtF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
         "name": "ios_createBannerOrMrecAd",
         "printedName": "ios_createBannerOrMrecAd(_:_:_:_:_:_:_:)",
         "children": [
@@ -12632,8 +13196,8 @@
       },
       {
         "kind": "Function",
-        "name": "ios_setBannerOrMrecExtraParameterForKey",
-        "printedName": "ios_setBannerOrMrecExtraParameterForKey(_:_:_:)",
+        "name": "ios_setBannerOrMrecExtraParameter",
+        "printedName": "ios_setBannerOrMrecExtraParameter(_:_:_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -12708,8 +13272,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)ios_setBannerOrMrecExtraParameterForKey:::",
-        "mangledName": "$s18MeticaSDKFramework39ios_setBannerOrMrecExtraParameterForKeyyySPys4Int8VGSg_A2FtF",
+        "usr": "c:(cm)ios_setBannerOrMrecExtraParameter:::",
+        "mangledName": "$s18MeticaSDKFramework33ios_setBannerOrMrecExtraParameteryySPys4Int8VGSg_A2FtF",
         "moduleName": "MeticaSDKFramework",
         "declAttributes": [
           "AccessControl",
@@ -12719,8 +13283,8 @@
       },
       {
         "kind": "Function",
-        "name": "ios_setBannerOrMrecLocalExtraParameterForKey",
-        "printedName": "ios_setBannerOrMrecLocalExtraParameterForKey(_:_:_:)",
+        "name": "ios_setBannerOrMrecLocalExtraParameter",
+        "printedName": "ios_setBannerOrMrecLocalExtraParameter(_:_:_:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -12795,8 +13359,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "c:(cm)ios_setBannerOrMrecLocalExtraParameterForKey:::",
-        "mangledName": "$s18MeticaSDKFramework44ios_setBannerOrMrecLocalExtraParameterForKeyyySPys4Int8VGSg_A2FtF",
+        "usr": "c:(cm)ios_setBannerOrMrecLocalExtraParameter:::",
+        "mangledName": "$s18MeticaSDKFramework38ios_setBannerOrMrecLocalExtraParameteryySPys4Int8VGSg_A2FtF",
         "moduleName": "MeticaSDKFramework",
         "declAttributes": [
           "AccessControl",
@@ -12862,6 +13426,120 @@
         "declKind": "Func",
         "usr": "c:(cm)ios_setBannerOrMrecPlacement::",
         "mangledName": "$s18MeticaSDKFramework28ios_setBannerOrMrecPlacementyySPys4Int8VGSg_AFtF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ios_setBannerWidth",
+        "printedName": "ios_setBannerWidth(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Float",
+            "printedName": "Swift.Float",
+            "usr": "s:Sf"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_setBannerWidth::",
+        "mangledName": "$s18MeticaSDKFramework18ios_setBannerWidthyySPys4Int8VGSg_SftF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ios_setBannerBackgroundColor",
+        "printedName": "ios_setBannerBackgroundColor(_:_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafePointer",
+                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int8",
+                    "printedName": "Swift.Int8",
+                    "usr": "s:s4Int8V"
+                  }
+                ],
+                "usr": "s:SP"
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_setBannerBackgroundColor::",
+        "mangledName": "$s18MeticaSDKFramework28ios_setBannerBackgroundColoryySPys4Int8VGSg_AFtF",
         "moduleName": "MeticaSDKFramework",
         "declAttributes": [
           "AccessControl",
@@ -15865,35 +16543,35 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2261,
+      "offset": 2251,
       "length": 22,
       "value": "\"disable_auto_retries\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2292,
+      "offset": 2282,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2461,
+      "offset": 2451,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2500,
+      "offset": 2490,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 9271,
+      "offset": 9524,
       "length": 24,
       "value": "\"ApplovinInterstitialAd\""
     },
@@ -15914,35 +16592,35 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1948,
+      "offset": 1938,
       "length": 22,
       "value": "\"disable_auto_retries\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 1979,
+      "offset": 1969,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2155,
+      "offset": 2145,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2194,
+      "offset": 2184,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 8720,
+      "offset": 8973,
       "length": 20,
       "value": "\"ApplovinRewardedAd\""
     },
@@ -16005,28 +16683,28 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 18301,
+      "offset": 20260,
       "length": 17,
       "value": "\"ApplovinAdapter\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "IntegerLiteral",
-      "offset": 18334,
+      "offset": 20293,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 18384,
+      "offset": 20343,
       "length": 17,
       "value": "\"No ad available\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/FullscreenAdapter.swift",
       "kind": "StringLiteral",
-      "offset": 18437,
+      "offset": 20396,
       "length": 17,
       "value": "\"ApplovinAdapter\""
     },
@@ -16201,14 +16879,14 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 23161,
+      "offset": 24413,
       "length": 11,
       "value": "\"MeticaAds\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 23466,
+      "offset": 24718,
       "length": 5,
       "value": "false"
     },
@@ -16903,7 +17581,7 @@
       "kind": "StringLiteral",
       "offset": 78,
       "length": 7,
-      "value": "\"2.1.2\""
+      "value": "\"2.2.0\""
     }
   ]
 }

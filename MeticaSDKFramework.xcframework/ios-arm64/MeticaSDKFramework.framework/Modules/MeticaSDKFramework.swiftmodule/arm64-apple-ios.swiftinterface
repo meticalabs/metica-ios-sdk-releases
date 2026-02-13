@@ -111,6 +111,12 @@ public protocol MeticaAds {
   func showRewarded(adUnitId: Swift.String, placementId: Swift.String?, customData: Swift.String?, callback: any MeticaSDKFramework.MeticaAdsShowCallback)
   #endif
   func isRewardedReady(adUnitId: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setExtraParameter(adFormat: MeticaSDKFramework.MeticaAdFormatType, adUnitId: Swift.String, key: Swift.String, value: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setLocalExtraParameter(adFormat: MeticaSDKFramework.MeticaAdFormatType, adUnitId: Swift.String, key: Swift.String, value: Any?)
+  #endif
 }
 extension MeticaSDKFramework.MeticaAds {
   public static var privacySettings: any MeticaSDKFramework.MeticaPrivacySettings {
@@ -156,6 +162,7 @@ public protocol MeticaAdView {
   #if compiler(>=5.3) && $NonescapableTypes
   func setPlacement(placement: Swift.String?)
   #endif
+  func setBackgroundColor(hexColorCode: Swift.String)
 }
 extension MeticaSDKFramework.MeticaAdView {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -377,6 +384,8 @@ public enum MeticaUserGroup : Swift.Codable {
   #if compiler(>=5.3) && $NonescapableTypes
   final public func setLocalExtraParameterForKey(adUnitId: Swift.String, key: Swift.String, value: Any?)
   #endif
+  final public func setWidth(adUnitId: Swift.String, width: CoreFoundation.CGFloat)
+  final public func setBackgroundColor(adUnitId: Swift.String, hexColorCode: Swift.String)
   final public func stopAutoRefresh(adUnitId: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   final public func setPlacement(adUnitId: Swift.String, placement: Swift.String?)
@@ -435,12 +444,28 @@ public func ios_loadRewarded(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ on
 public func ios_showRewarded(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ placementId: Swift.UnsafePointer<Swift.CChar>?, _ customData: Swift.UnsafePointer<Swift.CChar>?, _ onShowSuccess: MeticaSDKFramework.OnAdShowSuccessDelegate?, _ onShowFailed: MeticaSDKFramework.OnAdShowFailedDelegate?, _ onAdHidden: MeticaSDKFramework.OnAdHiddenDelegate?, _ onAdClicked: MeticaSDKFramework.OnAdClickedDelegate?, _ onAdRewarded: MeticaSDKFramework.OnAdRewardedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnAdRevenuePaidDelegate?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setRewardedAdExtraParameter")
+public func ios_setRewardedAdExtraParameter(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ value: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setRewardedAdLocalExtraParameter")
+public func ios_setRewardedAdLocalExtraParameter(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ jsonValuePtr: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_loadInterstitial")
 public func ios_loadInterstitial(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ onAdLoadSuccess: MeticaSDKFramework.OnAdLoadSuccessDelegate?, _ onAdLoadFailed: MeticaSDKFramework.OnAdLoadFailedDelegate?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_showInterstitial")
 public func ios_showInterstitial(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ placementId: Swift.UnsafePointer<Swift.CChar>?, _ customData: Swift.UnsafePointer<Swift.CChar>?, _ onShowSuccess: MeticaSDKFramework.OnAdShowSuccessDelegate?, _ onShowFailed: MeticaSDKFramework.OnAdShowFailedDelegate?, _ onAdHidden: MeticaSDKFramework.OnAdHiddenDelegate?, _ onAdClicked: MeticaSDKFramework.OnAdClickedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnAdRevenuePaidDelegate?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setInterstitialExtraParameter")
+public func ios_setInterstitialExtraParameter(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ value: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setInterstitialLocalExtraParameter")
+public func ios_setInterstitialLocalExtraParameter(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ jsonValuePtr: Swift.UnsafePointer<Swift.CChar>?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_createBannerOrMrecAd")
@@ -475,16 +500,24 @@ public func ios_stopBannerOrMrecAutoRefresh(_ adUnitId: Swift.UnsafePointer<Swif
 public func ios_setBannerOrMrecCustomData(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ value: Swift.UnsafePointer<Swift.CChar>?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
-@_cdecl("ios_setBannerOrMrecExtraParameterForKey")
-public func ios_setBannerOrMrecExtraParameterForKey(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ value: Swift.UnsafePointer<Swift.CChar>?)
+@_cdecl("ios_setBannerOrMrecExtraParameter")
+public func ios_setBannerOrMrecExtraParameter(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ value: Swift.UnsafePointer<Swift.CChar>?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
-@_cdecl("ios_setBannerOrMrecLocalExtraParameterForKey")
-public func ios_setBannerOrMrecLocalExtraParameterForKey(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ jsonValuePtr: Swift.UnsafePointer<Swift.CChar>?)
+@_cdecl("ios_setBannerOrMrecLocalExtraParameter")
+public func ios_setBannerOrMrecLocalExtraParameter(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ jsonValuePtr: Swift.UnsafePointer<Swift.CChar>?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_setBannerOrMrecPlacement")
 public func ios_setBannerOrMrecPlacement(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ placement: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setBannerWidth")
+public func ios_setBannerWidth(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ width: Swift.Float)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setBannerBackgroundColor")
+public func ios_setBannerBackgroundColor(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ hexColor: Swift.UnsafePointer<Swift.CChar>?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_logPurchaseEvent")
