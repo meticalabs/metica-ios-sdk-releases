@@ -16709,7 +16709,7 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaSdk.swift",
       "kind": "StringLiteral",
-      "offset": 13395,
+      "offset": 13581,
       "length": 11,
       "value": "\"MeticaSdk\""
     },
@@ -16844,7 +16844,7 @@
       "kind": "StringLiteral",
       "offset": 78,
       "length": 7,
-      "value": "\"2.2.2\""
+      "value": "\"2.2.3\""
     }
   ]
 }
