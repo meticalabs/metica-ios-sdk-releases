@@ -399,16 +399,16 @@ public struct MeticaSmartFloors : Swift.Codable, Swift.Equatable, Swift.Hashable
   }
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum MeticaUserGroup : Swift.Codable {
+public enum MeticaUserGroup : Swift.String, Swift.Codable {
   case trial
   case holdout
-  public static func == (a: MeticaSDKFramework.MeticaUserGroup, b: MeticaSDKFramework.MeticaUserGroup) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers final public class BannerOrMrecManager {
   public static let shared: MeticaSDKFramework.BannerOrMrecManager
@@ -669,3 +669,4 @@ extension MeticaSDKFramework.MeticaSdk.InitializationError : Swift.Equatable {}
 extension MeticaSDKFramework.MeticaSdk.InitializationError : Swift.Hashable {}
 extension MeticaSDKFramework.MeticaUserGroup : Swift.Equatable {}
 extension MeticaSDKFramework.MeticaUserGroup : Swift.Hashable {}
+extension MeticaSDKFramework.MeticaUserGroup : Swift.RawRepresentable {}
