@@ -84,7 +84,7 @@ public protocol MeticaAnalytics {
   #endif
 }
 public protocol MeticaAds {
-  func createBannerOrMrecAdView(adUnitId: Swift.String, adFormat: MeticaSDKFramework.MeticaAdFormatType) async -> any MeticaSDKFramework.MeticaAdView
+  func createBannerOrMrecAdView(adUnitId: Swift.String, adFormat: MeticaSDKFramework.MeticaAdFormatType) -> any MeticaSDKFramework.MeticaAdView
   func loadInterstitial(adUnitId: Swift.String, callback: any MeticaSDKFramework.MeticaAdsLoadCallback)
   #if compiler(>=5.3) && $NonescapableTypes
   func showInterstitial(adUnitId: Swift.String, placementId: Swift.String?, customData: Swift.String?, callback: any MeticaSDKFramework.MeticaAdsShowCallback)
@@ -412,29 +412,29 @@ public enum MeticaUserGroup : Swift.String, Swift.Codable {
     get
   }
 }
-@_hasMissingDesignatedInitializers final public class BannerOrMrecManager {
-  public static let shared: MeticaSDKFramework.BannerOrMrecManager
-  final public func createAd(adUnitId: Swift.String, position: Swift.String, adFormat: MeticaSDKFramework.MeticaAdFormatType, callback: any MeticaSDKFramework.MeticaAdsBannerCallback) async
-  final public func createAd(adUnitId: Swift.String, xCoordinate: Swift.Double, yCoordinate: Swift.Double, adFormat: MeticaSDKFramework.MeticaAdFormatType, callback: any MeticaSDKFramework.MeticaAdsBannerCallback) async
-  final public func showAd(adUnitId: Swift.String)
-  final public func hideAd(adUnitId: Swift.String)
-  final public func destroyAd(adUnitId: Swift.String)
-  final public func loadAd(adUnitId: Swift.String)
-  final public func startAutoRefresh(adUnitId: Swift.String)
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class BannerOrMrecManager {
+  @_Concurrency.MainActor public static let shared: MeticaSDKFramework.BannerOrMrecManager
+  @_Concurrency.MainActor final public func createAd(adUnitId: Swift.String, position: Swift.String, adFormat: MeticaSDKFramework.MeticaAdFormatType, callback: any MeticaSDKFramework.MeticaAdsBannerCallback)
+  @_Concurrency.MainActor final public func createAd(adUnitId: Swift.String, xCoordinate: Swift.Double, yCoordinate: Swift.Double, adFormat: MeticaSDKFramework.MeticaAdFormatType, callback: any MeticaSDKFramework.MeticaAdsBannerCallback)
+  @_Concurrency.MainActor final public func showAd(adUnitId: Swift.String)
+  @_Concurrency.MainActor final public func hideAd(adUnitId: Swift.String)
+  @_Concurrency.MainActor final public func destroyAd(adUnitId: Swift.String)
+  @_Concurrency.MainActor final public func loadAd(adUnitId: Swift.String)
+  @_Concurrency.MainActor final public func startAutoRefresh(adUnitId: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func setCustomData(adUnitId: Swift.String, value: Swift.String?)
+  @_Concurrency.MainActor final public func setCustomData(adUnitId: Swift.String, value: Swift.String?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func setExtraParameterForKey(adUnitId: Swift.String, key: Swift.String, value: Swift.String?)
+  @_Concurrency.MainActor final public func setExtraParameterForKey(adUnitId: Swift.String, key: Swift.String, value: Swift.String?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func setLocalExtraParameterForKey(adUnitId: Swift.String, key: Swift.String, value: Any?)
+  @_Concurrency.MainActor final public func setLocalExtraParameterForKey(adUnitId: Swift.String, key: Swift.String, value: Any?)
   #endif
-  final public func setWidth(adUnitId: Swift.String, width: CoreFoundation.CGFloat)
-  final public func setBackgroundColor(adUnitId: Swift.String, hexColorCode: Swift.String)
-  final public func stopAutoRefresh(adUnitId: Swift.String)
+  @_Concurrency.MainActor final public func setWidth(adUnitId: Swift.String, width: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor final public func setBackgroundColor(adUnitId: Swift.String, hexColorCode: Swift.String)
+  @_Concurrency.MainActor final public func stopAutoRefresh(adUnitId: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
-  final public func setPlacement(adUnitId: Swift.String, placement: Swift.String?)
+  @_Concurrency.MainActor final public func setPlacement(adUnitId: Swift.String, placement: Swift.String?)
   #endif
   @objc deinit
 }
@@ -672,3 +672,4 @@ extension MeticaSDKFramework.MeticaSdk.InitializationError : Swift.Hashable {}
 extension MeticaSDKFramework.MeticaUserGroup : Swift.Equatable {}
 extension MeticaSDKFramework.MeticaUserGroup : Swift.Hashable {}
 extension MeticaSDKFramework.MeticaUserGroup : Swift.RawRepresentable {}
+extension MeticaSDKFramework.BannerOrMrecManager : Swift.Sendable {}

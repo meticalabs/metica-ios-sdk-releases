@@ -2055,8 +2055,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework0A3AdsP24createBannerOrMrecAdView8adUnitId0J6FormatAA0ahI0_pSS_AA0ahM4TypeOtYaF",
-            "mangledName": "$s18MeticaSDKFramework0A3AdsP24createBannerOrMrecAdView8adUnitId0J6FormatAA0ahI0_pSS_AA0ahM4TypeOtYaF",
+            "usr": "s:18MeticaSDKFramework0A3AdsP24createBannerOrMrecAdView8adUnitId0J6FormatAA0ahI0_pSS_AA0ahM4TypeOtF",
+            "mangledName": "$s18MeticaSDKFramework0A3AdsP24createBannerOrMrecAdView8adUnitId0J6FormatAA0ahI0_pSS_AA0ahM4TypeOtF",
             "moduleName": "MeticaSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAds>",
             "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAds>",
@@ -9625,6 +9625,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Custom",
               "AccessControl"
             ],
             "isLet": true,
@@ -9691,10 +9692,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId8position0I6Format8callbackySS_SSAA0ahM4TypeOAA0a3AdsC8Callback_ptYaF",
-            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId8position0I6Format8callbackySS_SSAA0ahM4TypeOAA0a3AdsC8Callback_ptYaF",
+            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId8position0I6Format8callbackySS_SSAA0ahM4TypeOAA0a3AdsC8Callback_ptF",
+            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId8position0I6Format8callbackySS_SSAA0ahM4TypeOAA0a3AdsC8Callback_ptF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -9743,10 +9745,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId11xCoordinate01yL00I6Format8callbackySS_S2dAA0ahM4TypeOAA0a3AdsC8Callback_ptYaF",
-            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId11xCoordinate01yL00I6Format8callbackySS_S2dAA0ahM4TypeOAA0a3AdsC8Callback_ptYaF",
+            "usr": "s:18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId11xCoordinate01yL00I6Format8callbackySS_S2dAA0ahM4TypeOAA0a3AdsC8Callback_ptF",
+            "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC8createAd8adUnitId11xCoordinate01yL00I6Format8callbackySS_S2dAA0ahM4TypeOAA0a3AdsC8Callback_ptF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -9775,6 +9778,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC6showAd8adUnitIdySS_tF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -9803,6 +9807,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC6hideAd8adUnitIdySS_tF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -9831,6 +9836,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC9destroyAd8adUnitIdySS_tF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -9859,6 +9865,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC6loadAd8adUnitIdySS_tF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -9887,6 +9894,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC16startAutoRefresh8adUnitIdySS_tF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -9929,6 +9937,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC13setCustomData8adUnitId5valueySS_SSSgtF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -9977,6 +9986,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC23setExtraParameterForKey8adUnitId3key5valueySS_S2SSgtF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -10024,6 +10034,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC28setLocalExtraParameterForKey8adUnitId3key5valueySS_SSypSgtF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -10058,6 +10069,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC8setWidth8adUnitId5widthySS_12CoreGraphics7CGFloatVtF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -10092,6 +10104,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC18setBackgroundColor8adUnitId03hexI4CodeySS_SStF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -10120,6 +10133,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC15stopAutoRefresh8adUnitIdySS_tF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -10162,6 +10176,7 @@
             "mangledName": "$s18MeticaSDKFramework19BannerOrMrecManagerC12setPlacement8adUnitId9placementySS_SSSgtF",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
+              "Custom",
               "Final",
               "AccessControl",
               "RawDocComment"
@@ -10175,7 +10190,8 @@
         "moduleName": "MeticaSDKFramework",
         "declAttributes": [
           "AccessControl",
-          "Final"
+          "Final",
+          "Custom"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -10192,6 +10208,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -15579,7 +15602,7 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 9524,
+      "offset": 9779,
       "length": 24,
       "value": "\"ApplovinInterstitialAd\""
     },
@@ -15628,7 +15651,7 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 8973,
+      "offset": 9228,
       "length": 20,
       "value": "\"ApplovinRewardedAd\""
     },
@@ -15719,7 +15742,7 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/AdInstanceOperations.swift",
       "kind": "StringLiteral",
-      "offset": 11239,
+      "offset": 11296,
       "length": 22,
       "value": "\"AdInstanceOperations\""
     },
@@ -16034,14 +16057,14 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 26273,
+      "offset": 25109,
       "length": 11,
       "value": "\"MeticaAds\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 26578,
+      "offset": 25414,
       "length": 5,
       "value": "false"
     },
@@ -16769,107 +16792,93 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 520,
+      "offset": 117,
       "length": 9,
       "value": "\"TopLeft\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 555,
+      "offset": 152,
       "length": 11,
       "value": "\"TopCenter\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 591,
+      "offset": 188,
       "length": 10,
       "value": "\"TopRight\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 628,
+      "offset": 225,
       "length": 12,
       "value": "\"CenterLeft\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 665,
+      "offset": 262,
       "length": 10,
       "value": "\"Centered\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 703,
+      "offset": 300,
       "length": 13,
       "value": "\"CenterRight\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 743,
+      "offset": 340,
       "length": 12,
       "value": "\"BottomLeft\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 381,
       "length": 14,
       "value": "\"BottomCenter\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 826,
+      "offset": 423,
       "length": 13,
       "value": "\"BottomRight\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "Dictionary",
-      "offset": 902,
+      "offset": 499,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "Dictionary",
-      "offset": 966,
+      "offset": 563,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "Dictionary",
-      "offset": 1035,
+      "offset": 632,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
       "kind": "StringLiteral",
-      "offset": 1226,
+      "offset": 823,
       "length": 21,
       "value": "\"BannerOrMrecManager\""
-    },
-    {
-      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1414,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Unity\/BannerOrMrecManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1476,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/Extensions\/String+Extension.swift",
@@ -16897,35 +16906,28 @@
       "kind": "StringLiteral",
       "offset": 78,
       "length": 7,
-      "value": "\"2.2.6\""
+      "value": "\"2.2.7\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/network\/ConnectivityMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 101,
+      "offset": 107,
       "length": 21,
       "value": "\"ConnectivityMonitor\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/network\/ConnectivityMonitor.swift",
       "kind": "StringLiteral",
-      "offset": 208,
+      "offset": 214,
       "length": 32,
       "value": "\"com.metica.ConnectivityMonitor\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/network\/ConnectivityMonitor.swift",
       "kind": "Array",
-      "offset": 295,
+      "offset": 301,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/network\/ConnectivityMonitor.swift",
-      "kind": "BooleanLiteral",
-      "offset": 387,
-      "length": 4,
-      "value": "true"
     }
   ]
 }
