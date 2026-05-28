@@ -2,7 +2,6 @@
 // swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
 // swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MeticaSDKFramework
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
-import AVFoundation
 import AdSupport
 import AppTrackingTransparency
 import Combine
@@ -134,6 +133,35 @@ public protocol MeticaApplovinFunctions {
   func isSuccessfullyInitialized() -> Swift.Bool
   func getCountryCode() -> Swift.String
   func getConsentDialogState() -> Swift.Int
+  func showCmpForExistingUser(onComplete: @escaping (Swift.String?) -> Swift.Void)
+  func hasSupportedCmp() -> Swift.Bool
+  func getTcfVendorConsentStatus(vendorId: Swift.Int) -> Swift.Bool?
+  func getAdditionalConsentStatus(atpId: Swift.Int) -> Swift.Bool?
+  func getPurposeConsentStatus(purposeId: Swift.Int) -> Swift.Bool?
+  func getSpecialFeatureOptInStatus(specialFeatureId: Swift.Int) -> Swift.Bool?
+}
+public enum MeticaConsentFlowUserGeography : Swift.String, Swift.Equatable, Swift.Hashable, Swift.Sendable {
+  case unknown
+  case gdpr
+  case other
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct MeticaCmpFlowSettings : Swift.Equatable, Swift.Hashable {
+  public let enabled: Swift.Bool
+  public let showTermsAndPrivacyPolicyAlertInGdpr: Swift.Bool
+  public let privacyPolicyUri: Foundation.URL?
+  public let termsOfServiceUri: Foundation.URL?
+  public let debugUserGeography: MeticaSDKFramework.MeticaConsentFlowUserGeography?
+  public init(enabled: Swift.Bool = false, showTermsAndPrivacyPolicyAlertInGdpr: Swift.Bool = false, privacyPolicyUri: Foundation.URL? = nil, termsOfServiceUri: Foundation.URL? = nil, debugUserGeography: MeticaSDKFramework.MeticaConsentFlowUserGeography? = nil)
+  public static func == (a: MeticaSDKFramework.MeticaCmpFlowSettings, b: MeticaSDKFramework.MeticaCmpFlowSettings) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public struct MeticaMediationInfo : Swift.Equatable, Swift.Hashable {
   public let mediationType: MeticaSDKFramework.MeticaMediationType
@@ -260,7 +288,9 @@ public protocol MeticaInitCallback {
 public struct MeticaInitConfig {
   public let apiKey: Swift.String
   public let appId: Swift.String
+  public let cmpFlowSettings: MeticaSDKFramework.MeticaCmpFlowSettings?
   public init(apiKey: Swift.String, appId: Swift.String, userId: Swift.String?)
+  public init(apiKey: Swift.String, appId: Swift.String, userId: Swift.String?, cmpFlowSettings: MeticaSDKFramework.MeticaCmpFlowSettings?)
 }
 extension MeticaSDKFramework.MeticaInitConfig : Swift.Equatable {
   public static func == (lhs: MeticaSDKFramework.MeticaInitConfig, rhs: MeticaSDKFramework.MeticaInitConfig) -> Swift.Bool
@@ -305,6 +335,7 @@ public struct MeticaInitResponse : Swift.Codable, Swift.Equatable, Swift.Hashabl
     get
   }
   @_Concurrency.MainActor public static func initialize(initConfig: MeticaSDKFramework.MeticaInitConfig, mediationInfo: MeticaSDKFramework.MeticaMediationInfo?, callback: (any MeticaSDKFramework.MeticaInitCallback)?)
+  @_Concurrency.MainActor public static func initialize(initConfig: MeticaSDKFramework.MeticaInitConfig, mediationInfo: MeticaSDKFramework.MeticaMediationInfo?, callback: (any MeticaSDKFramework.MeticaInitCallback)?, onCmpFlowComplete: ((Swift.String?) -> Swift.Void)?)
   @objc deinit
 }
 public struct MeticaSmartFloors : Swift.Codable, Swift.Equatable, Swift.Hashable {
@@ -336,6 +367,8 @@ public enum MeticaUserGroup : Swift.String, Swift.Codable {
   @_Concurrency.MainActor final public func hideAd(adUnitId: Swift.String)
   @_Concurrency.MainActor final public func destroyAd(adUnitId: Swift.String)
   @_Concurrency.MainActor final public func loadAd(adUnitId: Swift.String)
+  @_Concurrency.MainActor final public func updateAdPosition(adUnitId: Swift.String, position: Swift.String)
+  @_Concurrency.MainActor final public func updateAdPosition(adUnitId: Swift.String, xCoordinate: Swift.Double, yCoordinate: Swift.Double)
   @_Concurrency.MainActor final public func startAutoRefresh(adUnitId: Swift.String)
   @_Concurrency.MainActor final public func setCustomData(adUnitId: Swift.String, value: Swift.String?)
   @_Concurrency.MainActor final public func setExtraParameterForKey(adUnitId: Swift.String, key: Swift.String, value: Swift.String?)
@@ -347,6 +380,8 @@ public enum MeticaUserGroup : Swift.String, Swift.Codable {
   @objc deinit
 }
 public typealias OnInitializedCallbackDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void
+public typealias OnCmpCompleteDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void
+public typealias OnCmpFlowCompleteDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void
 public typealias OnAdLoadSuccessDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?, Swift.Int64) -> Swift.Void
 public typealias OnAdLoadFailedDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?, Swift.Int64) -> Swift.Void
 public typealias OnAdShowSuccessDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?, Swift.Int64) -> Swift.Void
@@ -379,6 +414,20 @@ public func ios_isMuted() -> Swift.CBool
 public func ios_setMuted(value: Swift.CBool)
 @_cdecl("ios_showCmpForExistingUser")
 public func ios_showCmpForExistingUser()
+@_cdecl("ios_showCmpForExistingUserWithCallback")
+public func ios_showCmpForExistingUserWithCallback(_ onComplete: MeticaSDKFramework.OnCmpCompleteDelegate?)
+@_cdecl("ios_hasSupportedCmp")
+public func ios_hasSupportedCmp() -> Swift.CBool
+@_cdecl("ios_getTcfVendorConsentStatus")
+public func ios_getTcfVendorConsentStatus(_ vendorId: Swift.Int32) -> Swift.Int32
+@_cdecl("ios_getAdditionalConsentStatus")
+public func ios_getAdditionalConsentStatus(_ atpId: Swift.Int32) -> Swift.Int32
+@_cdecl("ios_getPurposeConsentStatus")
+public func ios_getPurposeConsentStatus(_ purposeId: Swift.Int32) -> Swift.Int32
+@_cdecl("ios_getSpecialFeatureOptInStatus")
+public func ios_getSpecialFeatureOptInStatus(_ specialFeatureId: Swift.Int32) -> Swift.Int32
+@_cdecl("ios_sdkInitializeWithCmp")
+@_Concurrency.MainActor public func ios_sdkInitializeWithCmp(_ apiKey: Swift.UnsafePointer<Swift.CChar>?, _ appId: Swift.UnsafePointer<Swift.CChar>?, _ userId: Swift.UnsafePointer<Swift.CChar>?, _ mediationKey: Swift.UnsafePointer<Swift.CChar>?, _ onInitSuccess: MeticaSDKFramework.OnInitializedCallbackDelegate?, _ cmpFlowSettingsJson: Swift.UnsafePointer<Swift.CChar>?, _ onCmpFlowComplete: MeticaSDKFramework.OnCmpFlowCompleteDelegate?)
 @_cdecl("ios_showMediationDebugger")
 public func ios_showMediationDebugger()
 @_cdecl("ios_setExtraParameter")
@@ -415,6 +464,10 @@ public func ios_setInterstitialExtraParameter(_ adUnitId: Swift.UnsafePointer<Sw
 public func ios_setInterstitialLocalExtraParameter(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ jsonValuePtr: Swift.UnsafePointer<Swift.CChar>?)
 @_cdecl("ios_createBannerOrMrecAdWithPosition")
 public func ios_createBannerOrMrecAdWithPosition(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ position: Swift.UnsafePointer<Swift.CChar>?, _ format: Swift.UnsafePointer<Swift.CChar>?, _ onAdLoadSuccess: MeticaSDKFramework.OnBannerAdLoadSuccessDelegate?, _ onAdLoadFailed: MeticaSDKFramework.OnBannerAdLoadFailedDelegate?, _ onAdClicked: MeticaSDKFramework.OnBannerAdClickedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnBannerAdRevenuePaidDelegate?)
+@_cdecl("ios_updateBannerOrMrecAdPosition")
+public func ios_updateBannerOrMrecAdPosition(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ position: Swift.UnsafePointer<Swift.CChar>?)
+@_cdecl("ios_updateBannerOrMrecAdPositionCoordinates")
+public func ios_updateBannerOrMrecAdPositionCoordinates(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ xCoordinate: Swift.Double, _ yCoordinate: Swift.Double)
 @_cdecl("ios_createBannerOrMrecAdWithCoords")
 public func ios_createBannerOrMrecAdWithCoords(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ xCoordinate: Swift.Double, _ yCoordinate: Swift.Double, _ format: Swift.UnsafePointer<Swift.CChar>?, _ onAdLoadSuccess: MeticaSDKFramework.OnBannerAdLoadSuccessDelegate?, _ onAdLoadFailed: MeticaSDKFramework.OnBannerAdLoadFailedDelegate?, _ onAdClicked: MeticaSDKFramework.OnBannerAdClickedDelegate?, _ onAdRevenuePaid: MeticaSDKFramework.OnBannerAdRevenuePaidDelegate?)
 @_cdecl("ios_showBannerOrMrecAd")
@@ -488,6 +541,7 @@ public struct SDKVersion {
   public static let version: Swift.String
 }
 extension MeticaSDKFramework.MeticaAdFormatType : Swift.Hashable {}
+extension MeticaSDKFramework.MeticaConsentFlowUserGeography : Swift.RawRepresentable {}
 extension MeticaSDKFramework.MeticaMediationType : Swift.RawRepresentable {}
 extension MeticaSDKFramework.EventPriority : Swift.Equatable {}
 extension MeticaSDKFramework.EventPriority : Swift.Hashable {}
