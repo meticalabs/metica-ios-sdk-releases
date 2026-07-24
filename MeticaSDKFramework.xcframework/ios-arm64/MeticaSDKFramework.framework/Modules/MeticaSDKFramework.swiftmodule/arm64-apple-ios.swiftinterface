@@ -563,6 +563,7 @@ public enum MeticaUserGroup : Swift.String, Swift.Codable {
   @_Concurrency.MainActor final public func setLocalExtraParameterForKey(adUnitId: Swift.String, key: Swift.String, value: Any?)
   #endif
   @_Concurrency.MainActor final public func setWidth(adUnitId: Swift.String, width: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor final public func getAdViewLayout(adUnitId: Swift.String) -> Swift.String
   @_Concurrency.MainActor final public func setBackgroundColor(adUnitId: Swift.String, hexColorCode: Swift.String)
   @_Concurrency.MainActor final public func stopAutoRefresh(adUnitId: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -638,6 +639,10 @@ public func ios_setExtraParameter(_ key: Swift.UnsafePointer<Swift.CChar>?, _ va
 #endif
 @_cdecl("ios_getAdaptiveBannerHeight")
 public func ios_getAdaptiveBannerHeight(_ width: Swift.Double) -> Swift.Double
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_getBannerOrMrecLayout")
+public func ios_getBannerOrMrecLayout(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ adFormat: Swift.UnsafePointer<Swift.CChar>?) -> Swift.UnsafePointer<Swift.CChar>?
+#endif
 @_cdecl("ios_isSuccessfullyInitialized")
 public func ios_isSuccessfullyInitialized() -> Swift.CBool
 #if compiler(>=5.3) && $NonescapableTypes
