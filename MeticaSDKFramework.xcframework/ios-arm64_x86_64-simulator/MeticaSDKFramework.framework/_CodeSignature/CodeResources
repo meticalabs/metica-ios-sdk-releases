@@ -6,47 +6,47 @@
 	<dict>
 		<key>Info.plist</key>
 		<data>
-		zO9v8p3e6WbFG4Zq7/ODfHIffPA=
+		TXWflON4idH4Pf2fg1LpVLAtXDQ=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9aqOdvEK4ROsIY3STpS9h06pV5w=
+		Otob0ndp3N45TzvPorj38i7eHfg=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		YkdounuHGsX70n3ctIjeJiXT+9s=
+		ZaQtfLaEqU7N/WGJ2ETrbCCVHrY=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		MuLhoazgTWgXtSQiTmwCigpjVsA=
+		Xm8ldu6Y6N4ytAAkUWBtScvKkfE=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YkdounuHGsX70n3ctIjeJiXT+9s=
+		ZaQtfLaEqU7N/WGJ2ETrbCCVHrY=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vTs7SMXyIeX9R1cPuACFkobrkFA=
+		PxhVlIvOuVJ0Ab9WAVQhrV/2MTY=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9aqOdvEK4ROsIY3STpS9h06pV5w=
+		Otob0ndp3N45TzvPorj38i7eHfg=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dL5wbRVd33LEBeii5JrDwSgvDeo=
+		kT5y0FkQkQJtN/9b1nHCEpRtOZs=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xFKxRzjMCZD7FVeX7ESw61i/AZg=
+		hhDJDDqAlZgAFtRxT1cVWsBnb/8=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dL5wbRVd33LEBeii5JrDwSgvDeo=
+		kT5y0FkQkQJtN/9b1nHCEpRtOZs=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fT68/y+0hV26YhpyKBKhgt0N+kw=
+		k3sr/avpctqE/262X+mDfPi4xoY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,70 +55,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HvMJ8B30cFWeSqlxthSjWjEZhEetOK6fih6f0qPeSUE=
+			qcS/UU9UC2V4La2mEb9JMvpLGzMmnqS29HPemDGEap4=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W+1bJoKQs58BcOSpGY1En3bwbS0yPa/XNcvxuN+r628=
+			4yev2jn+FK1yph8hMOifdThoogfBUmQgn0g9pMANr24=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			44rsmAOj+WlasizRYMzqcju5RqMTRz3ZTE0nGQed45Y=
+			sIl7arvhrw2MrDakVgFnwojYzNpIqSVrZdzWTgqSsjE=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W+1bJoKQs58BcOSpGY1En3bwbS0yPa/XNcvxuN+r628=
+			4yev2jn+FK1yph8hMOifdThoogfBUmQgn0g9pMANr24=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JpqFsxBEsV0cJuqABwzmvHoalMDz/p0FfGXHrFdI0pk=
+			o5LBeSsMJyeau/mcpzAeH98JTRSFGbRFbSn0LPo1fBg=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HvMJ8B30cFWeSqlxthSjWjEZhEetOK6fih6f0qPeSUE=
+			qcS/UU9UC2V4La2mEb9JMvpLGzMmnqS29HPemDGEap4=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PVPtb5L4ytkWuzgqf+2tC0f/svn0wbLp46ku/+ZKZvc=
+			pPQAuwARZo2fBrydUt2YFvMvTmOFQjlInjNswwqjLYE=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4JjxQZ5+91idV4U3BOet4aEhZn+svOcDhGGXmO6ROXo=
+			IUZDaDkSaHvFDVPqLR6BCg3V5hW5/+6vgUQhjRN1ryQ=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PVPtb5L4ytkWuzgqf+2tC0f/svn0wbLp46ku/+ZKZvc=
+			pPQAuwARZo2fBrydUt2YFvMvTmOFQjlInjNswwqjLYE=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1oXnK+GxTUh8c6q9cJbKbWEdWAH8wYECxhbQv23/S6Q=
+			NG+Blj8QD4Utq68b4n1ERncwK1hClIw/qPLg4WGqmck=
 			</data>
 		</dict>
 	</dict>
