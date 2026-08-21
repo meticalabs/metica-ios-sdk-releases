@@ -10,7 +10,7 @@
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		wVGo59CN9frQhWxuc+umEoLDeGY=
+		zA9ZL70H93cmlLhGM73oTqpgOUM=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bfJJvdMAqKHCU4CDXia0lrJa8TE=
+		0H+njk/pre6YJk2jGaJshfTGHi0=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		wVGo59CN9frQhWxuc+umEoLDeGY=
+		zA9ZL70H93cmlLhGM73oTqpgOUM=
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+tQgOugduojrLbWwdViOvDcchn4=
+		Z/VkQcTfjnetvcpf7bPxwO7wpd0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/AcBf0hk3m8B+RTBFkmje8MT367Qx7pQ+iTwoRgrQ/k=
+			lyuPtYdH80fd+OJYPa1d84OJHVzdPShgfOfLRWENJXc=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -83,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CvDvxG5nzagroWSs9GuKEWlWaUw7VMYPp2EbJCQXhQ0=
+			MvnfeX19GLec1zFR1CUbJcLibFsyWkPaEpQWc/0FGA0=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/AcBf0hk3m8B+RTBFkmje8MT367Qx7pQ+iTwoRgrQ/k=
+			lyuPtYdH80fd+OJYPa1d84OJHVzdPShgfOfLRWENJXc=
 			</data>
 		</dict>
 		<key>Modules/MeticaSDKFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -118,7 +118,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZkbwtqG5NHxnpX5OdjJQttKPMiSOrVHh4bI5w9qCBKU=
+			0EWHqsJCa/lkypwtKOnIaYbcjvOokApcba1Li06tNcM=
 			</data>
 		</dict>
 	</dict>
