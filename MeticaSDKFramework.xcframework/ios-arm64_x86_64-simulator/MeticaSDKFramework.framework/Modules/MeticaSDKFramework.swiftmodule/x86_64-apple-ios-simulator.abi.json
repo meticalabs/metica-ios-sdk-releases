@@ -10923,27 +10923,41 @@
           },
           {
             "kind": "Var",
-            "name": "customDomain",
-            "printedName": "customDomain",
+            "name": "parameters",
+            "printedName": "parameters",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "[Swift.String : Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18MeticaSDKFramework0A10InitConfigV12customDomainSSSgvp",
-            "mangledName": "$s18MeticaSDKFramework0A10InitConfigV12customDomainSSSgvp",
+            "usr": "s:18MeticaSDKFramework0A10InitConfigV10parametersSDyS2SGSgvp",
+            "mangledName": "$s18MeticaSDKFramework0A10InitConfigV10parametersSDyS2SGSgvp",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
               "HasStorage",
@@ -10961,21 +10975,35 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "[Swift.String : Swift.String]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18MeticaSDKFramework0A10InitConfigV12customDomainSSSgvg",
-                "mangledName": "$s18MeticaSDKFramework0A10InitConfigV12customDomainSSSgvg",
+                "usr": "s:18MeticaSDKFramework0A10InitConfigV10parametersSDyS2SGSgvg",
+                "mangledName": "$s18MeticaSDKFramework0A10InitConfigV10parametersSDyS2SGSgvg",
                 "moduleName": "MeticaSDKFramework",
                 "implicit": true,
                 "accessorKind": "get"
@@ -11095,7 +11123,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(apiKey:appId:userId:customDomain:)",
+            "printedName": "init(apiKey:appId:userId:parameters:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11132,21 +11160,35 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "[Swift.String : Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MeticaSDKFramework0A10InitConfigV6apiKey5appId04userH012customDomainACSS_S2SSgAHtcfc",
-            "mangledName": "$s18MeticaSDKFramework0A10InitConfigV6apiKey5appId04userH012customDomainACSS_S2SSgAHtcfc",
+            "usr": "s:18MeticaSDKFramework0A10InitConfigV6apiKey5appId04userH010parametersACSS_S2SSgSDyS2SGSgtcfc",
+            "mangledName": "$s18MeticaSDKFramework0A10InitConfigV6apiKey5appId04userH010parametersACSS_S2SSgSDyS2SGSgtcfc",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
               "AccessControl",
@@ -11157,7 +11199,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(apiKey:appId:userId:cmpFlowSettings:customDomain:)",
+            "printedName": "init(apiKey:appId:userId:cmpFlowSettings:parameters:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11208,21 +11250,35 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "[Swift.String : Swift.String]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MeticaSDKFramework0A10InitConfigV6apiKey5appId04userH015cmpFlowSettings12customDomainACSS_S2SSgAA0a3CmpkL0VSgAItcfc",
-            "mangledName": "$s18MeticaSDKFramework0A10InitConfigV6apiKey5appId04userH015cmpFlowSettings12customDomainACSS_S2SSgAA0a3CmpkL0VSgAItcfc",
+            "usr": "s:18MeticaSDKFramework0A10InitConfigV6apiKey5appId04userH015cmpFlowSettings10parametersACSS_S2SSgAA0a3CmpkL0VSgSDyS2SGSgtcfc",
+            "mangledName": "$s18MeticaSDKFramework0A10InitConfigV6apiKey5appId04userH015cmpFlowSettings10parametersACSS_S2SSgAA0a3CmpkL0VSgSDyS2SGSgtcfc",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
               "AccessControl",
@@ -22071,35 +22127,35 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaInitConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2154,
+      "offset": 2022,
       "length": 50,
       "value": "\"SDK initializing with userId: \""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaInitConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2203,
+      "offset": 2071,
       "length": 37,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaInitConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2235,
+      "offset": 2103,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaInitConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5732,
+      "offset": 5502,
       "length": 18,
       "value": "\"MeticaInitConfig\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/MeticaSdk.swift",
       "kind": "StringLiteral",
-      "offset": 23931,
+      "offset": 23049,
       "length": 11,
       "value": "\"MeticaSdk\""
     },
@@ -22254,8 +22310,8 @@
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/SDKVersion.swift",
       "kind": "StringLiteral",
       "offset": 78,
-      "length": 13,
-      "value": "\"2.5.2-beta1\""
+      "length": 7,
+      "value": "\"2.5.2\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/EnvironmentAttributes.swift",
@@ -22750,44 +22806,51 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/initialization\/CustomDomain.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 2165,
       "length": 5,
       "value": "\":\/\/\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/initialization\/CustomDomain.swift",
       "kind": "StringLiteral",
-      "offset": 1979,
+      "offset": 2202,
       "length": 7,
       "value": "\"https\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/initialization\/CustomDomain.swift",
       "kind": "StringLiteral",
-      "offset": 2017,
+      "offset": 2240,
       "length": 6,
       "value": "\"http\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/initialization\/CustomDomain.swift",
       "kind": "IntegerLiteral",
-      "offset": 2058,
+      "offset": 2281,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/initialization\/CustomDomain.swift",
       "kind": "IntegerLiteral",
-      "offset": 2093,
+      "offset": 2316,
       "length": 6,
       "value": "65535"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/initialization\/CustomDomain.swift",
       "kind": "StringLiteral",
-      "offset": 2344,
+      "offset": 2567,
       "length": 40,
       "value": "\"abcdefghijklmnopqrstuvwxyz0123456789-.\""
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/initialization\/MeticaInitParameterKey.swift",
+      "kind": "StringLiteral",
+      "offset": 239,
+      "length": 14,
+      "value": "\"customDomain\""
     }
   ]
 }

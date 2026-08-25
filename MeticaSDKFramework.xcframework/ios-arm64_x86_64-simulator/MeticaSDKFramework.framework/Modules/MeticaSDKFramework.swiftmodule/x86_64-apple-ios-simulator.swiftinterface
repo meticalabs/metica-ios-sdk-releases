@@ -445,7 +445,7 @@ public struct MeticaInitConfig {
   public let apiKey: Swift.String
   public let appId: Swift.String
   public let cmpFlowSettings: MeticaSDKFramework.MeticaCmpFlowSettings?
-  public let customDomain: Swift.String?
+  public let parameters: [Swift.String : Swift.String]?
   #if compiler(>=5.3) && $NonescapableTypes
   public init(apiKey: Swift.String, appId: Swift.String, userId: Swift.String?)
   #endif
@@ -453,10 +453,10 @@ public struct MeticaInitConfig {
   public init(apiKey: Swift.String, appId: Swift.String, userId: Swift.String?, cmpFlowSettings: MeticaSDKFramework.MeticaCmpFlowSettings?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(apiKey: Swift.String, appId: Swift.String, userId: Swift.String?, customDomain: Swift.String?)
+  public init(apiKey: Swift.String, appId: Swift.String, userId: Swift.String?, parameters: [Swift.String : Swift.String]?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(apiKey: Swift.String, appId: Swift.String, userId: Swift.String?, cmpFlowSettings: MeticaSDKFramework.MeticaCmpFlowSettings?, customDomain: Swift.String?)
+  public init(apiKey: Swift.String, appId: Swift.String, userId: Swift.String?, cmpFlowSettings: MeticaSDKFramework.MeticaCmpFlowSettings?, parameters: [Swift.String : Swift.String]?)
   #endif
 }
 extension MeticaSDKFramework.MeticaInitConfig : Swift.Equatable {
@@ -595,7 +595,7 @@ public typealias OnBannerAdRevenuePaidDelegate = @convention(c) (Swift.UnsafePoi
 public typealias OnAdReviewCreativeIdDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?, Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_sdkInitializeWithUnitySdkVersion")
-@_Concurrency.MainActor public func ios_sdkInitializeWithUnitySdkVersion(_ apiKey: Swift.UnsafePointer<Swift.CChar>?, _ appId: Swift.UnsafePointer<Swift.CChar>?, _ userId: Swift.UnsafePointer<Swift.CChar>?, _ mediationKey: Swift.UnsafePointer<Swift.CChar>?, _ onInitSuccess: MeticaSDKFramework.OnInitializedCallbackDelegate?, _ cmpFlowSettingsJson: Swift.UnsafePointer<Swift.CChar>?, _ onCmpFlowComplete: MeticaSDKFramework.OnCmpFlowCompleteDelegate?, _ unityVersion: Swift.UnsafePointer<Swift.CChar>?, _ customDomain: Swift.UnsafePointer<Swift.CChar>?)
+@_Concurrency.MainActor public func ios_sdkInitializeWithUnitySdkVersion(_ apiKey: Swift.UnsafePointer<Swift.CChar>?, _ appId: Swift.UnsafePointer<Swift.CChar>?, _ userId: Swift.UnsafePointer<Swift.CChar>?, _ mediationKey: Swift.UnsafePointer<Swift.CChar>?, _ onInitSuccess: MeticaSDKFramework.OnInitializedCallbackDelegate?, _ cmpFlowSettingsJson: Swift.UnsafePointer<Swift.CChar>?, _ onCmpFlowComplete: MeticaSDKFramework.OnCmpFlowCompleteDelegate?, _ unityVersion: Swift.UnsafePointer<Swift.CChar>?, _ parametersJson: Swift.UnsafePointer<Swift.CChar>?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_getNativeSdkVersion")
