@@ -52,7 +52,7 @@ public protocol MeticaAd : Swift.CustomStringConvertible {
   var latency: Swift.Int64? { get }
   #endif
 }
-public struct MeticaAdWaterfallInfo : Swift.Codable, Swift.Equatable {
+public struct MeticaAdWaterfallInfo : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let name: Swift.String
   public let testName: Swift.String
   public let latencyMillis: Swift.Int64
@@ -60,9 +60,13 @@ public struct MeticaAdWaterfallInfo : Swift.Codable, Swift.Equatable {
   public init(name: Swift.String, testName: Swift.String, latencyMillis: Swift.Int64, networkResponses: [MeticaSDKFramework.MeticaAdNetworkResponse])
   public static func == (a: MeticaSDKFramework.MeticaAdWaterfallInfo, b: MeticaSDKFramework.MeticaAdWaterfallInfo) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct MeticaAdNetworkResponse : Swift.Codable, Swift.Equatable {
+public struct MeticaAdNetworkResponse : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let adLoadState: Swift.String
   public let networkName: Swift.String
   public let adapterClassName: Swift.String
@@ -78,6 +82,10 @@ public struct MeticaAdNetworkResponse : Swift.Codable, Swift.Equatable {
   #endif
   public static func == (a: MeticaSDKFramework.MeticaAdNetworkResponse, b: MeticaSDKFramework.MeticaAdNetworkResponse) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
   public init(from decoder: any Swift.Decoder) throws
 }
 extension MeticaSDKFramework.MeticaAd {
@@ -89,8 +97,12 @@ public struct MeticaAdError : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let message: Swift.String
   public let adUnitId: Swift.String?
   public let code: Swift.Int?
+  public let mediatedNetworkErrorCode: Swift.Int?
+  public let mediatedNetworkErrorMessage: Swift.String?
+  public let latency: Swift.Int64?
+  public let waterfallInfo: MeticaSDKFramework.MeticaAdWaterfallInfo?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(message: Swift.String, adUnitId: Swift.String?, code: Swift.Int? = nil)
+  public init(message: Swift.String, adUnitId: Swift.String?, code: Swift.Int? = nil, mediatedNetworkErrorCode: Swift.Int? = nil, mediatedNetworkErrorMessage: Swift.String? = nil, latency: Swift.Int64? = nil, waterfallInfo: MeticaSDKFramework.MeticaAdWaterfallInfo? = nil)
   #endif
   public static func == (a: MeticaSDKFramework.MeticaAdError, b: MeticaSDKFramework.MeticaAdError) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
@@ -99,6 +111,9 @@ public struct MeticaAdError : Swift.Codable, Swift.Equatable, Swift.Hashable {
     get
   }
   public init(from decoder: any Swift.Decoder) throws
+}
+public protocol MeticaAdsExpirationCallback {
+  func onExpiredAdReloaded(expiredAd: any MeticaSDKFramework.MeticaAd, newAd: any MeticaSDKFramework.MeticaAd)
 }
 public enum MeticaAdFormatType : Swift.Equatable {
   case INTER
@@ -140,6 +155,9 @@ public protocol MeticaAds {
   func showInterstitial(adUnitId: Swift.String, placementId: Swift.String?, customData: Swift.String?, callback: any MeticaSDKFramework.MeticaAdsShowCallback)
   #endif
   func isInterstitialReady(adUnitId: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setInterstitialExpiredAdReloadedCallback(callback: (any MeticaSDKFramework.MeticaAdsExpirationCallback)?)
+  #endif
   func loadRewarded(adUnitId: Swift.String, callback: any MeticaSDKFramework.MeticaAdsLoadCallback)
   #if compiler(>=5.3) && $NonescapableTypes
   func loadRewarded(adUnitId: Swift.String, config: MeticaSDKFramework.MeticaAdConfig?, callback: any MeticaSDKFramework.MeticaAdsLoadCallback)
@@ -148,6 +166,9 @@ public protocol MeticaAds {
   func showRewarded(adUnitId: Swift.String, placementId: Swift.String?, customData: Swift.String?, callback: any MeticaSDKFramework.MeticaAdsShowCallback)
   #endif
   func isRewardedReady(adUnitId: Swift.String) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setRewardedExpiredAdReloadedCallback(callback: (any MeticaSDKFramework.MeticaAdsExpirationCallback)?)
+  #endif
   #if compiler(>=5.3) && $NonescapableTypes
   func setExtraParameter(adFormat: MeticaSDKFramework.MeticaAdFormatType, adUnitId: Swift.String, key: Swift.String, value: Swift.String?)
   #endif
@@ -587,6 +608,7 @@ public typealias OnAdShowFailedDelegate = @convention(c) (Swift.UnsafePointer<Sw
 public typealias OnAdHiddenDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?, Swift.Int64) -> Swift.Void
 public typealias OnAdClickedDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?, Swift.Int64) -> Swift.Void
 public typealias OnAdRewardedDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?, Swift.Int64) -> Swift.Void
+public typealias OnExpiredAdReloadedDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?, Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void
 public typealias OnAdRevenuePaidDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?, Swift.Int64) -> Swift.Void
 public typealias OnBannerAdLoadSuccessDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void
 public typealias OnBannerAdLoadFailedDelegate = @convention(c) (Swift.UnsafePointer<Swift.CChar>?) -> Swift.Void
@@ -686,6 +708,14 @@ public func ios_setRewardedAdExtraParameter(_ adUnitId: Swift.UnsafePointer<Swif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_setRewardedAdLocalExtraParameter")
 public func ios_setRewardedAdLocalExtraParameter(_ adUnitId: Swift.UnsafePointer<Swift.CChar>?, _ key: Swift.UnsafePointer<Swift.CChar>?, _ jsonValuePtr: Swift.UnsafePointer<Swift.CChar>?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setInterstitialExpiredAdReloadedCallback")
+public func ios_setInterstitialExpiredAdReloadedCallback(_ onExpiredAdReloaded: MeticaSDKFramework.OnExpiredAdReloadedDelegate?)
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
+@_cdecl("ios_setRewardedExpiredAdReloadedCallback")
+public func ios_setRewardedExpiredAdReloadedCallback(_ onExpiredAdReloaded: MeticaSDKFramework.OnExpiredAdReloadedDelegate?)
 #endif
 #if compiler(>=5.3) && $NonescapableTypes
 @_cdecl("ios_loadInterstitial")
@@ -803,6 +833,13 @@ public func ios_logCustomEvent(_ eventName: Swift.UnsafePointer<Swift.CChar>?, _
 @_cdecl("ios_trackEvent")
 public func ios_trackEvent(_ event: Swift.UnsafePointer<Swift.CChar>?, _ parameters: Swift.UnsafePointer<Swift.CChar>?)
 #endif
+public class MeticaExpirationCallbackWrapper : MeticaSDKFramework.MeticaAdsExpirationCallback {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(onExpiredAdReloaded: MeticaSDKFramework.OnExpiredAdReloadedDelegate?)
+  #endif
+  public func onExpiredAdReloaded(expiredAd: any MeticaSDKFramework.MeticaAd, newAd: any MeticaSDKFramework.MeticaAd)
+  @objc deinit
+}
 public class MeticaAdsBannerCallbackWrapper : MeticaSDKFramework.MeticaAdsBannerCallback {
   #if compiler(>=5.3) && $NonescapableTypes
   public init(onSuccess: MeticaSDKFramework.OnBannerAdLoadSuccessDelegate?, onFail: MeticaSDKFramework.OnBannerAdLoadFailedDelegate?, onClicked: MeticaSDKFramework.OnBannerAdClickedDelegate?, onRevenue: MeticaSDKFramework.OnBannerAdRevenuePaidDelegate?)

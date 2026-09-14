@@ -86,6 +86,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -207,6 +214,16 @@
         "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "AppLovinSDK",
+        "printedName": "AppLovinSDK",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -1460,6 +1477,70 @@
             "static": true,
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A15AdWaterfallInfoV9hashValueSivp",
+            "mangledName": "$s18MeticaSDKFramework0A15AdWaterfallInfoV9hashValueSivp",
+            "moduleName": "MeticaSDKFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A15AdWaterfallInfoV9hashValueSivg",
+                "mangledName": "$s18MeticaSDKFramework0A15AdWaterfallInfoV9hashValueSivg",
+                "moduleName": "MeticaSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A15AdWaterfallInfoV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18MeticaSDKFramework0A15AdWaterfallInfoV4hash4intoys6HasherVz_tF",
+            "moduleName": "MeticaSDKFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -1505,6 +1586,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -2174,6 +2262,70 @@
             "static": true,
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A17AdNetworkResponseV9hashValueSivp",
+            "mangledName": "$s18MeticaSDKFramework0A17AdNetworkResponseV9hashValueSivp",
+            "moduleName": "MeticaSDKFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A17AdNetworkResponseV9hashValueSivg",
+                "mangledName": "$s18MeticaSDKFramework0A17AdNetworkResponseV9hashValueSivg",
+                "moduleName": "MeticaSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A17AdNetworkResponseV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18MeticaSDKFramework0A17AdNetworkResponseV4hash4intoys6HasherVz_tF",
+            "moduleName": "MeticaSDKFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -2219,6 +2371,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -2401,9 +2560,253 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "mediatedNetworkErrorCode",
+            "printedName": "mediatedNetworkErrorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A7AdErrorV015mediatedNetworkD4CodeSiSgvp",
+            "mangledName": "$s18MeticaSDKFramework0A7AdErrorV015mediatedNetworkD4CodeSiSgvp",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A7AdErrorV015mediatedNetworkD4CodeSiSgvg",
+                "mangledName": "$s18MeticaSDKFramework0A7AdErrorV015mediatedNetworkD4CodeSiSgvg",
+                "moduleName": "MeticaSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mediatedNetworkErrorMessage",
+            "printedName": "mediatedNetworkErrorMessage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A7AdErrorV015mediatedNetworkD7MessageSSSgvp",
+            "mangledName": "$s18MeticaSDKFramework0A7AdErrorV015mediatedNetworkD7MessageSSSgvp",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A7AdErrorV015mediatedNetworkD7MessageSSSgvg",
+                "mangledName": "$s18MeticaSDKFramework0A7AdErrorV015mediatedNetworkD7MessageSSSgvg",
+                "moduleName": "MeticaSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "latency",
+            "printedName": "latency",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A7AdErrorV7latencys5Int64VSgvp",
+            "mangledName": "$s18MeticaSDKFramework0A7AdErrorV7latencys5Int64VSgvp",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int64",
+                        "printedName": "Swift.Int64",
+                        "usr": "s:s5Int64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A7AdErrorV7latencys5Int64VSgvg",
+                "mangledName": "$s18MeticaSDKFramework0A7AdErrorV7latencys5Int64VSgvg",
+                "moduleName": "MeticaSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "waterfallInfo",
+            "printedName": "waterfallInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MeticaSDKFramework.MeticaAdWaterfallInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MeticaAdWaterfallInfo",
+                    "printedName": "MeticaSDKFramework.MeticaAdWaterfallInfo",
+                    "usr": "s:18MeticaSDKFramework0A15AdWaterfallInfoV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MeticaSDKFramework0A7AdErrorV13waterfallInfoAA0ac9WaterfallF0VSgvp",
+            "mangledName": "$s18MeticaSDKFramework0A7AdErrorV13waterfallInfoAA0ac9WaterfallF0VSgvp",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "MeticaSDKFramework.MeticaAdWaterfallInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MeticaAdWaterfallInfo",
+                        "printedName": "MeticaSDKFramework.MeticaAdWaterfallInfo",
+                        "usr": "s:18MeticaSDKFramework0A15AdWaterfallInfoV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MeticaSDKFramework0A7AdErrorV13waterfallInfoAA0ac9WaterfallF0VSgvg",
+                "mangledName": "$s18MeticaSDKFramework0A7AdErrorV13waterfallInfoAA0ac9WaterfallF0VSgvg",
+                "moduleName": "MeticaSDKFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(message:adUnitId:code:)",
+            "printedName": "init(message:adUnitId:code:mediatedNetworkErrorCode:mediatedNetworkErrorMessage:latency:waterfallInfo:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2445,11 +2848,71 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int64?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MeticaSDKFramework.MeticaAdWaterfallInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MeticaAdWaterfallInfo",
+                    "printedName": "MeticaSDKFramework.MeticaAdWaterfallInfo",
+                    "usr": "s:18MeticaSDKFramework0A15AdWaterfallInfoV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MeticaSDKFramework0A7AdErrorV7message8adUnitId4codeACSS_SSSgSiSgtcfc",
-            "mangledName": "$s18MeticaSDKFramework0A7AdErrorV7message8adUnitId4codeACSS_SSSgSiSgtcfc",
+            "usr": "s:18MeticaSDKFramework0A7AdErrorV7message8adUnitId4code015mediatedNetworkD4Code0jkD7Message7latency13waterfallInfoACSS_SSSgSiSgAlKs5Int64VSgAA0ac9WaterfallP0VSgtcfc",
+            "mangledName": "$s18MeticaSDKFramework0A7AdErrorV7message8adUnitId4code015mediatedNetworkD4Code0jkD7Message7latency13waterfallInfoACSS_SSSgSiSgAlKs5Int64VSgAA0ac9WaterfallP0VSgtcfc",
             "moduleName": "MeticaSDKFramework",
             "declAttributes": [
               "AccessControl",
@@ -2655,6 +3118,80 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MeticaAdsExpirationCallback",
+        "printedName": "MeticaAdsExpirationCallback",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onExpiredAdReloaded",
+            "printedName": "onExpiredAdReloaded(expiredAd:newAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAd",
+                "printedName": "any MeticaSDKFramework.MeticaAd",
+                "usr": "s:18MeticaSDKFramework0A2AdP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAd",
+                "printedName": "any MeticaSDKFramework.MeticaAd",
+                "usr": "s:18MeticaSDKFramework0A2AdP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A21AdsExpirationCallbackP19onExpiredAdReloaded07expiredH003newH0yAA0aH0_p_AaG_ptF",
+            "mangledName": "$s18MeticaSDKFramework0A21AdsExpirationCallbackP19onExpiredAdReloaded07expiredH003newH0yAA0aH0_p_AaG_ptF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAdsExpirationCallback>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAdsExpirationCallback>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18MeticaSDKFramework0A21AdsExpirationCallbackP",
+        "mangledName": "$s18MeticaSDKFramework0A21AdsExpirationCallbackP",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -3720,6 +4257,44 @@
           },
           {
             "kind": "Function",
+            "name": "setInterstitialExpiredAdReloadedCallback",
+            "printedName": "setInterstitialExpiredAdReloadedCallback(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any MeticaSDKFramework.MeticaAdsExpirationCallback)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MeticaAdsExpirationCallback",
+                    "printedName": "any MeticaSDKFramework.MeticaAdsExpirationCallback",
+                    "usr": "s:18MeticaSDKFramework0A21AdsExpirationCallbackP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A3AdsP40setInterstitialExpiredAdReloadedCallback8callbackyAA0ac10ExpirationI0_pSg_tF",
+            "mangledName": "$s18MeticaSDKFramework0A3AdsP40setInterstitialExpiredAdReloadedCallback8callbackyAA0ac10ExpirationI0_pSg_tF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAds>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAds>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "loadRewarded",
             "printedName": "loadRewarded(adUnitId:callback:)",
             "children": [
@@ -3889,6 +4464,44 @@
             "declKind": "Func",
             "usr": "s:18MeticaSDKFramework0A3AdsP15isRewardedReady8adUnitIdSbSS_tF",
             "mangledName": "$s18MeticaSDKFramework0A3AdsP15isRewardedReady8adUnitIdSbSS_tF",
+            "moduleName": "MeticaSDKFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAds>",
+            "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAds>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setRewardedExpiredAdReloadedCallback",
+            "printedName": "setRewardedExpiredAdReloadedCallback(callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any MeticaSDKFramework.MeticaAdsExpirationCallback)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MeticaAdsExpirationCallback",
+                    "printedName": "any MeticaSDKFramework.MeticaAdsExpirationCallback",
+                    "usr": "s:18MeticaSDKFramework0A21AdsExpirationCallbackP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A3AdsP36setRewardedExpiredAdReloadedCallback8callbackyAA0ac10ExpirationI0_pSg_tF",
+            "mangledName": "$s18MeticaSDKFramework0A3AdsP36setRewardedExpiredAdReloadedCallback8callbackyAA0ac10ExpirationI0_pSg_tF",
             "moduleName": "MeticaSDKFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : MeticaSDKFramework.MeticaAds>",
             "sugared_genericSig": "<Self where Self : MeticaSDKFramework.MeticaAds>",
@@ -16019,6 +16632,190 @@
       },
       {
         "kind": "Function",
+        "name": "ios_setInterstitialExpiredAdReloadedCallback",
+        "printedName": "ios_setInterstitialExpiredAdReloadedCallback(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "((Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ())?",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_setInterstitialExpiredAdReloadedCallback:",
+        "mangledName": "$s18MeticaSDKFramework44ios_setInterstitialExpiredAdReloadedCallbackyyySPys4Int8VGSg_AFtXCSgF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "ios_setRewardedExpiredAdReloadedCallback",
+        "printedName": "ios_setRewardedExpiredAdReloadedCallback(_:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Void",
+            "printedName": "()"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Optional",
+            "printedName": "((Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ())?",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnsafePointer",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int8",
+                                "printedName": "Swift.Int8",
+                                "usr": "s:s4Int8V"
+                              }
+                            ],
+                            "usr": "s:SP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sq"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "c:(cm)ios_setRewardedExpiredAdReloadedCallback:",
+        "mangledName": "$s18MeticaSDKFramework40ios_setRewardedExpiredAdReloadedCallbackyyySPys4Int8VGSg_AFtXCSgF",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "CDecl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
         "name": "ios_loadInterstitial",
         "printedName": "ios_loadInterstitial(_:_:_:_:)",
         "children": [
@@ -18808,6 +19605,175 @@
         "moduleName": "MeticaSDKFramework"
       },
       {
+        "kind": "TypeDecl",
+        "name": "MeticaExpirationCallbackWrapper",
+        "printedName": "MeticaExpirationCallbackWrapper",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(onExpiredAdReloaded:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaExpirationCallbackWrapper",
+                "printedName": "MeticaSDKFramework.MeticaExpirationCallbackWrapper",
+                "usr": "s:18MeticaSDKFramework0A25ExpirationCallbackWrapperC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.UnsafePointer<Swift.Int8>?, Swift.UnsafePointer<Swift.Int8>?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UnsafePointer",
+                                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int8",
+                                    "printedName": "Swift.Int8",
+                                    "usr": "s:s4Int8V"
+                                  }
+                                ],
+                                "usr": "s:SP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.UnsafePointer<Swift.Int8>?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UnsafePointer",
+                                "printedName": "Swift.UnsafePointer<Swift.Int8>",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Int8",
+                                    "printedName": "Swift.Int8",
+                                    "usr": "s:s4Int8V"
+                                  }
+                                ],
+                                "usr": "s:SP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MeticaSDKFramework0A25ExpirationCallbackWrapperC19onExpiredAdReloadedACySPys4Int8VGSg_AHtXCSg_tcfc",
+            "mangledName": "$s18MeticaSDKFramework0A25ExpirationCallbackWrapperC19onExpiredAdReloadedACySPys4Int8VGSg_AHtXCSg_tcfc",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "onExpiredAdReloaded",
+            "printedName": "onExpiredAdReloaded(expiredAd:newAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAd",
+                "printedName": "any MeticaSDKFramework.MeticaAd",
+                "usr": "s:18MeticaSDKFramework0A2AdP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MeticaAd",
+                "printedName": "any MeticaSDKFramework.MeticaAd",
+                "usr": "s:18MeticaSDKFramework0A2AdP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MeticaSDKFramework0A25ExpirationCallbackWrapperC19onExpiredAdReloaded07expiredH003newH0yAA0aH0_p_AaG_ptF",
+            "mangledName": "$s18MeticaSDKFramework0A25ExpirationCallbackWrapperC19onExpiredAdReloaded07expiredH003newH0yAA0aH0_p_AaG_ptF",
+            "moduleName": "MeticaSDKFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18MeticaSDKFramework0A25ExpirationCallbackWrapperC",
+        "mangledName": "$s18MeticaSDKFramework0A25ExpirationCallbackWrapperC",
+        "moduleName": "MeticaSDKFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MeticaAdsExpirationCallback",
+            "printedName": "MeticaAdsExpirationCallback",
+            "usr": "s:18MeticaSDKFramework0A21AdsExpirationCallbackP",
+            "mangledName": "$s18MeticaSDKFramework0A21AdsExpirationCallbackP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MeticaSDKFramework"
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -20860,70 +21826,91 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2134,
+      "offset": 3047,
       "length": 22,
       "value": "\"disable_auto_retries\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2165,
+      "offset": 3078,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2263,
+      "offset": 3176,
       "length": 22,
       "value": "\"disable_back_to_back\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2294,
+      "offset": 3207,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3744,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 2719,
+      "offset": 4117,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2760,
+      "offset": 4158,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 2799,
+      "offset": 4197,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2998,
+      "offset": 4396,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 3032,
+      "offset": 4430,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
+      "kind": "Dictionary",
+      "offset": 4709,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
+      "kind": "Dictionary",
+      "offset": 4768,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinInterstitialAd.swift",
       "kind": "StringLiteral",
-      "offset": 11379,
+      "offset": 16145,
       "length": 24,
       "value": "\"ApplovinInterstitialAd\""
     },
@@ -20944,70 +21931,91 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2097,
+      "offset": 2840,
       "length": 22,
       "value": "\"disable_auto_retries\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2128,
+      "offset": 2871,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2224,
+      "offset": 2967,
       "length": 22,
       "value": "\"disable_back_to_back\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2255,
+      "offset": 2998,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3527,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 2678,
+      "offset": 3900,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2719,
+      "offset": 3941,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 2758,
+      "offset": 3980,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2895,
+      "offset": 4117,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2929,
+      "offset": 4151,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
+      "kind": "Dictionary",
+      "offset": 4430,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
+      "kind": "Dictionary",
+      "offset": 4489,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/applovin\/ApplovinRewardedAd.swift",
       "kind": "StringLiteral",
-      "offset": 11537,
+      "offset": 16123,
       "length": 20,
       "value": "\"ApplovinRewardedAd\""
     },
@@ -21042,126 +22050,154 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/FullscreenAdapterImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8367,
+      "offset": 7471,
       "length": 23,
       "value": "\"FullscreenAdapterImpl\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "StringLiteral",
-      "offset": 3039,
+      "offset": 4583,
       "length": 34,
       "value": "\"com.metica.interstitialInstances\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "Dictionary",
-      "offset": 3165,
+      "offset": 4709,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "StringLiteral",
-      "offset": 3361,
+      "offset": 4905,
       "length": 30,
       "value": "\"com.metica.rewardedInstances\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "Dictionary",
-      "offset": 3479,
+      "offset": 5023,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "StringLiteral",
-      "offset": 3655,
+      "offset": 5199,
       "length": 22,
       "value": "\"com.metica.autoRetry\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "Array",
-      "offset": 3760,
+      "offset": 5304,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "StringLiteral",
-      "offset": 3819,
+      "offset": 5363,
       "length": 23,
       "value": "\"com.metica.backToBack\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "Array",
-      "offset": 3926,
+      "offset": 5470,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
+      "kind": "Dictionary",
+      "offset": 6889,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
+      "kind": "Dictionary",
+      "offset": 6934,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
+      "kind": "Dictionary",
+      "offset": 7023,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
+      "kind": "Dictionary",
+      "offset": 7101,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
+      "kind": "Array",
+      "offset": 7163,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "Array",
-      "offset": 3987,
+      "offset": 7219,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "Array",
-      "offset": 4043,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
-      "kind": "Array",
-      "offset": 4546,
+      "offset": 7722,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "BooleanLiteral",
-      "offset": 12898,
+      "offset": 22568,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/AdInstanceOperations.swift",
       "kind": "StringLiteral",
-      "offset": 18292,
+      "offset": 27765,
       "length": 22,
       "value": "\"AdInstanceOperations\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/HoldoutLoadingStrategy.swift",
       "kind": "StringLiteral",
-      "offset": 2639,
+      "offset": 3339,
       "length": 24,
       "value": "\"HoldoutLoadingStrategy\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/HoldoutLoadingStrategy.swift",
       "kind": "IntegerLiteral",
-      "offset": 2679,
+      "offset": 3379,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/HoldoutLoadingStrategy.swift",
       "kind": "StringLiteral",
-      "offset": 2729,
+      "offset": 3429,
       "length": 17,
       "value": "\"No ad available\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/HoldoutLoadingStrategy.swift",
       "kind": "StringLiteral",
-      "offset": 2778,
+      "offset": 3478,
       "length": 24,
       "value": "\"HoldoutLoadingStrategy\""
     },
@@ -21196,7 +22232,7 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/service\/AdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 8084,
+      "offset": 8539,
       "length": 10,
       "value": "\"AdLoader\""
     },
@@ -21280,35 +22316,35 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1410,
+      "offset": 1761,
       "length": 50,
       "value": "\"User is in holdout. Generating request id: \""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1459,
+      "offset": 1810,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3610,
+      "offset": 3961,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 39261,
+      "offset": 41777,
       "length": 11,
       "value": "\"MeticaAds\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/MeticaAdsImpl.swift",
       "kind": "StringLiteral",
-      "offset": 39531,
+      "offset": 42047,
       "length": 14,
       "value": "\"Interstitial\""
     },
@@ -21651,21 +22687,21 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/di\/DependencyContainer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5637,
+      "offset": 5714,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/di\/DependencyContainer.swift",
       "kind": "BooleanLiteral",
-      "offset": 5714,
+      "offset": 5791,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/di\/DependencyContainer.swift",
       "kind": "BooleanLiteral",
-      "offset": 5760,
+      "offset": 5837,
       "length": 5,
       "value": "false"
     },
@@ -22311,7 +23347,7 @@
       "kind": "StringLiteral",
       "offset": 78,
       "length": 7,
-      "value": "\"2.5.2\""
+      "value": "\"2.5.3\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/internal\/util\/EnvironmentAttributes.swift",
@@ -22421,42 +23457,42 @@
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/ContinuousLoadingStrategy.swift",
       "kind": "StringLiteral",
-      "offset": 27584,
+      "offset": 27233,
       "length": 27,
       "value": "\"ContinuousLoadingStrategy\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/ContinuousLoadingStrategy.swift",
       "kind": "StringLiteral",
-      "offset": 27655,
+      "offset": 27304,
       "length": 12,
       "value": "\"continuous\""
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/ContinuousLoadingStrategy.swift",
       "kind": "BooleanLiteral",
-      "offset": 28964,
+      "offset": 28613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/ContinuousLoadingStrategy.swift",
       "kind": "Dictionary",
-      "offset": 32164,
+      "offset": 31813,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/ContinuousLoadingStrategy.swift",
       "kind": "Dictionary",
-      "offset": 32283,
+      "offset": 31932,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/aljazkajtna\/Work\/Metica\/metica-ios-sdk\/MeticaSDKDemo\/MeticaSDKFramework\/Sources\/MeticaSDK\/ads\/internal\/adapter\/ContinuousLoadingStrategy.swift",
       "kind": "BooleanLiteral",
-      "offset": 32428,
+      "offset": 32077,
       "length": 5,
       "value": "false"
     },
